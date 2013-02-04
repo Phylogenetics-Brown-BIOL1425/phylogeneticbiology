@@ -1,0 +1,241 @@
+
+\documentclass[12pt]{article}
+
+
+% From http://www-bcf.usc.edu/~bozovic/Teaching.html
+
+%%% PACKAGES
+
+\usepackage{bibentry} %to use intext full bibliography entries instead of citations.  You will need a separate BibTex database for this to work.  See http://cst.usc.edu/services/tel/grants/legrants.html for details on this package. See also http://stefaanlippens.net/bibentry
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+%\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+%\usepackage{subfigure} % make it possible to include more than one captioned figure/table in a single float
+
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions. Read ftp://ftp.tex.ac.uk/tex-archive/macros/latex/contrib/geometry/geometry.pdf for detailed page layout information 
+\geometry{margin=1in} % for example, change the margins to 1 inches all round
+%\geometry{landscape} % set up the page for landscape
+% 
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0.4pt} % customise the layout...
+%\lhead{}\chead{}\rhead{}
+%\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%\rfoot{\footnotesize SIR 330}
+\rhead{\footnotesize Biology 1425 Syllabus}
+\renewcommand\footrulewidth{0pt}
+
+%\usepackage{hyperref}
+
+%%% SECTION TITLE APPEARANCE
+%\usepackage{sectsty}
+%\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+
+%% END Article customise
+
+%%% BEGIN DOCUMENT
+
+
+\begin{document}
+
+
+\thispagestyle{plain} %alternatively specify empty to get no footer on first page.  This is part of the fancyhdr package
+
+
+%\nobibliography*%{MasterBib} %this specifies the BibTex directory that stores your desired bibliography entries.  It has to come before any \bibentry lines are invoked
+
+\nobibliography{Phylogenetic_Biology_Syllabus.bib}
+\bibliographystyle{apalike} %be careful here, there is only a few styles that will run
+
+
+
+
+%\tableofcontents
+
+\begin{center}
+\bigskip
+
+
+
+
+\textbf{Phylogenetic Biology}
+
+\large{\bf{Biol 1425}}
+
+\textsc{Spring 2013}
+
+\textsc{Brown University} \bigskip
+
+\end{center}
+
+\noindent\textbf{Professor: }Casey Dunn\medskip
+
+\noindent\textbf{Time:} Monday 3:00-4:00 (section), Wednesday 2:30-4:50pm (seminar)\medskip
+
+\noindent\textbf{Location:} First floor conference room, Walter Hall (80 Waterman St.)\medskip
+
+\noindent\textbf{Contact:} casey\_dunn@brown.edu. Please prefix the subject line of e-mails related to the class with ``phylobio:''\medskip
+
+\noindent\textbf{Office Hours:} W 12:30-2:00pm,\ Walter Hall (80 Waterman St.) Room 301\medskip
+
+\bigskip
+
+
+
+\section*{Overview and Objectives}%starred section will eliminate numbering; remove stars to get numbered sections especially if you are using TOC for some reason in your syllabus
+Phylogenetic Biology is the study of the evolutionary relationships between organisms, and the use of evolutionary relationships to understand other aspects of organism biology. This course will survey phylogenetic methods, providing a detailed picture of the statistical, mathematical, and computational tools for building phylogenies and using them to study evolution. We will also examine the application of these tools to particular problems in the literature and emerging areas of study. 
+
+This seminar will include lectures by the professor, as well as student presentations and frequent open discussions.
+
+\section*{Enrollment}
+Enrollment is capped at 16 students, and registration requires instructor permission. To request a spot, please fill out the online form at \url{http://goo.gl/v6w0E} before November 6, 2012.
+
+
+\section*{Prerequisites} 
+Students are expected to have taken classes in:
+
+\begin{itemize}
+
+
+\item Statistics (eg Biol 0495)
+\item Evolutionary Biology (eg Biol 0480, 0410, 0430,  1430, 1485)
+
+\end{itemize}
+
+Exceptions will be made if students can demonstrate proficiency in these areas, or in closely related ares such as computer science and math.
+
+\section*{Assignments and grading}
+
+\begin{itemize}
+\item {\bf Final Project, 40\% }. Each student will conduct their own phylogenetic study, which could include development of a new method, reconstructing the phylogeny of a particular group of organisms, examining the evolution of one more more characters on a tree, or examination of the behavior of a particular method. The final project will be summarized as a scientific paper in PLoS One format, see http://www.plosone.org/static/guidelines.action for formatting details. In addition, each student will make a 10 minute presentation summarizing their work.
+
+\item {\bf Analysis assignments, 20\% }. There will be several take-home phylogenetic analysis assignments. These will provide you with the opportunity to apply your new skills to example datasets.
+
+\item {\bf Class participation, 15\% }. Takes attendance and participation in class discussions into account.
+
+\item {\bf Group presentation, 15\%}. Groups of 4 students will lead discussions of papers that describe particular methods and applications. Groups are expected to summarize the methods and results of the paper, tie the paper to other topics covered in class, and lead a discussion that examines its strengths, weaknesses, and implications.
+
+\item {\bf Individual presentation, 10\%}. Each student will make a 10 minute presentation about a scientific paper.
+
+
+\end{itemize}
+
+
+\section*{Reading}
+
+\begin{itemize}
+\item {\bf Required: \bibentry{Baum:2012wj}}. This text covers many of the principles of tree thinking and phylogenetic methods.
+\item {\bf Suggested: \bibentry{Haddock2010}}. You will perform a variety of phylogenetic analyses, which will require running programs at the command line and editing text files. If you are not familiar with these skills already, this book will provide the necessary background.
+\item {\bf Primary literature}. Scientific papers from the primary literature are a critical component of this course. These will be assigned over the course of the semester as they are selected by students and the professor. 2--4 papers a week will be assigned.
+
+\end{itemize}
+
+\section*{Computing}
+The assignments and final project will require that you have access to a computer running Unix or Linux. If you have an Apple Mac or a computer with Linux installed, you are already set. If your computer runs Microsoft Windows you have a couple options. You can run your analyses in a computer lab with Apple Macs or Linux computers, or you can install Linux on your windows computer within a virtual machine. This page has links that explain how to set up a virtual machine: http://practicalcomputing.org/preworkshop
+
+\section*{Course Outline}
+
+\subsection*{Tree Thinking \textnormal{\small{(Week 1)}}}
+
+\begin{enumerate}
+\item Understanding what phylogenetic trees are
+\item Reading phylogenetic trees
+\item An overview of example applications
+\item Gene trees and species trees
+
+\end{enumerate}
+
+
+\subsection*{Inferring phylogenies \textnormal{\small{(Week 2-5)}}}
+
+\begin{enumerate}
+\item Tree space
+\item Characters and homology
+\item Multiple sequence alignment
+\item Optimality Criteria
+\item Heuristics for finding trees
+\item Summarizing trees
+\item Measuring tree support
+\item Dating trees
+\end{enumerate}
+
+
+\subsection*{Model-based approaches revisited \textnormal{\small{(Week 6)}}}
+
+\begin{enumerate}
+\item Models of molecular evolution
+\item Calculating the likelihood of a tree
+\item Bayesian inference
+\item Relationship between Bayesian and likelihood approaches
+\item Models of morphological evolution
+\end{enumerate}
+
+\subsection*{Real-world applications \textnormal{\small{(Week 7)}}}
+
+\begin{enumerate}
+\item Designing a phylogenetic study
+\item Taxon and character sampling
+\item Missing data
+\item Sources of systematic error
+\end{enumerate}
+
+
+\subsection*{Testing phylogenetic hypotheses \textnormal{\small{(Week 8)}}}
+
+\begin{enumerate}
+\item Common scenarios
+\item KH Test
+\item SH Test
+\item Other tests
+\end{enumerate}
+
+
+\subsection*{Character evolution on phylogenies \textnormal{\small{(Week 9-10)}}}
+
+\begin{enumerate}
+\item Reconstructing discrete and continuous characters
+\item Testing evolutionary scenarios
+\item Characterizing patterns of character evolution, including phylogenetic signal
+\item Examining the co-evolution of multiple characters, including independent contrasts
+\item Accounting for phylogenetic uncertainty
+\end{enumerate}
+
+
+\subsection*{Populations and phylogenies \textnormal{\small{(Week 11)}}}
+
+\begin{enumerate}
+\item Coalescence
+\item Incomplete lineage sorting
+\item Phylogeography
+\item Speciation
+\end{enumerate}
+
+\subsection*{Phylogenomics \textnormal{\small{(Week 12)}}}
+\begin{enumerate}
+\item Project design
+\item Sequence assembly
+\item Identifying homologs
+\item Identifying orthologs
+\item Simultaneous estimation of gene trees and species trees
+\end{enumerate}
+
+\subsection*{Final Project Presentations \textnormal{\small{(Week 13)}}}
+
+\begin{enumerate}
+\item Final Project presentations
+
+
+\end{enumerate}
+
+
+
+
+\end{document} 
