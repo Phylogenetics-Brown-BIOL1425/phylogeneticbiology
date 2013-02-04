@@ -18,4 +18,25 @@ http://www.ncbi.nlm.nih.gov/nuccore?term=txid42759%5BOrganism%3Aexp%5D%2016S%20D
 
 Under the "Send to:" menu, select "File:", then "FASTA" for the format.
 
-Rename the downloaded fasta file as siph16s-raw.fasta.
+Rename the downloaded fasta file as `siph16s-raw.fasta`.
+
+### Renaming the sequences
+
+The sequences that are downloaded have very long names that can complicated 
+downstream analyses. It is a good idea to rename them. 
+
+Rename each sequence as `Genus_species_gi`, and name the new file 
+`siph16s.fasta`.
+
+### Aligning the sequences
+
+Align the sequences with the following command:
+
+    mafft siph16s.fasta > siph16s.aligned.fasta
+    
+### Converting the alignment format
+
+mafft will generate an alignment that is in fasta format, we need to convert 
+this alignment to a phylip format for the next step. This can be done in 
+a variety of programs, including mesquite.
+
