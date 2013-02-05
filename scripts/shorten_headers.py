@@ -1,6 +1,6 @@
 import re, sys
 
-"""
+usage = """
 Shortens the header of NCBI fasta files to Genus_species_gi
 
 usage:
@@ -24,7 +24,7 @@ def shorten_headers( in_name ):
 
 if __name__ == "__main__":
 	if len(sys.argv) < 2:
-		print "usage: python paralogyprune.py tree.tre"
+		print usage
 		sys.exit( 0 )
 	in_name = sys.argv[1]
 	print shorten_headers( in_name )
