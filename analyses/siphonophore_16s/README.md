@@ -34,7 +34,7 @@ To load the modules needed for the examples below, enter:
     module load python # Needed for the fasta2phylip.py script
     module load mafft
     module load raxml
-    
+
 
 ### Getting the data
 
@@ -71,13 +71,7 @@ appendices](http://practicalcomputing.org/files/PCfB_Appendices.pdf).
 Alternatively, you can make the change at the command line with the python 
 script `shorten_headers.py`.
 
-    python ../../scripts/shorten_headers.py siph16s-raw.fasta > siph16s.fasta
-
-`python` calls the python language interpreter. 
-`../../scripts/shorten_headers.py` is the path to the script (open it up in the 
-text editor and take a look at it if you like). You may need to edit this path 
-if the script or file are somewhere else. `> siph16s.fasta` sends the output 
-to a new file 
+    shorten_headers.py siph16s-raw.fasta > siph16s.fasta
 
 
 ### Aligning the sequences
@@ -109,9 +103,12 @@ this alignment to a phylip format for the next step. This can be done in
 a variety of programs, including 
 [mesquite](http://mesquiteproject.org/mesquite/mesquite.html).
 
-You can also use the fasta2phylip.py python program of the scripts folder:
+You can also use the fasta2phylip.py python program in the scripts folder:
 
-    python ../../scripts/fasta2phylip.py siph16s.aligned.fasta siph16s.phy
+    fasta2phylip.py siph16s.aligned.fasta > siph16s.phy
+
+Take a look at your alignment in mesquite to make sure that there are no 
+problems such as sequences that are in the wrong direction.
 
 
 ### Estimating the phylogeny with raxml
@@ -120,4 +117,9 @@ You can also use the fasta2phylip.py python program of the scripts folder:
 widely used program for maximum likelihood phylogenetic analyses. Consult the 
 [manual](http://sco.h-its.org/exelixis/oldPage/RAxML-Manual.7.0.4.pdf) for 
 detailed information on use and options.
+
+As for the alignment above, we are going to use default parameters for now. 
+Later we will cover a variety of details that you will want to optimize.
+
+The command for running our analysis will look like this:
 
