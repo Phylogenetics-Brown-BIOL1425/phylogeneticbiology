@@ -4,14 +4,11 @@ This repository contains the source code, datasets, and documentation for
 Casey Dunn's Phylogenetic Biology course (Biology 1425) at Brown University, as 
 taught in the spring of 2013.
 
-You can browse the [Source files](https://bitbucket.org/caseywdunn/phylogeneticbiology/src/master) 
-for all scripts, documentation, data, analyses, lectures, etc.
-
 See the [syllabus](https://bitbucket.org/caseywdunn/phylogeneticbiology/src/master/syllabus/Phylogenetic_Biology_Syllabus.pdf) 
 for additional information.
 
 
-## Schedule
+## Class schedule
 
 The syllabus describes the overall structure of the course. Information for 
 specific dates is noted here:
@@ -25,7 +22,7 @@ pages 383-396.
 
 - Wednesday, January 30. Introduction to phylogenetic inference: tree space, 
 optimality criteria, and searching. Reading: Baum and Smith chapters 4, 6, 7. 
-Lecture: `lectures/Casey Dunn Lecture 2.pdf`
+Lecture: `lectures/Lecture_2.pdf`
 
 - Monday, February 4. Getting acquainted with tools and the cluster. Activity: 
 `analyses/siphonophore_16s` through sequence alignment.
@@ -40,6 +37,20 @@ from the [Workshop in Molecular Evolution](https://molevol.mbl.edu/wiki/index.ph
 
 - Monday, February 11. Getting acquainted with tools and the cluster. Activity: 
 `analyses/siphonophore_16s` through tree building.
+
+
+## Assignments
+
+- March 6. Group presentations. Groups can consist of 2-4 registered students. 
+Presentations should be 20-30 minutes. By March 6 each group should form up, 
+pick a paper, and schedule their presentation. Group presentations must be made 
+on or before April 16. Scheduling will be organized so that there is no more 
+than one group presentation per class. 
+
+- April 30. The written component of the final project is due by the beginning 
+of class.
+
+- May 7. Presentations of final projects in class
 
 
 ## Software to install on your own computer
