@@ -1,11 +1,25 @@
 # Phylogenetic Biology
 
 This repository contains the source code, datasets, and documentation for 
-Casey Dunn's Phylogenetic Biology course (Biology 1425) at Brown University.
+Casey Dunn's Phylogenetic Biology course (Biology 1425) at Brown University, as 
+taught in the spring of 2013.
 
-See the [syllabus](https://bitbucket.org/caseywdunn/phylogeneticbiology/src/master/syllabus/Phylogenetic_Biology_Syllabus.pdf) for additional information.
+You can browse the [Source files](https://bitbucket.org/caseywdunn/phylogeneticbiology/src/master) 
+for all scripts, documentation, data, analyses, lectures, etc.
 
-## Software to install on your laptop
+See the [syllabus](https://bitbucket.org/caseywdunn/phylogeneticbiology/src/master/syllabus/Phylogenetic_Biology_Syllabus.pdf) 
+for additional information.
+
+
+## Schedule
+
+The syllabus describes the overall structure of the course. Information for 
+specific dates is noted here:
+
+
+
+
+## Software to install on your own computer
 
 You will use the following programs to work with phylogenies on your laptop. We 
 will use computationally intensive programs, such as raxml and mrbayes, on the 
@@ -24,13 +38,11 @@ Java on Microsoft Windows from the [Java site](http://www.java.com/en/download/i
 
 - [CyberDuck](http://cyberduck.ch)
 
- 
 
 ### For OS X (ie, Macs):
 
 - [TextWrangler](http://www.barebones.com/products/textwrangler/)
 
- 
 
 ### For Microsoft Windows:
 
