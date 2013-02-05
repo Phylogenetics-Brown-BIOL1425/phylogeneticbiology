@@ -20,7 +20,7 @@ You will use the following programs to work with phylogenies on your laptop. We 
 
  
 
-### For macs running OS X:
+### For OS X (ie, Macs):
 
 - [TextWrangler](http://www.barebones.com/products/textwrangler/)
 
@@ -40,38 +40,28 @@ theory and and practice of phylogenetic biology.
 
 An extensive list of tools, tutorials, and examples of phylogenetic tools in 
 the programming language R:
-
 [r-phylo](http://www.r-phylo.org/wiki/Main_Page)
 
- 
 The Workshop on Molecular Evolution at Woods Hole. This is an intensive summer 
 course on phylogenetics, with an emphasis on building phylogenetic trees. Check 
 out the faculty pages for lecture pdfs:
-
 [Workshop on Molecular Evolution](https://molevol.mbl.edu/wiki/index.php/Main_Page)
-
 
 The Applied Phylogenetics Workshop in Bodega Bay. This is another summer course 
 on phylogenetics, but with a bit more emphasis on using phylogenies to test 
 evolutionary questions:
-
 [Applied Phylogenetics Workshop](http://bodegaphylo.wikispot.org)
-
 
 The site for the book I co-authored with Steve Haddock, Practical Computing for 
 Biologists:
-
 [Practical Computing](http://practicalcomputing.org)
 
 Here are some of the appendices from the book, which summarize frequently used 
 commands:
-
 [Appendices](http://practicalcomputing.org/files/PCfB_Appendices.pdf)
-
 
 Documentation and resources for Oscar, the computer cluster we will use for our 
 analyses:
-
 [Oscar](http://www.brown.edu/Departments/CCV/doc)
 
 
