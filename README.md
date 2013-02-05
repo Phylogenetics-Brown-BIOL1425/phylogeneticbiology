@@ -3,14 +3,20 @@
 This repository contains the source code, datasets, and documentation for 
 Casey Dunn's Phylogenetic Biology course (Biology 1425) at Brown University.
 
+See the [syllabus](syllabus/Phylogenetic_Biology_Syllabus.pdf) for additional information.
 
 ## Software to install on your laptop
 
-You will use the following programs to work with phylogenies on your laptop. We will use computationally intensive programs, such as raxml and mrbayes, on the cluster.
+You will use the following programs to work with phylogenies on your laptop. We 
+will use computationally intensive programs, such as raxml and mrbayes, on the 
+cluster.
 
 ### For all computers:
 
-- [Mesquite](http://mesquiteproject.org/mesquite/mesquite.html). Mesquite will require that you also install Java. OS X will prompt you to install Java when you launch mesquite, if you don't already have java installed. Follow this ling to install java on windows: http://www.java.com/en/download/index.jsp
+- [Mesquite](http://mesquiteproject.org/mesquite/mesquite.html). Mesquite will 
+require that you also install Java. OS X will prompt you to install Java when 
+you launch mesquite, if you don't already have java installed. You can install 
+Java on Microsoft Windows from the [Java site](http://www.java.com/en/download/index.jsp)
 
 - [R](http://www.r-project.org)
 
@@ -70,10 +76,10 @@ analyses:
 The following resources provide additional background.
 
 Paradis, E. Analysis of Phylogenetics and Evolution with R. (Springer, 2011).
-[Publisher](http://www.springer.com/life+sciences/evolutionary+%26+developmental+biology/book/978-0-387-32914-7)
+[Publisher link](http://www.springer.com/life+sciences/evolutionary+%26+developmental+biology/book/978-0-387-32914-7)
 
 Felsenstein, J. Inferring phylogenies. (Sinauer Associates Sunderland, 2004).
-[Publisher](http://www.sinauer.com/detail.php?id=1775)
+[Publisher link](http://www.sinauer.com/detail.php?id=1775)
 
 ## Licenses
 
