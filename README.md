@@ -3,7 +3,7 @@
 This repository contains the source code, datasets, and documentation for 
 Casey Dunn's Phylogenetic Biology course (Biology 1425) at Brown University.
 
-See the [syllabus](syllabus/Phylogenetic_Biology_Syllabus.pdf) for additional information.
+See the [syllabus](https://bitbucket.org/caseywdunn/phylogeneticbiology/src/master/syllabus/Phylogenetic_Biology_Syllabus.pdf) for additional information.
 
 ## Software to install on your laptop
 
