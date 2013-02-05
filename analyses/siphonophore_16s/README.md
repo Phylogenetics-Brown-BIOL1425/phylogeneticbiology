@@ -121,7 +121,35 @@ detailed information on use and options.
 As for the alignment above, we are going to use default parameters for now. 
 Later we will cover a variety of details that you will want to optimize.
 
-The command for running our analysis will look like this:
+Phylogenetic inference can be computationally intensive (an understatement). 
+We can't just run it from the command line on the cluster, as this would bring 
+down the login node (the computer where you land when you log into the cluster). 
+So we'll need to use the cluster job scheduler, as described below. First, 
+though, let's take a look at the structure of the command that actually runs 
+the phylogenetic analysis (don't run it yet):
+
+    raxmlHPC -f a -x 12345 -p 12345 -N 10 -m GTRGAMMA -s siph16s.phy -n boot10
+    
+This command has a few parts. Consult the raxml manual for more details, or run 
+the following command to get information on all the raxml options:
+
+    raxmlHPC -help
+
+The breakdown of our command is:
+- `raxmlHPC` calls the raxml program
+- `-f a` specifies a rapid bootstrap analysis followed by a maximum likelihood 
+search
+- `-x 12345` Turns on bootstras and sets the 
+[random seed](http://en.wikipedia.org/wiki/Random_seed). Any integer would do.
+- `-p 12345` Sets the random seed for the starting tree.
+- `-N 10` Specifies that we will do 10 bootstrap replicates.
+- `-m GTRGAMMA` Sets the model of molecular evolution.
+- `-s siph16s.phy` Specifies the input alignment name.
+- `-n boot10` Gives the analysis a name, which will be used for output files.
+
+The above command took 216 seconds to run on my laptop. This isn't that bad, 
+but a "real" analysis would have many more bootstraps (usually on the order of 
+500), which greatly lengthens run time.
 
 
 ### Viewing the phylogeny

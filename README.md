@@ -131,11 +131,12 @@ analyses:
 
 The following resources provide additional background.
 
-Paradis, E. Analysis of Phylogenetics and Evolution with R. (Springer, 2011).
-[Publisher link](http://www.springer.com/life+sciences/evolutionary+%26+developmental+biology/book/978-0-387-32914-7)
+Paradis, E. (2011) Analysis of Phylogenetics and Evolution with R. 
+[Springer](http://www.springer.com/life+sciences/evolutionary+%26+developmental+biology/book/978-0-387-32914-7)
 
-Felsenstein, J. Inferring phylogenies. (Sinauer Associates Sunderland, 2004).
-[Publisher link](http://www.sinauer.com/detail.php?id=1775)
+Felsenstein, J. (2004) Inferring phylogenies. 
+[Sinauer Associates](http://www.sinauer.com/detail.php?id=1775).
+
 
 ## Licenses
 
