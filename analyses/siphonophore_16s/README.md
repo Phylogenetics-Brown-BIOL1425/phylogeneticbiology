@@ -31,7 +31,7 @@ command:
 
 To load the modules needed for the examples below, enter:
 
-    module load python # Needed for the fasta2phylip.py script
+    module load python
     module load mafft
     module load raxml
 
@@ -122,4 +122,8 @@ As for the alignment above, we are going to use default parameters for now.
 Later we will cover a variety of details that you will want to optimize.
 
 The command for running our analysis will look like this:
+
+
+### Viewing the phylogeny
+
 

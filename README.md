@@ -7,6 +7,15 @@ taught in the spring of 2013.
 See the [syllabus](https://bitbucket.org/caseywdunn/phylogeneticbiology/src/master/syllabus/Phylogenetic_Biology_Syllabus.pdf) 
 for additional information.
 
+The two books for the class are:
+
+Baum, D. and Smith, S. (2012). Tree Thinking. An Introduction to Phylogenetic 
+Biology. [Roberts Publishers](http://www.roberts-publishers.com/tree-thinking-an-introduction-to-phylogenetic-biology.html). 
+Required.
+
+Haddock, S. H. D. and Dunn, C. W. (2010). Practical Computing for Biologists. 
+[Sinauer Associates](http://practicalcomputing.org). Optional.
+
 
 ## Class schedule
 
@@ -36,21 +45,21 @@ on [Paul Lewis's](http://www.eeb.uconn.edu/people/plewis) excellent
 from the [Workshop in Molecular Evolution](https://molevol.mbl.edu/wiki/index.php/Main_Page).
 
 - Monday, February 11. Getting acquainted with tools and the cluster. Activity: 
-`analyses/siphonophore_16s` through tree building.
+`analyses/siphonophore_16s` through viewing the phylogeny.
 
 
 ## Assignments
 
-- March 6. Group presentations. Groups can consist of 2-4 registered students. 
+- Wednesday, March 6. Group presentations. Groups can consist of 2-4 registered students. 
 Presentations should be 20-30 minutes. By March 6 each group should form up, 
 pick a paper, and schedule their presentation. Group presentations must be made 
 on or before April 16. Scheduling will be organized so that there is no more 
 than one group presentation per class. 
 
-- April 30. The written component of the final project is due by the beginning 
-of class.
+- Wednesday, May 1. The written component of the final project is due by the 
+beginning of class.
 
-- May 7. Presentations of final projects in class
+- Wednesday, May 8. Presentations of final projects in class.
 
 
 ## Software to install on your own computer
