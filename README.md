@@ -16,7 +16,30 @@ for additional information.
 The syllabus describes the overall structure of the course. Information for 
 specific dates is noted here:
 
+- Wednesday, January 23. Introduction to tree thinking. Reading: Baum and Smith 
+chapters 1-3.
 
+- Monday, January 28. Getting around at the command line, logging in to 
+remote computers. Reading: Haddock and Dunn chapters 4-5 and chapter 20 
+pages 383-396.
+
+- Wednesday, January 30. Introduction to phylogenetic inference: tree space, 
+optimality criteria, and searching. Reading: Baum and Smith chapters 4, 6, 7. 
+Lecture: `lectures/Casey Dunn Lecture 2.pdf`
+
+- Monday, February 4. Getting acquainted with tools and the cluster. Activity: 
+`analyses/siphonophore_16s` through sequence alignment.
+
+- Wednesday, February 6. Maximum likelihood. Reading: Baum and Smith chapters 8, 
+and Holder, M. & Lewis, P. O. Phylogeny estimation: traditional and Bayesian 
+approaches. Nat Rev Genet 4, 275–284 (2003). 
+[doi:10.1038/nrg1044](http://dx.doi.org/10.1038/nrg1044). Lecture: We will draw 
+on [Paul Lewis's](http://www.eeb.uconn.edu/people/plewis) excellent 
+[likelihood lecture](http://www.eeb.uconn.edu/people/plewis/downloads/wh2012/Likelihood_WoodsHole_24July2012_1-per-page.pdf) 
+from the [Workshop in Molecular Evolution](https://molevol.mbl.edu/wiki/index.php/Main_Page).
+
+- Monday, February 11. Getting acquainted with tools and the cluster. Activity: 
+`analyses/siphonophore_16s` through tree building.
 
 
 ## Software to install on your own computer
@@ -24,6 +47,7 @@ specific dates is noted here:
 You will use the following programs to work with phylogenies on your laptop. We 
 will use computationally intensive programs, such as raxml and mrbayes, on the 
 cluster.
+
 
 ### For all computers:
 
