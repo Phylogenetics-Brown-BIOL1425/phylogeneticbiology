@@ -10,8 +10,13 @@ Siphonophora (Cnidaria), with implications for the evolution of functional
 specialization. Systematic Biology 54:916-935.
 [doi:10.1080/10635150500354837](http://dx.doi.org/10.1080/10635150500354837)
 
+This tutorial assumes that you are familiar with logging onto a remote computer, 
+transferring files, and the basics of working at the command line. If this is 
+not the case, take a look at [Haddock and Dunn](http://practicalcomputing.org) 
+chapters 4-5 and chapter 20 pages 383-396.
+
 The instructions below are all you need to complete the analysis. The files 
-that are generated are included in this folder so that you can compare them 
+that you will generate are included in this folder so that you can compare them 
 to your results and try later steps if there is anything that doesn't work.
 
 ## Implementing the analysis
@@ -35,6 +40,21 @@ To load the modules needed for the examples below, enter:
     module load mafft
     module load raxml
 
+Create a new folder for the analyses in your data directory. If your username 
+is guest168, for example, you would use the following commands to create the 
+new directory (which you may give a different name) and move to it:
+
+    cd ~/data/guest168/
+    mkdir siph16s_06Feb2013
+    cd siph16s_06Feb2013/
+    
+You can execute the commands below in this new directory. If you do use any of 
+the example files, copy them to this new directory with `cp` rather than use 
+them in the main repository.
+
+Remember to keep a notebook of what you do. You can include a link to this file, 
+record the commands you use, and add various comments about results etc...
+
 
 ### Getting the data
 
@@ -46,7 +66,7 @@ Under the "Send to:" menu, select "File:", then "FASTA" for the format.
 
 Rename the downloaded fasta file as `siph16s-raw.fasta`.
 
-Use cyberduck to transfer the file 
+Use cyberduck to transfer the file to the data directory you created above.
 
 
 ### Renaming the sequences
