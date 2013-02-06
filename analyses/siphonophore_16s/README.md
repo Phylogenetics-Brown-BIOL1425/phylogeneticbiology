@@ -28,18 +28,6 @@ We'll be running these analyses on the Oscar cluster here at Brown. Consult the
 [Oscar documentation](http://www.brown.edu/Departments/CCV/doc) for additional 
 information.
 
-Some of the steps below require that you load some modules with specialized 
-software. To see all the modules that are available on the system, use the 
-command:
-
-    module avail
-
-To load the modules needed for the examples below, enter:
-
-    module load python
-    module load mafft
-    module load raxml
-
 Create a new folder for the analyses in your data directory. If your username 
 is guest168, for example, you would use the following commands to create the 
 new directory (which you may give a different name) and move to it:
@@ -55,6 +43,24 @@ them in the main repository.
 Remember to keep a notebook of what you do. You can include a link to this file, 
 record the commands you use, and add various comments about results etc...
 
+Some of the steps below require that you load some modules with specialized 
+software. If you are using your guest account that has been created for this 
+class (eg, guest168) then all the needed modules are loaded when you log in and 
+you can skip to the next section. If you are using a different oscar account,
+you will need to manually load the modules.
+
+To see all the modules that are available on the system, use the 
+command:
+
+    module avail
+
+To load the modules needed below, enter:
+
+    module load python
+    module load biol1425
+    module load R
+    module load mafft
+    module load raxml
 
 ### Getting the data
 
