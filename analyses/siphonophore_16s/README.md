@@ -136,15 +136,23 @@ the following command to get information on all the raxml options:
     raxmlHPC -help
 
 The breakdown of our command is:
+
 - `raxmlHPC` calls the raxml program
+
 - `-f a` specifies a rapid bootstrap analysis followed by a maximum likelihood 
 search
+
 - `-x 12345` Turns on bootstras and sets the 
 [random seed](http://en.wikipedia.org/wiki/Random_seed). Any integer would do.
-- `-p 12345` Sets the random seed for the starting tree.
+
+- `-p 12345` Sets the random seed for the starting tree. Any integer would do.
+
 - `-N 10` Specifies that we will do 10 bootstrap replicates.
+
 - `-m GTRGAMMA` Sets the model of molecular evolution.
+
 - `-s siph16s.phy` Specifies the input alignment name.
+
 - `-n boot10` Gives the analysis a name, which will be used for output files.
 
 The above command took 216 seconds to run on my laptop. This isn't that bad, 
