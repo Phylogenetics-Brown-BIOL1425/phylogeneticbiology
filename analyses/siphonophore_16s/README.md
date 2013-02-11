@@ -72,7 +72,11 @@ Under the "Send to:" menu, select "File:", then "FASTA" for the format.
 
 Rename the downloaded fasta file as `siph16s-raw.fasta`.
 
-Use cyberduck to transfer the file to the data directory you created above.
+Use cyberduck to transfer the file to the data directory you created above. 
+Alternatively, if you are working in an Oscar account created for the class, 
+you can copy it to the new directory with:
+
+    cp ~/data/shared/phylogeneticbiology/analyses/siphonophore_16s/siph16s-raw.fasta ./
 
 
 ### Renaming the sequences
@@ -150,9 +154,30 @@ Later we will cover a variety of details that you will want to optimize.
 Phylogenetic inference can be computationally intensive (an understatement). 
 We can't just run it from the command line on the cluster, as this would bring 
 down the login node (the computer where you land when you log into the cluster). 
-So we'll need to use the cluster job scheduler, as described below. First, 
-though, let's take a look at the structure of the command that actually runs 
-the phylogenetic analysis (don't run it yet):
+Instead, we'll run the command with a job manager that allocates resources. The 
+details of a job manager are system-specific, so the following few commands 
+just apply to [Oscar](http://ccv.brown.edu/doc/getting-started.html). The 
+following will give you an overview of the system:
+
+    nodes
+    allq
+    myq
+    
+`nodes` summarizes the computer nodes and their properties. `allq` summarizes 
+all the jobs that are currently running. `myq` summarizes your jobs that are 
+currently running.
+
+### Using Oscar in interactive mode
+
+There are two ways to run jobs - interactively and in batch mode. We'll first 
+give interactive jobs a try. In this mode, you type commands as usual at the 
+command line but they are executed on a dedicated CPU. Enter interactive mode 
+as follows:
+
+    interact
+
+This puts you in interactive mode, and provides some information about the 
+computer node you have been assigned. Now, type your raxml command:
 
     raxmlHPC -f a -x 12345 -p 12345 -N 10 -m GTRGAMMA -s siph16s.phy -n boot10
     
@@ -181,11 +206,53 @@ search
 
 - `-n boot10` Gives the analysis a name, which will be used for output files.
 
-The above command took 216 seconds to run on my laptop. This isn't that bad, 
+The above command took 183.114057 seconds to run. This isn't that bad, 
 but a "real" analysis would have many more bootstraps (usually on the order of 
 500), which greatly lengthens run time.
+
+Once your analysis is complete, type `exit` to leave interactive mode.
+
+### Using Oscar in batch mode
+
+Let's try it again, this time using the job manager in batch mode. Rather than 
+gain control of a computer node and then type your commands at the command line, 
+you will use a batch script that configures the job manager and tells it what 
+commands to run. You'll then pass this batch file to the job manager, and it 
+will allocate resources and start the analysis. This is the best way to run 
+large or complicated jobs.
+
+A batch file, `mpi_raxml.sh`, is provided as part of this exercise. Copy it to 
+your own analysis directory, and take a look with `vi`. Then, run submit it to 
+the manager as follows:
+
+    sbatch mpi_raxml.sh
+    myq
+    
+The `myq` command will give an idea of when it will start, which may take a few 
+hours if the cluster is under heavy use.
 
 
 ### Viewing the phylogeny
 
+The raxml analysis generates several files:
 
+    RAxML_bestTree.boot10
+    RAxML_bipartitions.boot10
+    RAxML_bipartitionsBranchLabels.boot10
+    RAxML_bootstrap.boot10
+    RAxML_info.boot10
+
+The last part of each of these file names ("boot10"), will depend on the run 
+name that was specified with `-n` when calling raxml. These files are:
+
+* `RAxML_bestTree.boot10`, the single tree with the maximum likelihood.
+* `RAxML_bipartitions.boot10`, the maximum likelihood tree (with the same 
+  topology and branch lengths as above), with bootstrap support mapped onto it.
+  This is the file that you will usually examine most closely after the 
+  analysis.
+* `RAxML_bootstrap.boot10` The trees for each bootstrap replicate.
+* `RAxML_info.boot10` Summary information about the analysis, including the 
+  likelihood.
+  
+We'll focus on `RAxML_bipartitions.boot10` for now. First, open it with `less` 
+and take a look. Then, copy it to your laptop and open it with FigTree.

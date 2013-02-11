@@ -47,7 +47,7 @@ from the [Workshop in Molecular Evolution](https://molevol.mbl.edu/wiki/index.ph
 - Monday, February 11. Getting acquainted with tools and the cluster. Activity: 
 `analyses/siphonophore_16s` through viewing the phylogeny.
 
-- Wednesday, February 13. Maximum likelihood continued, summarizine tree sets, 
+- Wednesday, February 13. Maximum likelihood continued, summarizing tree sets, 
 bootstraps, bayesian inference. Reading: Look over last week's reading.
 
 
