@@ -1,0 +1,136 @@
+
+
+IMPORTANT WARNING: Sequences Forskalia_edwardsi_60544967 and Forskalia_edwardsi_60544966 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Agalma_elegans_60544925 and Agalma_elegans_60544952 are exactly identical
+
+IMPORTANT WARNING
+Found 2 sequences that are exactly identical to other sequences in the alignment.
+Normally they should be excluded from the analysis.
+
+Just in case you might need it, an alignment file with 
+sequence duplicates removed is printed to file siph16s.phy.reduced
+
+
+This is RAxML version 7.3.5 released by Alexandros Stamatakis on September 16 2012.
+
+With greatly appreciated code contributions by:
+Andre Aberer (HITS)
+Simon Berger (HITS)
+Nick Pattengale (Sandia)
+Wayne Pfeiffer (SDSC)
+Akifumi S. Tanabe (Univ. Tsukuba)
+
+
+Alignment has 633 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 27.93%
+
+RAxML rapid bootstrapping and subsequent ML search
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+
+Executing 10 rapid bootstrap inferences and thereafter a thorough ML search 
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heteorgeneity, ML estimate of alpha-parameter
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 633
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+raxmlHPC -f a -x 12345 -p 12345 -N 10 -m GTRGAMMA -s siph16s.phy -n boot10 
+
+
+Testing which likelihood implementation to use
+Standard Implementation full tree traversal time: 0.021757
+Subtree Equality Vectors for gap columns full tree traversal time: 0.019154
+... using standard implementation
+
+
+Time for BS model parameter optimization 1.734942
+Bootstrap[0]: Time 5.653281 seconds, bootstrap likelihood -14748.612367, best rearrangement setting 13
+Bootstrap[1]: Time 3.506278 seconds, bootstrap likelihood -15474.226985, best rearrangement setting 13
+Bootstrap[2]: Time 4.189049 seconds, bootstrap likelihood -15260.554029, best rearrangement setting 12
+Bootstrap[3]: Time 3.752298 seconds, bootstrap likelihood -14389.829945, best rearrangement setting 15
+Bootstrap[4]: Time 3.685215 seconds, bootstrap likelihood -14452.870195, best rearrangement setting 10
+Bootstrap[5]: Time 4.049219 seconds, bootstrap likelihood -14586.007921, best rearrangement setting 10
+Bootstrap[6]: Time 3.991108 seconds, bootstrap likelihood -14571.813480, best rearrangement setting 6
+Bootstrap[7]: Time 3.955414 seconds, bootstrap likelihood -14903.843754, best rearrangement setting 14
+Bootstrap[8]: Time 3.463587 seconds, bootstrap likelihood -14957.178056, best rearrangement setting 5
+Bootstrap[9]: Time 3.288896 seconds, bootstrap likelihood -14266.191140, best rearrangement setting 7
+
+
+Overall Time for 10 Rapid Bootstraps 40.060077 seconds
+Average Time per Rapid Bootstrap 4.006008 seconds
+
+Starting ML Search ...
+
+Fast ML optimization finished
+
+Fast ML search Time: 78.531462 seconds
+
+Slow ML Search 0 Likelihood: -14688.003660
+Slow ML Search 1 Likelihood: -14688.552035
+Slow ML optimization finished
+
+Slow ML search Time: 39.154681 seconds
+Thorough ML search Time: 25.361307 seconds
+
+Final ML Optimization Likelihood: -14688.003788
+
+Model Information:
+
+Model Parameters of Partition 0, Name: No Name Provided, Type of Data: DNA
+alpha: 0.556949
+Tree-Length: 14.654837
+rate A <-> C: 0.876472
+rate A <-> G: 3.181892
+rate A <-> T: 1.995793
+rate C <-> G: 0.785961
+rate C <-> T: 5.355587
+rate G <-> T: 1.000000
+
+freq pi(A): 0.384078
+freq pi(C): 0.118242
+freq pi(G): 0.164649
+freq pi(T): 0.333031
+
+
+ML search took 143.050672 secs or 0.039736 hours
+
+Combined Bootstrap and ML search took 183.110806 secs or 0.050864 hours
+
+Drawing Bootstrap Support Values on best-scoring ML tree ...
+
+
+
+Found 1 tree in File /gpfs/scratch/cdunn/siph16s_11Feb2013/RAxML_bestTree.boot10
+
+
+
+Found 1 tree in File /gpfs/scratch/cdunn/siph16s_11Feb2013/RAxML_bestTree.boot10
+
+Program execution info written to /gpfs/scratch/cdunn/siph16s_11Feb2013/RAxML_info.boot10
+All 10 bootstrapped trees written to: /gpfs/scratch/cdunn/siph16s_11Feb2013/RAxML_bootstrap.boot10
+
+Best-scoring ML tree written to: /gpfs/scratch/cdunn/siph16s_11Feb2013/RAxML_bestTree.boot10
+
+Best-scoring ML tree with support values written to: /gpfs/scratch/cdunn/siph16s_11Feb2013/RAxML_bipartitions.boot10
+
+Best-scoring ML tree with support values as branch labels written to: /gpfs/scratch/cdunn/siph16s_11Feb2013/RAxML_bipartitionsBranchLabels.boot10
+
+Overall execution time for full ML analysis: 183.114057 secs or 0.050865 hours or 0.002119 days
+
