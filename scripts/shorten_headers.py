@@ -19,7 +19,7 @@ def shorten_headers( in_name ):
 	out = ""
 	for line in infile:
 		out = out + re.sub( 
-			r"^>gi\|(\d+)\|[^|]+?\|[^|]+?\| (\w+) (\w+) .+?$", 
+			r"^>gi\|(\d+)\|[^|]+?\|[^|]+?\| (\w+) (\w+)[\. ].+?$", 
 			r">\2_\3_\1", line )
 	return( out )
 

@@ -90,7 +90,7 @@ Rename each sequence as `Genus_species_gi`, and name the new file
 You can make the change in a text editor (eg TextWrangler) with the following 
 regular expressions (make sure 'grep' is enabled in the search box):
 
-Search:  `^>gi\|(\d+)\|[^|]+?\|[^|]+?\| (\w+) (\w+) .+$`
+Search:  `^>gi\|(\d+)\|[^|]+?\|[^|]+?\| (\w+) (\w+)[\. ].+$`
 Replace: `>\2_\3_\1`
 
 For more information on regular expressions, take a look at Chapters 2 and 3 of 
