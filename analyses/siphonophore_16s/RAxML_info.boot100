@@ -1,0 +1,225 @@
+
+
+IMPORTANT WARNING: Sequences Forskalia_edwardsi_60544967 and Forskalia_edwardsi_60544966 are exactly identical
+
+
+IMPORTANT WARNING: Sequences Agalma_elegans_60544925 and Agalma_elegans_60544952 are exactly identical
+
+IMPORTANT WARNING
+Found 2 sequences that are exactly identical to other sequences in the alignment.
+Normally they should be excluded from the analysis.
+
+An alignment file with sequence duplicates removed has already
+been printed to file siph16s.phy.reduced
+
+
+This is RAxML version 7.3.5 released by Alexandros Stamatakis on September 16 2012.
+
+With greatly appreciated code contributions by:
+Andre Aberer (HITS)
+Simon Berger (HITS)
+Nick Pattengale (Sandia)
+Wayne Pfeiffer (SDSC)
+Akifumi S. Tanabe (Univ. Tsukuba)
+
+
+Alignment has 633 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 27.93%
+
+RAxML rapid bootstrapping and subsequent ML search
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+
+Executing 10 rapid bootstrap inferences and thereafter a thorough ML search 
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heteorgeneity, ML estimate of alpha-parameter
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 633
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+/gpfs/runtime/opt/raxml/2012-10-08/sse4.2/bin/raxmlHPC-MPI -f a -x 12345 -p 12345 -N 10 -m GTRGAMMA -s siph16s.phy -n boot100 
+
+
+Testing which likelihood implementation to use
+Testing which likelihood implementation to use
+Testing which likelihood implementation to use
+Testing which likelihood implementation to use
+Testing which likelihood implementation to use
+Standard Implementation full tree traversal time: 0.021789
+Subtree Equality Vectors for gap columns full tree traversal time: 0.019617
+... using standard implementation
+
+Standard Implementation full tree traversal time: 0.021807
+Subtree Equality Vectors for gap columns full tree traversal time: 0.020025
+... using standard implementation
+
+Standard Implementation full tree traversal time: 0.022132
+Subtree Equality Vectors for gap columns full tree traversal time: 0.019744
+... using standard implementation
+
+Standard Implementation full tree traversal time: 0.022395
+Standard Implementation full tree traversal time: 0.022370
+Subtree Equality Vectors for gap columns full tree traversal time: 0.019841
+Subtree Equality Vectors for gap columns full tree traversal time: 0.020096
+... using standard implementation
+
+... using standard implementation
+
+Testing which likelihood implementation to use
+Testing which likelihood implementation to use
+Testing which likelihood implementation to use
+Standard Implementation full tree traversal time: 0.022370
+Subtree Equality Vectors for gap columns full tree traversal time: 0.019882
+Standard Implementation full tree traversal time: 0.022310
+... using standard implementation
+
+Subtree Equality Vectors for gap columns full tree traversal time: 0.019972
+... using standard implementation
+
+Standard Implementation full tree traversal time: 0.022771
+Subtree Equality Vectors for gap columns full tree traversal time: 0.020410
+... using standard implementation
+
+
+Time for BS model parameter optimization on Process 1: 1.792478 seconds
+
+Time for BS model parameter optimization on Process 2: 1.779002 seconds
+
+Time for BS model parameter optimization on Process 4: 1.804052 seconds
+
+Time for BS model parameter optimization on Process 0: 1.791755 seconds
+
+Time for BS model parameter optimization on Process 3: 1.802524 seconds
+
+Time for BS model parameter optimization on Process 6: 1.775817 seconds
+
+Time for BS model parameter optimization on Process 7: 1.780511 seconds
+
+Time for BS model parameter optimization on Process 5: 1.799093 seconds
+Bootstrap[8]: Time 5.483832 seconds, bootstrap likelihood -13850.233522, best rearrangement setting 8
+Bootstrap[6]: Time 5.577631 seconds, bootstrap likelihood -14928.694149, best rearrangement setting 9
+Bootstrap[10]: Time 5.603557 seconds, bootstrap likelihood -15001.484539, best rearrangement setting 6
+Bootstrap[12]: Time 5.624578 seconds, bootstrap likelihood -14265.212240, best rearrangement setting 5
+Bootstrap[0]: Time 5.689348 seconds, bootstrap likelihood -14748.612367, best rearrangement setting 13
+Bootstrap[4]: Time 5.984955 seconds, bootstrap likelihood -14227.235032, best rearrangement setting 10
+Bootstrap[14]: Time 6.206999 seconds, bootstrap likelihood -14815.264077, best rearrangement setting 15
+Bootstrap[2]: Time 6.548380 seconds, bootstrap likelihood -14615.916391, best rearrangement setting 12
+Bootstrap[9]: Time 3.400498 seconds, bootstrap likelihood -14411.383294, best rearrangement setting 14
+Bootstrap[1]: Time 3.481223 seconds, bootstrap likelihood -15474.226985, best rearrangement setting 13
+Bootstrap[11]: Time 3.920397 seconds, bootstrap likelihood -14503.434020, best rearrangement setting 15
+Bootstrap[13]: Time 3.912513 seconds, bootstrap likelihood -14642.805193, best rearrangement setting 15
+Bootstrap[7]: Time 4.011256 seconds, bootstrap likelihood -14833.450901, best rearrangement setting 14
+Bootstrap[15]: Time 3.469778 seconds, bootstrap likelihood -14890.138407, best rearrangement setting 5
+Bootstrap[5]: Time 3.709821 seconds, bootstrap likelihood -14418.494031, best rearrangement setting 13
+Bootstrap[3]: Time 3.869313 seconds, bootstrap likelihood -14495.167260, best rearrangement setting 13
+
+
+Overall Time for 16 Rapid Bootstraps 10.463836 seconds
+Average Time per Rapid Bootstrap 0.653990 seconds
+
+Starting ML Search ...
+
+Fast ML search on Process 7: Time 21.931720 seconds
+
+Fast ML search on Process 5: Time 25.528477 seconds
+
+Fast ML optimization finished
+
+Fast ML search on Process 0: Time 27.225256 seconds
+
+Fast ML search on Process 4: Time 27.428753 seconds
+
+Fast ML search on Process 3: Time 27.623601 seconds
+
+Fast ML search on Process 2: Time 28.429753 seconds
+
+Fast ML search on Process 6: Time 32.570567 seconds
+
+Fast ML search on Process 1: Time 34.860298 seconds
+
+Slow ML Search 14 Likelihood: -14688.671492
+Slow ML search on Process 7: Time 22.490078 seconds
+Slow ML Search 10 Likelihood: -14688.670766
+Slow ML search on Process 5: Time 22.445116 seconds
+Slow ML Search 0 Likelihood: -14688.671522
+Slow ML optimization finished
+
+Slow ML search on Process 0: Time 22.486801 seconds
+Slow ML Search 8 Likelihood: -14688.671650
+Slow ML search on Process 4: Time 22.456306 seconds
+Slow ML Search 4 Likelihood: -14688.004254
+Slow ML search on Process 2: Time 21.585604 seconds
+Slow ML Search 6 Likelihood: -14688.671840
+Slow ML search on Process 3: Time 22.527357 seconds
+Slow ML Search 12 Likelihood: -14688.003719
+Slow ML search on Process 6: Time 21.556425 seconds
+Slow ML Search 2 Likelihood: -14688.003495
+Slow ML search on Process 1: Time 21.513372 seconds
+Thorough ML search on Process 7: Time 23.687574 seconds
+Thorough ML search on Process 5: Time 23.678471 seconds
+Thorough ML search on Process 0: Time 23.777554 seconds
+Thorough ML search on Process 4: Time 23.679968 seconds
+Thorough ML search on Process 3: Time 23.701381 seconds
+Thorough ML search on Process 2: Time 25.181604 seconds
+Thorough ML search on Process 6: Time 25.129317 seconds
+Thorough ML search on Process 1: Time 25.333254 seconds
+
+Final ML Optimization Likelihood: -14688.003621
+
+Model Information:
+
+Model Parameters of Partition 0, Name: No Name Provided, Type of Data: DNA
+alpha: 0.556922
+Tree-Length: 14.655355
+rate A <-> C: 0.876501
+rate A <-> G: 3.181985
+rate A <-> T: 1.995824
+rate C <-> G: 0.785984
+rate C <-> T: 5.355770
+rate G <-> T: 1.000000
+
+freq pi(A): 0.384078
+freq pi(C): 0.118242
+freq pi(G): 0.164649
+freq pi(T): 0.333031
+
+
+ML search took 81.708988 secs or 0.022697 hours
+
+Combined Bootstrap and ML search took 92.172715 secs or 0.025604 hours
+
+Drawing Bootstrap Support Values on best-scoring ML tree ...
+
+
+
+Found 1 tree in File /gpfs/scratch/cdunn/siph16s_11Feb2013/RAxML_bestTree.boot100
+
+
+
+Found 1 tree in File /gpfs/scratch/cdunn/siph16s_11Feb2013/RAxML_bestTree.boot100
+
+Program execution info written to /gpfs/scratch/cdunn/siph16s_11Feb2013/RAxML_info.boot100
+All 16 bootstrapped trees written to: /gpfs/scratch/cdunn/siph16s_11Feb2013/RAxML_bootstrap.boot100
+
+Best-scoring ML tree written to: /gpfs/scratch/cdunn/siph16s_11Feb2013/RAxML_bestTree.boot100
+
+Best-scoring ML tree with support values written to: /gpfs/scratch/cdunn/siph16s_11Feb2013/RAxML_bipartitions.boot100
+
+Best-scoring ML tree with support values as branch labels written to: /gpfs/scratch/cdunn/siph16s_11Feb2013/RAxML_bipartitionsBranchLabels.boot100
+
+Overall execution time for full ML analysis: 92.175310 secs or 0.025604 hours or 0.001067 days
+
