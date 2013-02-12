@@ -48,8 +48,13 @@ from the [Workshop in Molecular Evolution](https://molevol.mbl.edu/wiki/index.ph
 `analyses/siphonophore_16s` through viewing the phylogeny.
 
 - Wednesday, February 13. Maximum likelihood continued, summarizing tree sets, 
-bootstraps, bayesian inference. Reading: Look over last week's reading.
+bootstraps, bayesian inference. Reading: Look over last week's reading.  
+Lecture: We will draw on [Paul Lewis's](http://www.eeb.uconn.edu/people/plewis) 
+[Bayesian lecture](http://www.eeb.uconn.edu/people/plewis/downloads/wh2012/Bayesian_WoodsHole_25July2012_1-per-page.pdf).
 
+- Monday, February 18. No class (President's day).
+
+ 
 
 ## Assignments
 
