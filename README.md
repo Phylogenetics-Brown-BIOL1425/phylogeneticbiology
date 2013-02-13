@@ -145,6 +145,10 @@ Paradis, E. (2011) Analysis of Phylogenetics and Evolution with R.
 Felsenstein, J. (2004) Inferring phylogenies. 
 [Sinauer Associates](http://www.sinauer.com/detail.php?id=1775).
 
+Swofford, D. L., Olsen, G. J., Waddell, P. J., & Hillis, D. M. (1996). 
+Phylogenetic inference. In: Molecular Systematics, Second Edition. eds: D. M. 
+Hillis, C Moritz, & B. K. Mable. [Sinauer Associates](http://www.sinauer.com/detail.php?id=1775)
+
 
 ## Licenses
 
