@@ -54,9 +54,15 @@ Lecture: We will draw on [Paul Lewis's](http://www.eeb.uconn.edu/people/plewis)
 
 - Monday, February 18. No class (President's day).
 
+- Wednesday, February 20. Bayesian continued. Reading: no new reading.
+
+- Monday, February 25. Working with tree files. 
+
  
 
 ## Assignments
+
+
 
 - Wednesday, March 6. Group presentations. Groups can consist of 2-4 registered students. 
 Presentations should be 20-30 minutes. By March 6 each group should form up, 
