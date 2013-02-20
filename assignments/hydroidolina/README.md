@@ -113,7 +113,7 @@ Questions:
    input alignments?
 
 
-## Independent phylogenetic analyses of each gene
+## Phylogenetic analyses of each gene
 
 Now that you have trimmed alignments for each gene, you will build trees with 
 them. Copy the mpi raxml script from 
