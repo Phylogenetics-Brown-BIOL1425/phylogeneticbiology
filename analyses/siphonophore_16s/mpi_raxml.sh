@@ -18,5 +18,5 @@
 
 module load raxml
 
-mpirun -n 8 raxmlHPC-MPI  -f a -x 12345 -p 12345 -N 10 -m GTRGAMMA -s siph16s.phy -n boot100
+mpirun -n 8 raxmlHPC-MPI  -f a -x 12345 -p 12345 -N 100 -m GTRGAMMA -s siph16s.phy -n boot100
 

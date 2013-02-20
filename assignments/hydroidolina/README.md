@@ -115,10 +115,15 @@ Questions:
 
 ## Independent phylogenetic analyses of each gene
 
-Now that you have trimmed alignments for each gene, you you build trees for 
+Now that you have trimmed alignments for each gene, you will build trees with 
 them. Copy the mpi raxml script from 
 `phylogeneticbiology/analyses/siphonophore_16s` and modify it to do a 
-maximum likelihood analysis with 100 bootstrap replicates. Once you have 
+maximum likelihood analysis with 100 bootstrap replicates. You should give the 
+analyses plenty of time to finish, modify the number of hours to be 4 or 8. 
+You can put the three raxml commands for your analyses of the three genes all 
+in one shell file, they will run consecutively.
+
+Once you have 
 estimated your trees, copy them to your laptop and look at them with Figtree. 
 Generate a pdf of the tree and add it to you analysis folder on the cluster.
 
