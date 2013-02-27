@@ -97,6 +97,8 @@ Java on Microsoft Windows from the [Java site](http://www.java.com/en/download/i
 
 - [CyberDuck](http://cyberduck.ch)
 
+- [Tracer](http://tree.bio.ed.ac.uk/software/tracer/)
+
 
 ### For OS X (ie, Macs):
 
