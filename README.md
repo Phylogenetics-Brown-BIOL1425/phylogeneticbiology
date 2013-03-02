@@ -58,6 +58,14 @@ Lecture: We will draw on [Paul Lewis's](http://www.eeb.uconn.edu/people/plewis)
 
 - Monday, February 25. Working with tree files. 
 
+- Wednesday, February 27. Multiple sequence alignment, exotic models, distance 
+methods, consistency.
+
+- Monday, March 4. No lab.
+
+- Wednesday, March 6. Phylogenetic project design. Reading:
+[Hydra phylogeny](http://dx.doi.org/10.1016/j.ympev.2012.12.016)
+
  
 
 ## Assignments
