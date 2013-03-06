@@ -66,6 +66,11 @@ methods, consistency.
 - Wednesday, March 6. Phylogenetic project design. Reading:
 [Hydra phylogeny](http://dx.doi.org/10.1016/j.ympev.2012.12.016)
 
+- Monday, March 11. Combining data across genes.
+
+- Wednesday, March 13. Testing Phylogenetic Hypotheses. Reading: Baum and Smith 
+Chapter 9. 
+
  
 
 ## Assignments
