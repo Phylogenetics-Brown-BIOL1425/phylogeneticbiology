@@ -56,7 +56,8 @@ There is more information available on concatenation in the
 
 After you have created the concatenated nexus file, export the data in phylip 
 format. In the Mesquite File menu, select Export..., then select phylip. Set the 
-taxon names length to 50 and and line ending to Unix.
+taxon names length to 50 and and line ending to Unix. Call the file 
+combined.phy.
 
 
 ## Configuring RAxML for multiple partitions
@@ -75,4 +76,20 @@ This tells me that 16s is sites 1-494, and 18s is sites 495-2248. Yours may be
 slightly different.
 
 Now, take a look at the RAxML [manual](http://sco.h-its.org/exelixis/oldPage/RAxML-Manual.7.0.4.pdf) 
-to understand how to set up `-q multipleModelFileName`.
+to understand how to set up `-q multipleModelFileName`. We first need to create 
+a file that has information on which columns belong to which genes. Based on 
+the portion of combined.nex shown above, I created a partition file called part 
+with the following contents:
+
+	DNA, r16s = 1-494
+	DNA, r18s = 495-2248
+	
+This provides the data type, name, and sites for each partition. Now I'll run 
+the raxml analysis:
+
+	interact
+	raxmlHPC -f a -x 12345 -p 12345 -N 10 -m GTRGAMMA -s combined.phy -n boot10 -q part
+	
+This will generate several output files, including the tree and a .info file 
+with model parameters, among other things.
+
