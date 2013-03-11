@@ -71,7 +71,37 @@ methods, consistency.
 - Wednesday, March 13. Testing Phylogenetic Hypotheses. Reading: Baum and Smith 
 Chapter 9. 
 
+- Monday, March 18. 
+
+- Wednesday, March 20.
+
+- Monday, April 1.
+
+- Wednesday, April 3. Group presentations: Matthew Leonard, Po Bhattacharyya, Samuel 
+Church present the paper 
+[doi:10.1126/science.1157704](http://dx.doi.org/10.1126/science.1157704); 
+Ning Hou and Miho Connolly present the paper 
+[doi:10.1371/journal.pone.0015530](http://dx.doi.org/10.1371/journal.pone.0015530)
+
+- Monday, April 8. 
+
+- Wednesday, April 10. Group presentation: Kristin Stover, Lillian Hancock, and Rosalyn 
+Price-Waldman present the paper 
+[doi:10.1098/rspb.2011.2301](http://dx.doi.org/10.1098/rspb.2011.2301).
+
+- Monday, April 15. 
+
+- Wednesday, April 17. Group presentation: Anthony Bui and Lei Ma present the paper
+[doi:10.1371/journal.pgen.1000144](http://dx.doi.org/10.1371/journal.pgen.1000144)
+
+- Monday, April 22. 
+
+- Wednesday, April 24.
  
+- Monday, April 29. 
+
+- Wednesday, May 1.
+
 
 ## Assignments
 
@@ -81,13 +111,11 @@ Chapter 9.
 - Wednesday, March 6. Group presentations. Groups can consist of 2-4 registered students. 
 Presentations should be 20-30 minutes. By March 6 each group should form up, 
 pick a paper, and schedule their presentation. Group presentations must be made 
-on or before April 16. Scheduling will be organized so that there is no more 
+on or before April 17. Scheduling will be organized so that there is no more 
 than one group presentation per class. 
 
 - Wednesday, May 1. The written component of the final project is due by the 
-beginning of class.
-
-- Wednesday, May 8. Presentations of final projects in class.
+beginning of class. Presentations of final projects in class.
 
 
 ## Software to install on your own computer
