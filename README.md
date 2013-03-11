@@ -71,9 +71,10 @@ methods, consistency.
 - Wednesday, March 13. Testing Phylogenetic Hypotheses. Reading: Baum and Smith 
 Chapter 9. 
 
-- Monday, March 18. 
+- Monday, March 18. Bayesian analysis.
 
-- Wednesday, March 20.
+- Wednesday, March 20. Using phylogenies to study character evolution. Reading: 
+Baum and Smith chapter 10, [Felsenstein 1985](http://www.jstor.org/stable/2461605).
 
 - Monday, April 1.
 
@@ -81,7 +82,9 @@ Chapter 9.
 Church present the paper 
 [doi:10.1126/science.1157704](http://dx.doi.org/10.1126/science.1157704); 
 Ning Hou and Miho Connolly present the paper 
-[doi:10.1371/journal.pone.0015530](http://dx.doi.org/10.1371/journal.pone.0015530)
+[doi:10.1371/journal.pone.0015530](http://dx.doi.org/10.1371/journal.pone.0015530).
+Using phylogenies to study character evolution. Reading: review last week's 
+reading.
 
 - Monday, April 8. 
 
@@ -91,7 +94,8 @@ Price-Waldman present the paper
 
 - Monday, April 15. 
 
-- Wednesday, April 17. Group presentation: Anthony Bui and Lei Ma present the paper
+- Wednesday, April 17. Group presentation: Anthony Bui, Lei Ma, and Melanie 
+Berger present the paper
 [doi:10.1371/journal.pgen.1000144](http://dx.doi.org/10.1371/journal.pgen.1000144)
 
 - Monday, April 22. 
