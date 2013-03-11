@@ -55,39 +55,39 @@ raxmlHPC -f a -x 12345 -p 12345 -N 10 -m GTRGAMMA -s siph16s.phy -n boot10
 
 
 Testing which likelihood implementation to use
-Standard Implementation full tree traversal time: 0.021757
-Subtree Equality Vectors for gap columns full tree traversal time: 0.019154
+Standard Implementation full tree traversal time: 0.021463
+Subtree Equality Vectors for gap columns full tree traversal time: 0.018942
 ... using standard implementation
 
 
-Time for BS model parameter optimization 1.734942
-Bootstrap[0]: Time 5.653281 seconds, bootstrap likelihood -14748.612367, best rearrangement setting 13
-Bootstrap[1]: Time 3.506278 seconds, bootstrap likelihood -15474.226985, best rearrangement setting 13
-Bootstrap[2]: Time 4.189049 seconds, bootstrap likelihood -15260.554029, best rearrangement setting 12
-Bootstrap[3]: Time 3.752298 seconds, bootstrap likelihood -14389.829945, best rearrangement setting 15
-Bootstrap[4]: Time 3.685215 seconds, bootstrap likelihood -14452.870195, best rearrangement setting 10
-Bootstrap[5]: Time 4.049219 seconds, bootstrap likelihood -14586.007921, best rearrangement setting 10
-Bootstrap[6]: Time 3.991108 seconds, bootstrap likelihood -14571.813480, best rearrangement setting 6
-Bootstrap[7]: Time 3.955414 seconds, bootstrap likelihood -14903.843754, best rearrangement setting 14
-Bootstrap[8]: Time 3.463587 seconds, bootstrap likelihood -14957.178056, best rearrangement setting 5
-Bootstrap[9]: Time 3.288896 seconds, bootstrap likelihood -14266.191140, best rearrangement setting 7
+Time for BS model parameter optimization 1.713828
+Bootstrap[0]: Time 5.598373 seconds, bootstrap likelihood -14748.612367, best rearrangement setting 13
+Bootstrap[1]: Time 3.474033 seconds, bootstrap likelihood -15474.226985, best rearrangement setting 13
+Bootstrap[2]: Time 4.148361 seconds, bootstrap likelihood -15260.554029, best rearrangement setting 12
+Bootstrap[3]: Time 3.720946 seconds, bootstrap likelihood -14389.829945, best rearrangement setting 15
+Bootstrap[4]: Time 3.649701 seconds, bootstrap likelihood -14452.870195, best rearrangement setting 10
+Bootstrap[5]: Time 4.008212 seconds, bootstrap likelihood -14586.007921, best rearrangement setting 10
+Bootstrap[6]: Time 3.956951 seconds, bootstrap likelihood -14571.813480, best rearrangement setting 6
+Bootstrap[7]: Time 3.933056 seconds, bootstrap likelihood -14903.843754, best rearrangement setting 14
+Bootstrap[8]: Time 3.443466 seconds, bootstrap likelihood -14957.178056, best rearrangement setting 5
+Bootstrap[9]: Time 3.267534 seconds, bootstrap likelihood -14266.191140, best rearrangement setting 7
 
 
-Overall Time for 10 Rapid Bootstraps 40.060077 seconds
-Average Time per Rapid Bootstrap 4.006008 seconds
+Overall Time for 10 Rapid Bootstraps 39.335680 seconds
+Average Time per Rapid Bootstrap 3.933568 seconds
 
 Starting ML Search ...
 
 Fast ML optimization finished
 
-Fast ML search Time: 78.531462 seconds
+Fast ML search Time: 77.661447 seconds
 
 Slow ML Search 0 Likelihood: -14688.003660
 Slow ML Search 1 Likelihood: -14688.552035
 Slow ML optimization finished
 
-Slow ML search Time: 39.154681 seconds
-Thorough ML search Time: 25.361307 seconds
+Slow ML search Time: 38.688836 seconds
+Thorough ML search Time: 25.112682 seconds
 
 Final ML Optimization Likelihood: -14688.003788
 
@@ -109,28 +109,28 @@ freq pi(G): 0.164649
 freq pi(T): 0.333031
 
 
-ML search took 143.050672 secs or 0.039736 hours
+ML search took 141.474520 secs or 0.039298 hours
 
-Combined Bootstrap and ML search took 183.110806 secs or 0.050864 hours
+Combined Bootstrap and ML search took 180.810261 secs or 0.050225 hours
 
 Drawing Bootstrap Support Values on best-scoring ML tree ...
 
 
 
-Found 1 tree in File /gpfs/scratch/cdunn/siph16s_11Feb2013/RAxML_bestTree.boot10
+Found 1 tree in File /gpfs/data/biol1425/guest168/phylogeneticbiology/analyses/siphonophore_16s/RAxML_bestTree.boot10
 
 
 
-Found 1 tree in File /gpfs/scratch/cdunn/siph16s_11Feb2013/RAxML_bestTree.boot10
+Found 1 tree in File /gpfs/data/biol1425/guest168/phylogeneticbiology/analyses/siphonophore_16s/RAxML_bestTree.boot10
 
-Program execution info written to /gpfs/scratch/cdunn/siph16s_11Feb2013/RAxML_info.boot10
-All 10 bootstrapped trees written to: /gpfs/scratch/cdunn/siph16s_11Feb2013/RAxML_bootstrap.boot10
+Program execution info written to /gpfs/data/biol1425/guest168/phylogeneticbiology/analyses/siphonophore_16s/RAxML_info.boot10
+All 10 bootstrapped trees written to: /gpfs/data/biol1425/guest168/phylogeneticbiology/analyses/siphonophore_16s/RAxML_bootstrap.boot10
 
-Best-scoring ML tree written to: /gpfs/scratch/cdunn/siph16s_11Feb2013/RAxML_bestTree.boot10
+Best-scoring ML tree written to: /gpfs/data/biol1425/guest168/phylogeneticbiology/analyses/siphonophore_16s/RAxML_bestTree.boot10
 
-Best-scoring ML tree with support values written to: /gpfs/scratch/cdunn/siph16s_11Feb2013/RAxML_bipartitions.boot10
+Best-scoring ML tree with support values written to: /gpfs/data/biol1425/guest168/phylogeneticbiology/analyses/siphonophore_16s/RAxML_bipartitions.boot10
 
-Best-scoring ML tree with support values as branch labels written to: /gpfs/scratch/cdunn/siph16s_11Feb2013/RAxML_bipartitionsBranchLabels.boot10
+Best-scoring ML tree with support values as branch labels written to: /gpfs/data/biol1425/guest168/phylogeneticbiology/analyses/siphonophore_16s/RAxML_bipartitionsBranchLabels.boot10
 
-Overall execution time for full ML analysis: 183.114057 secs or 0.050865 hours or 0.002119 days
+Overall execution time for full ML analysis: 180.819711 secs or 0.050228 hours or 0.002093 days
 
