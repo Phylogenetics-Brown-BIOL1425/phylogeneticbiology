@@ -41,6 +41,14 @@ this with the command line program `sed`:
 `sed` makes use of regular expressions to edit text streams. For more 
 information, see Practical Computing for Biologists.
 
+This takes care of most of the differences, but not all. By hand, open the 
+18s.stripped.fasta file in a text editor and change the names of Porpita and 
+Velella so they are the same as in the 16s.stripped.fasta file.
+
 Now you have two alignment files that are ready to be joined into a single file. 
-There are a few ways to do this, we'll use mesquite.
+There are a few ways to do this, we'll use Mesquite. The 
+[Mesquite Documentation](http://mesquiteproject.org/mesquite_folder/docs/mesquite/molecular/molecular.html#concatMatrices) 
+has detailed information on how to do this. Alternatively, follow 
+[These streamlined instructions](http://ib.berkeley.edu/courses/ib200a/ib200a_sp2008/ConcatenatingDataSets.pdf).
+
 
