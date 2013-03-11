@@ -45,10 +45,34 @@ This takes care of most of the differences, but not all. By hand, open the
 18s.stripped.fasta file in a text editor and change the names of Porpita and 
 Velella so they are the same as in the 16s.stripped.fasta file.
 
+
+## Concatenate the sequences
+
 Now you have two alignment files that are ready to be joined into a single file. 
-There are a few ways to do this, we'll use Mesquite. The 
-[Mesquite Documentation](http://mesquiteproject.org/mesquite_folder/docs/mesquite/molecular/molecular.html#concatMatrices) 
-has detailed information on how to do this. Alternatively, follow 
-[These streamlined instructions](http://ib.berkeley.edu/courses/ib200a/ib200a_sp2008/ConcatenatingDataSets.pdf).
+There are a few ways to do this, we'll use Mesquite. Follow 
+[these streamlined instructions](http://ib.berkeley.edu/courses/ib200a/ib200a_sp2008/ConcatenatingDataSets.pdf).
+There is more information available on concatenation in the  
+[Mesquite Documentation](http://mesquiteproject.org/mesquite_folder/docs/mesquite/molecular/molecular.html#concatMatrices).
+
+After you have created the concatenated nexus file, export the data in phylip 
+format. In the Mesquite File menu, select Export..., then select phylip. Set the 
+taxon names length to 50 and and line ending to Unix.
 
 
+## Configuring RAxML for multiple partitions
+
+We will now create the file needed by RAxML to know which sites belong to which 
+genes. This will be specified to RAxML with the `-q` flag.
+
+Open the combined.nex file, and look at the SETS block:
+
+	BEGIN SETS;
+		CHARPARTITION * UNTITLED  (CHARACTERS = Character_Matrix) =  Character_Matrix :  1 -  494, Character_Matrix1 :  495 -  2248;
+	
+	END;
+	
+This tells me that 16s is sites 1-494, and 18s is sites 495-2248. Yours may be 
+slightly different.
+
+Now, take a look at the RAxML [manual](http://sco.h-its.org/exelixis/oldPage/RAxML-Manual.7.0.4.pdf) 
+to understand how to set up `-q multipleModelFileName`.
