@@ -100,7 +100,7 @@ Price-Waldman present the paper
  
 - Monday, April 29. 
 
-- Wednesday, May 1.
+- Wednesday, May 1. Final project presentations.
 
 
 ## Assignments
