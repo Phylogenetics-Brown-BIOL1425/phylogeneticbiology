@@ -1,387 +1,420 @@
 >Agalma_clausi
-gctaagacta aacctgccca gtgtaaacgg atgcggtatc ctgaccgtaa taaagtagca
-taatcactcg ccacttaatt agtggatagt atgaatggtt gaacgaattt ttagctgtct
-taattagaat a-ttatgaaa ttgaaataat agtcaagatg ctattttaaa ctgtaagacg
-aaaagaccct atagagctta actaggtagt ttagttgggg cgactgcctt ttattaaaaa
-caaaggtaaa caatgtgtat aatttataaa tttaacaatt attaaagtag gtatagtgac
-ccgttattat taagtaataa aataacgatc aataaataaa agctacctta gggataacag
-gataatttta atttagagac cttatcgaag ttaaagtttg tcacctctat gttgaattga
-gatatccata taacgcagaa gttatagagg gtgggtctgt tcgaccttta aaatct
+ctaagactaa acctgcccag tgtaaacgga tgcggtatcc tgaccgtaat aaagtagcat
+aatcactcgc cacttaatta gtggatagta tgaatggttg aacgaatttt tagctgtctt
+aattagaata -ttatgaaat tgaaataata gtcaagatgc tattttaaac tgtaagacga
+aaagacccta tagagcttaa ctaagaaagt taggtagttt agttggggcg actgcctttt
+attaaaaaca aaggtaaaca atttaattat tattgtataa tttataaatt taacaattat
+taaagtaggt atagtgaccc gttattatta agtaaaaaaa taacgatcaa taaataaaag
+ctaccttagg gataacagga taattttaat ttagagacct tatcgaagtt aaagtttgtc
+acctctatgt tgaattgaga tatccatata acgcagaagt tatagagggt gggtctgttc
+gacctttaaa atct
 >Agalma_elegans
-gctaagacta aacctgccca gtgtgaacgg atgcggtatc ttgaccgtaa taaagtagca
-taatcactcg ccacttaatt agtggatagt atgaatggtt gaacgaattt ttagctgtct
-taattagaat a-ttatgaaa ttgaaataat agtcaagatg ctatttaaaa ttgtaagacg
-aaaagaccct atagagctta actaggtagt ttagttgggg cgactgcctt ttaaaagaaa
-caaaggtaaa caatgtgtat aataaataaa tttaacaatt attaaagtag gtataatgac
-ccgttattat taaattaaaa aataacgatc aataaataaa agctacctta gggataacag
-gataatttta atttagagac cttatcgaag ttaaagtttg tcacctctat gttgaattga
-gatatccatg taacgcagaa gttataaagg gtgggtctgt tcgaccttta aaatct
+ctaagactaa acctgcccag tgtgaacgga tgcggtatct tgaccgtaat aaagtagcat
+aatcactcgc cacttaatta gtggatagta tgaatggttg aacgaatttt tagctgtctt
+aattagaata -ttatgaaat tgaaataata gtcaagatgc tatttaaaat tgtaagacga
+aaagacccta tagagcttaa ctaagaaagt taggtagttt agttggggcg actgcctttt
+aaaagaaaca aaggtaaaca atttaattat tattgtataa taaataaatt taacaattat
+taaagtaggt ataatgaccc gttattatta aattaaaaaa taacgatcaa taaataaaag
+ctaccttagg gataacagga taattttaat ttagagacct tatcgaagtt aaagtttgtc
+acctctatgt tgaattgaga tatccatgta acgcagaagt tataaagggt gggtctgttc
+gacctttaaa atct
 >Agalma_okeni
-gctatgatta aacctgccca gtgtaaacgg atgcggtatt ctgaccgtaa taaagtagca
-taatccttcg ccacctaatt agtggatagt atgaatggtt gaacgaattt ttagctgtct
-taattagaat g-ttgtgaaa ttgaaataat agttaagatg ctattttaaa ttgtaagacg
-aaaagaccct atagagctta actaggtagt ttagttgggg cgactgcctt ttaattaaaa
-caaaggtaaa caatgtgtat aatatataaa tttaacagtt attaaagtag gtataatgac
-ccgttattat taaaaaagaa aataacgatc aataaataaa agctacctta gggataacag
-gataatttta atttagagac catatcgaag ttaaagtttg tcacctctat gttgaattga
-gatatccatg taacgcagaa gttataaagg gtgggtctgt tcgaccttta aaatct
+ctatgattaa acctgcccag tgtaaacgga tgcggtattc tgaccgtaat aaagtagcat
+aatccttcgc cacctaatta gtggatagta tgaatggttg aacgaatttt tagctgtctt
+aattagaatg -ttgtgaaat tgaaataata gttaagatgc tattttaaat tgtaagacga
+aaagacccta tagagcttaa ctaagaaagt taggtagttt agttggggcg actgcctttt
+aattaaaaca aaggtaaaca atttaattat tattgtataa tatataaatt taacagttat
+taaagtaggt ataatgaccc gttattatta aaaaaaaaag taacgatcaa taaataaaag
+ctaccttagg gataacagga taattttaat ttagagacca tatcgaagtt aaagtttgtc
+acctctatgt tgaattgaga tatccatgta acgcagaagt tataaagggt gggtctgttc
+gacctttaaa atct
 >Apolemia_sp
-gccttaaaaa aacctgccca gtgtaaacgg acgcagtatc ttgactgtgg taatgtagca
-taatcatttg ccatttaatt agtggatagt atgaatggtt aaacgaattc ttcactgtct
-taagaaaaaa atttataaaa ttgaaataat agttaagatg ctatttaaaa ttgtaagacg
-aaaagaccct atagagctta actagatagt ttagttgggg cgactacctt ttattacaaa
-caaaggtaaa caaaatgtat aataaataaa tttaacaatt ataaaaatag gtataatgac
-ccgttataag aataaaatat cataacgatt aataaataaa agctacctta gggataacag
-aataatttta acttagagat catatcgaag ttaaagtttg tcacctctat gttgaattaa
-gatatcctaa taatgcagaa gttattaaag gtaggtctgt tcgaccttta aaatct
+ccttaaaaaa acctgcccag tgtaaacgga cgcagtatct tgactgtggt aatgtagcat
+aatcatttgc catttaatta gtggatagta tgaatggtta aacgaattct tcactgtctt
+aagaaaaaaa tttataaaat tgaaataata gttaagatgc tatttaaaat tgtaagacga
+aaagacccta tagagcttaa ctaagaaaaa tggatagttt agttggggcg actacctttt
+attacaaaca aaggtaaaca aaattttaat tattgtataa taaataaatt taacaattat
+aaaaataggt ataatgaccc gttataagaa taaaaatcaa taacgattaa taaataaaag
+ctaccttagg gataacagaa taattttaac ttagagatca tatcgaagtt aaagtttgtc
+acctctatgt tgaattaaga tatcctaata atgcagaagt tattaaaggt aggtctgttc
+gacctttaaa atct
 >Cordagalma_cordiforme
-gttataataa aacctgccca gtgtaaacgg acgcaaga-- --aattgtga taaagtagcg
-taatcatttg cctattaatt gtaggatagt atgaatggtt gaacaaataa tttttttttt
-taatagaaat -----taaaa ttaatataat agtaaagaag ctatttaata ttataagacg
-ataagaccct atagagcttg actaggtagt ttatttgggg cgaatatatt ttatttataa
-caaata---- -----tgaaa aatacat--t tttattaagt aata------ ------tgac
-ctattttttt taaaaaaata aaaaataatc attgaataaa agctacctta gggataacag
-aacaatcttt ttttgaagtt catattcgaa aaaaggctta ttacctcgat gttgaattta
-gttaccttga aaatgtagaa attttaaaag gttgtactgt tcgtacatta ataact
+gttataataa acctgcccag tgtaaacgga cgcaaga--- -aattgtgat aaagtagcgt
+aatcatttgc ctattaattg taggatagta tgaatggttg aacaaataat tttttttttt
+aatagaaat- ----taaaat taatataata gtaaagaagc tatttaatat tataagacga
+taagacccta tagagcttga ctaattatat ttggtagttt atttggggcg aatatatttt
+atttataaca aat------- --atataaat tattgaaaaa tacat--ttt tattaagta-
+---------- -atatgacct atttttttta aaaaaaaata -aataatcat tgaataaaag
+ctaccttagg gataacagaa caatcttttt ttgaagttca tattcgaaaa aaggcttatt
+acctcgatgt tgaatttagt tgacctgaaa atgtagaaat tttaaaaggt tgtactgttc
+gtacattaat aact
 >Diphyes_dispar
-gccaagattt aacctgctca gtgtaaacag ctgccttaat ccgagggtac taagtaagca
-taatctgatg ccgtttaatt ggcggagagt -tgaatggac gaacgagcgc ataactgtct
-tgttaggaat aaa-ttgaac tagacattca agtgaagagg cttgatttaa tagttggacg
-agaagacccc gtgaagcttt actaggtagt ttaggtgggg cgcctgtact ttaataaaaa
-caaggattag caatatgtgt aacttatttg tttatacaga gtattta-cg gttaatcgac
-cctt------ ---attatta caaataagtt aaaggataat agctactccg gggataacag
-ggtaattaag tattata-ct gttatgtaat attttgtttg ccacctcgat gttgaattgg
-cttatcctag cggagtagaa gctgctaagg gtaggactgt tcgtcctgta taagct
+ccaagattta acctgctcag tgtaaacagc tgccttaatc cgagggtact aagtaagcat
+aatctgatgc cgtttaattg gcggagagt- tgaatggacg aacgagcgca taactgtctt
+gttaggaata aa-ttgaact agacattcaa gtgaagaggc ttgatttaat agttggacga
+gaagaccccg tgaagcttta ctaagttaac taggtagttt aggtggggcg cctgtacttt
+aataaaaaca agg------a at---gtgaa aactgtgtaa cttatttgtt tatacagagt
+attta-cggt taatcgaccc tt-------- -attaacaaa ataagttaaa -ggataatag
+ctactccggg gataacaggg taattaagta ttata-ctgt tatgtaatat tttgtttgcc
+acctcgatgt tgaattggct tatcctagcg gagtagaagc tgctaagggt aggactgttc
+gtcctgtata agct
 >Forskalia_asymmetrica
-actagtaaaa aacctgccca gtg--aacgg ccgcggtatt ctgaccgtga taatgtagca
-taataattcg tcatctaatt ggtgaatagt atgaatggtt gaacgaactt tcccttgtct
-ttaactgagg -aaactgaaa ttaagataat agttaagatg ctatttaaga ctgaaagacg
-aaaagaccct atagagcttg actaggtagt ttagttgggg cgactgcctt ttaataataa
-caaaggcaaa ----ttgtat aagatattac tttaacagtt ataaaagtag atataatgac
-cggttg---- ---------- -aaaacaata aattaataaa agctacctta gggataacag
-aacaattatt agtaagagat cttatcgaat taatagtttg tcacctctat gttgaattaa
-gattacctgt aggggcagca ccttacaaag gtaggtctgt tcgaccttta aaatct
+ctagtaaaaa acctgcccag tg--aacggc cgcggtattc tgaccgtgat aatgtagcat
+aataattcgt catctaattg gtgaatagta tgaatggttg aacgaacttt cccttgtctt
+taactgagg- aaactgaaat taagataata gttaagatgc tatttaagac tgaaagacga
+aaagacccta tagagcttga ctaataaatt ttggtagttt agttggggcg actgcctttt
+aataataaca aaggcaaa-- --aaattaat tactgtataa gatattactt taacagttat
+aaaagtagat ataatgaccg gttg------ --------ag aaacaataaa ttaataaaag
+ctaccttagg gataacagaa caattattag taagagatct tatcgaatta atagtttgtc
+acctctatgt tgaattaaga ttacctgtag gggcagcacc ttacaaaggt aggtctgttc
+gacctttaaa atct
 >Forskalia_edwardsi
-gccataagaa aacctgccca gtg--aacgg ccgcggtatc ctgaccgtga taatgtagca
-taatcatttg ttacttaatt agtaaatagt atgaatggtt gaacgaattt cccattgtct
-ctgattaaga -tttatgaaa ttaaaataat agtaaagatg ctattttaaa ttgaaagacg
-aaaagaccct atagagcttg actaggtagt ttagttgggg cgactgcctt ttattaataa
-caaaggcaaa -tatgtgtat aataaaaaaa tttaacagtt acaatagtag atataatgac
-ctgttg---- ---------- -aaaacaata aattgataaa agctacctta gggataacag
-aataattatt gttaagagat cgtatcgaag taatagtttg tcacctctat gttgaattaa
-gatatcctat aagagcagtc acttatgagg gtaggtctgt tcgaccttta aaatct
+ccataagaaa acctgcccag tg--aacggc cgcggtatcc tgaccgtgat aatgtagcat
+aatcatttgt tacttaatta gtaaatagta tgaatggttg aacgaatttc ccattgtctc
+tgattaaga- tttatgaaat taaaataata gtaaagatgc tattttaaat tgaaagacga
+aaagacccta tagagcttga cta-atctga ttggtagttt agttggggcg actgcctttt
+attaataaca aaggcaaa-t attactcaat tactgtataa taaaaaaatt taacagttac
+aatagtagat ataatgacct gttg------ --------ag aaacaataaa ttgataaaag
+ctaccttagg gataacagaa taattattgt taagagatcg tatcgaagta atagtttgtc
+acctctatgt tgaattaaga tatcctataa gagcagtcac ttatgagggt aggtctgttc
+gacctttaaa atct
 >Forskalia_tholoides
-gccataagaa tacctgccca gtg--aacgg ccgcggtatc ctgaccgtga taatgtagca
-taatcatttg ttacttaatt agtaaatagt atgaatggtt gaacgaattt cccattttct
-ttgattaagg -cttatgaaa ttaaaataat agtaaagatg ctattttaaa ttgaaagacg
-aaaagaccct atagagctta actaggtagt ttagttgggg cgactgcctt ttattaataa
-caaaggtaag -tatatgtat aataaaataa tttaacagtt acaatagtag acataatgac
-ctgttg---- ---------- -aaaacaata aattgataaa agctacctta gggataacag
-aataattatt attaagagac cgtatcaaag taatagtttg tcacctctat gttgaattaa
-gatatcctat aagagcagtc acttttaagg gtaggtctgt tcgaccttta aaatct
+ccataagaat acctgcccag tg--aacggc cgcggtatcc tgaccgtgat aatgtagcat
+aatcatttgt tacttaatta gtaaatagta tgaatggttg aacgaatttc ccattttctt
+tgattaagg- cttatgaaat taaaataata gtaaagatgc tattttaaat tgaaagacga
+aaagacccta tagagcttaa cta-atttga ttggtagttt agttggggcg actgcctttt
+attaataaca aaggtaag-t ataattcaat tactgtataa taaaataatt taacagttac
+aatagtagac ataatgacct gttg------ --------aa aaacaataaa ttgataaaag
+ctaccttagg gataacagaa taattattat taagagaccg tatcaaagta atagtttgtc
+acctctatgt tgaattaaga tatcctataa gagcagtcac ttttaagggt aggtctgttc
+gacctttaaa atct
 >Stephanomia_amphytridis
-gctaagaaca aacctgccca gtgtaaacgg acgcagtatc ttgactgtgg taatgtagca
-taatcatttg ccatttaatt aatggatagt atgaatggtt aaacgaatat ttcactgtct
-taaaaaaaaa acttatgaaa ttgaaataat agttaagatg ctatttaaaa ttgtaagacg
-aaaagaccct atagagctta actagttagt ttagttgggg cgactacctt ttatttaaaa
-caaaggtaaa caaaatgtat aatatataaa tttaacaatt ataaaaatag gtatattgac
-ccgttattaa taaataataa tataacgatt aataaataaa agctacctta gggataacag
-aataatttta atttagagat cacatcgaaa ttaaagttta ttacctctat gttgaattaa
-gatatccaaa taatgcagaa gttataaagg gtaggtctgt tcgaccttta aaatct
+ctaagaacaa acctgcccag tgtaaacgga cgcagtatct tgactgtggt aatgtagcat
+aatcatttgc catttaatta atggatagta tgaatggtta aacgaatatt tcactgtctt
+aaaaaaaaaa cttatgaaat tgaaataata gttaagatgc tatttaaaat tgtaagacga
+aaagacccta tagagcttaa ctaaaaaaga tagttagttt agttggggcg actacctttt
+atttaaaaca aaggtaaaca aaaaaataat tattgtataa tatataaatt taacaattat
+aaaaataggt atattgaccc gttattaata aataaaataa taacgattaa taaataaaag
+ctaccttagg gataacagaa taattttaat ttagagatca catcgaaatt aaagtttatt
+acctctatgt tgaattaaga tatccaaata atgcagaagt tataaagggt aggtctgttc
+gacctttaaa atct
 >Halistemma_rubrum
-gctgagaata aacctgccca gtgtaaacgg ctgcggtatt ttgaccgtaa taatgtagca
-taatcacttg ccacttaatt agtggatagt atgaatggtt gaacgagttt ttaactgtct
-taataagaag atttatgaaa tagaaataat agttaagatg ctatttaaaa ttgtaagacg
-aaaagaccct atagagctta actaggtagt ttagttgggg cgactacctt ttattaaaaa
-caaaggtaaa caaaatgtat aatatatata tttaacaatt ataaaagtag gtataatgac
-ccgttattat tataaaaaca aataacgatc aataaataaa agctacctta gggataacag
-gataatttta atttagagat catatcgaag ttaaagtttg tcacctctat gttgaattga
-gatatccata caatgcagaa gttgtaaagg gttggtctgt tcgaccttta aaatct
+ctgagaataa acctgcccag tgtaaacggc tgcggtattt tgaccgtaat aatgtagcat
+aatcacttgc cacttaatta gtggatagta tgaatggttg aacgagtttt taactgtctt
+aataagaaga tttatgaaat agaaataata gttaagatgc tatttaaaat tgtaagacga
+aaagacccta tagagcttaa ctaaaagagt taggtagttt agttggggcg actacctttt
+attaaaaaca aaggtaaaca aattaattat tattgtataa tatatatatt taacaattat
+aaaagtaggt ataatgaccc gttattatta taaaacaaaa taacgatcaa taaataaaag
+ctaccttagg gataacagga taattttaat ttagagatca tatcgaagtt aaagtttgtc
+acctctatgt tgaattgaga tatccataca atgcagaagt tgtaaagggt tggtctgttc
+gacctttaaa atct
 >Nanomia_bijuga
-gctgagaata aacctgccca gtgtaaacgg atgcggtatt ctaactgtaa taaagtagca
-taatcactcg ccacctaatt agtggatagt atgaatggtt gaacgaatat ctaactgtct
-tatatagaag acttacgaaa ctaaaataat agttaagatg ctatttaaaa ctgtaagacg
-aaaagaccct atagagctta actaggtagt ttagttgggg cgactgcctt ttattagtat
-caaaggtaaa caatgtgtat aattcatata tttaacaatt attaaaatag gtataatgac
-ccgttagaat taaacaatac aataacgatt aataaataaa agctacctta gggataacag
-gataatttta atttagagac catatcaagg ttaaagtttg tcacctctat gttgaattaa
-ggtatcctta tgaagcagaa tttataaagg gtaggtctgt tcgaccttta aaacct
+ctgagaataa acctgcccag tgtaaacgga tgcggtattc taactgtaat aaagtagcat
+aatcactcgc cacctaatta gtggatagta tgaatggttg aacgaatatc taactgtctt
+atatagaaga cttacgaaac taaaataata gttaagatgc tatttaaaac tgtaagacga
+aaagacccta tagagcttaa ctaaaaaagt taggtagttt agttggggcg actgcctttt
+attagtatca aaggtaaaca atttaaatat tattgtataa ttcatatatt taacaattat
+taaaataggt ataatgaccc gttagaatta aacaaacaac taacgattaa taaataaaag
+ctaccttagg gataacagga taattttaat ttagagacca tatcaaggtt aaagtttgtc
+acctctatgt tgaattaagg tatccttatg aagcagaatt tataaagggt aggtctgttc
+gacctttaaa acct
 >Physalia_physalis
-gcttttatat aacctgccca gtgtaaacgg acgcggtaac ctgaccgtgg taatgtagca
-taatcagtcg ccatttaatt gttggatagt atgaatggtt taacgagcat ctcactgtct
-tgaggagaaa ccctatgaaa ttggattcgt agttaagata ctacttaaaa ttgtaagacg
-aaaagaccct atagagcttg actagttagt ttggttgggg cgaccacctt ctacattaaa
-cgaaggtatt caaaatgtat aacccatgag tttaacaatt actaaagtag gtataatgac
-ccgttgtgtg tgtgaaaaaa cccaacgata aatagataaa agctacctta gggataacag
-gataatttaa tcttagagac cttatcgaag cttaagtttg tcacctctat gttgaattaa
-gatatcccaa tagcgcagaa gttattaaag gtgggtctgt tcgaccctta aaatct
+cttttatata acctgcccag tgtaaacgga cgcggtaacc tgaccgtggt aatgtagcat
+aatcagtcgc catttaattg ttggatagta tgaatggttt aacgagcatc tcactgtctt
+gaggagaaac cctatgaaat tggattcgta gttaagatac tacttaaaat tgtaagacga
+aaagacccta tagagcttga ctaatgggtg ttgttagttt ggttggggcg accaccttct
+acattaaacg aaggtattca aaattaaaat tattgtataa cccatgagtt taacaattac
+taaagtaggt ataatgaccc gttgtgtgtg tgaaaaaccc caacgataaa tagataaaag
+ctaccttagg gataacagga taatttaatc ttagagacct tatcgaagct taagtttgtc
+acctctatgt tgaattaaga tatcccaata gcgcagaagt tattaaaggt gggtctgttc
+gacccttaaa atct
 >Praya_dubia
-gctaaaaaaa aacctgccca gtgtaaacgg acgcagtatc ttgactgtaa taatgtagca
-taataatttg tcatttaatt gatgaatagt atgaatggta gaacgaatat ttcattgttt
-taaaaaaaac atatataaaa tttgaataat agttaagata ctatttaaaa ttgtaagacg
-aaaagaccct atagagctta actagttagt ttagttgggg cgactatctt ttattataaa
-caaagataaa caaaatgtat aatatataac tttaacaatt ataaaaatag gtataatgac
-ccgttatatt aaaataattt attaacgata aataaataaa agctacctta gggataacag
-aataatttta actaaaagat catattgaag ttaatgttta tcacctctat gttgaattaa
-gatacccaaa taatgcagaa attattaaag gtaggtctgt tcgaccttaa aaatct
+ctaaaaaaaa acctgcccag tgtaaacgga cgcagtatct tgactgtaat aatgtagcat
+aataatttgt catttaattg atgaatagta tgaatggtag aacgaatatt tcattgtttt
+aaaaaaaaca tatataaaat ttgaataata gttaagatac tatttaaaat tgtaagacga
+aaagacccta tagagcttaa ctaattaaat aagttagttt agttggggcg actatctttt
+attataaaca aagataaaca aaaaaacaat tattgtataa tatataactt taacaattat
+aaaaataggt ataatgaccc gttatattaa aataattata taacgataaa taaataaaag
+ctaccttagg gataacagaa taattttaac taaaagatca tattgaagtt aatgtttatc
+acctctatgt tgaattaaga tacccaaata atgcagaaat tattaaaggt aggtctgttc
+gaccttaaaa atct
 >Rhizophysa_filiformis
-gctttaaaat aacctgccca gtgtaaacgg acgcggtaac ctgaccgtgg taatgtagca
-taatcaatcg ccatttaatt gatggatagt atgaatggtt taacgagtac ttcactgtct
-tagaaaaaaa tcttgtgaaa ttgaaatggt agttaagatg ctacttagaa ttgtaagacg
-aaaagaccct atagagctta actagttagt ttggttgggg cgaccgcctt ttatataaaa
-caaaggtaaa caaagtgtat aatcaattaa tttaacaatt acaaaagtag gtatagtgac
-ccgttatgaa ttataaaaga tttaacgatt aataaataaa agctacctta gggataacag
-gataatttaa gcttagagat cttatcgaag ctaaagtttg tcacctctat gttgaattga
-gatatcctaa taatgcagaa gttattaaag gtgggtctgt tcgaccttta aaatct
+ctttaaaata acctgcccag tgtaaacgga cgcggtaacc tgaccgtggt aatgtagcat
+aatcaatcgc catttaattg atggatagta tgaatggttt aacgagtact tcactgtctt
+agaaaaaaat cttgtgaaat tgaaatggta gttaagatgc tacttagaat tgtaagacga
+aaagacccta tagagcttaa ctaagaaaga aagttagttt ggttggggcg accgcctttt
+atataaaaca aaggtaaaca aaaagtaaat tattgtataa tcaattaatt taacaattac
+aaaagtaggt atagtgaccc gttatgaatt ataaagatta taacgattaa taaataaaag
+ctaccttagg gataacagga taatttaagc ttagagatct tatcgaagct aaagtttgtc
+acctctatgt tgaattgaga tatcctaata atgcagaagt tattaaaggt gggtctgttc
+gacctttaaa atct
 >Rosacea_flaccida
-gccagatgaa aacctgccca gtgtaaacgg cggctttaat ctgagagtca caatgtagca
-taataatttg ccttttaatt gaaggatagt atgaatggtg tcacgaatac ttcattgtct
-taaataaaaa ttttataaaa ttgaaataat agtgaagatg ctatttaaaa ttgtaagacg
-aaaagaccct a-agaacttt actaggtagt ttgagtgggg tgctcatctt ttattaaaaa
-cattgataag taaaatgttt aaataataat tttaacagtt acaaaagtag acaaaatgac
-ccattattta taaataacta ttctattgtt gttagataac agttacctta gggataacag
-aacaaagatg aaataaagat gttattgttt ccattacttg ttacctcgat gttgaattat
-ggttccaaat tttagcagaa gaaattaagg gtaggactgt tcgtccttta aaaccg
+ccagatgaaa acctgcccag tgtaaacggc ggctttaatc tgagagtcac aatgtagcat
+aataatttgc cttttaattg aaggatagta tgaatggtgt cacgaatact tcattgtctt
+aaataaaaat tttataaaat tgaaataata gtgaagatgc tatttaaaat tgtaagacga
+aaagacccta -agaacttta cta-----ta caggtagttt gagtggggtg ctcatctttt
+attaaaaaca ttgataagta aaatatttat tactgtttaa ataataattt taacagttac
+aaaagtagac aaaatgaccc attatttata aataatatta ctattgttgt tagataacag
+ttaccttagg gataacagaa caaagatgaa ataaagatgt tattgtttcc attacttgtt
+acctcgatgt tgaattatgg tatccaattt tagcagaaga aattaagggt aggactgttc
+gtcctttaaa accg
 >Bargmannia_amoena
-gctcaaaata aacctgccca gtgtaaacgg acgcagtatc ttgactgtgg taatgtagca
-taataattta ccatttaatt ggtggatggt atgaatggtt aaacgaatat ttcattgtct
-taagaaaaaa atttataaaa ttaaattaat agttaagatg ctatttaaaa ttgtaagacg
-aaaagaccct atagagctta actagttagt ttagttgggg cgactacctt ttatttaaaa
-caaaggtaaa caaagtgtat aaaaaataat tttaacaatt ataaaaatag gtttaatgac
-ccgttatttt tacaaaaaaa tataacgatt aataaataaa agctacctta gggataacag
-aataatttta gtttagagac cttatcgaag ctaaagtttg tcacctctat gttgaattaa
-gatatccaaa taatgcagaa gttattaagg gtaggtctgt tcgaccttta aaatct
+ctcaaaataa acctgcccag tgtaaacgga cgcagtatct tgactgtggt aatgtagcat
+aataatttac catttaattg gtggatggta tgaatggtta aacgaatatt tcattgtctt
+aagaaaaaaa tttataaaat taaattaata gttaagatgc tatttaaaat tgtaagacga
+aaagacccta tagagcttaa ctaaaaaaga ttgttagttt agttggggcg actacctttt
+atttaaaaca aaggtaaaca aaaaaataat tattgtataa aaaataattt taacaattat
+aaaaataggt ttaatgaccc gttattttta caaaaaataa taacgattaa taaataaaag
+ctaccttagg gataacagaa taattttagt ttagagacct tatcgaagct aaagtttgtc
+acctctatgt tgaattaaga tatccaaata atgcagaagt tattaagggt aggtctgttc
+gacctttaaa atct
 >Chuniphyes_multidentata
-ctagaatgta agcctgctca gtgtaaacag ctgccttagg tagagggtaa taattaagca
-taatctgata ccgtttgaat ggcggagcgt -tgaatggag ttacgagcgt gtcactgtct
-taattgaaaa acctatgaat ttgaagtact agttaagatg ctagttaaaa ttgtaagacg
-agaagaccct atagagcttt actaggtagt ttaggtgggg agcctaccta ttattaaaaa
-cataggttaa caatatgtgt aaattttatt tttaccagtt ataagtatag gtggaatgac
-ccgtttagaa taattatata tttaacgaca ga-aaataaa agctacctta gggataacag
-agtaatgctg atcagtagat cttatattga tcaggggttg ccacctcgat gttgaattga
-gtttcctgga ctgcgcagaa gtagccaagg gtgggactgt tcgtccctta atatct
+tagaatgtaa gcctgctcag tgtaaacagc tgccttaggt agagggtaat aattaagcat
+aatctgatac cgtttgaatg gcggagcgt- tgaatggagt tacgagcgtg tcactgtctt
+aattgaaaaa cctatgaatt tgaagtacta gttaagatgc tagttaaaat tgtaagacga
+gaagacccta tagagcttta ctaagaaagt gtggtagttt aggtggggag cctacctatt
+attaaaaaca taggttaaca atcaatctat tattgtgtaa attttatttt taccagttat
+aagtataggt ggaatgaccc gtttagaata attatatttt taacgacaga -aaataaaag
+ctaccttagg gataacagag taatgctgat cagtagatct tatattgatc aggggttgcc
+acctcgatgt tgaattgagt tgtcctgact gcgcagaagt agccaagggt gggactgttc
+gtcccttaat atct
 >Clausophyes_ovata
-cccaaatata aacctgctca gtgtaaacag ccgccctagt ta---ggtga taattaagca
-taatctgata ccgtttaatt ggcggagtgt -tgaatggtg taacgagtgc gaagctgtct
-tagttggaga atctatgaag ttgaaatact agttaagatg ctagttaaaa ttgtaagacg
-agaagaccct atagagcttt actcgggagt ttaagtgggg cgcttaccta ttattaaaaa
-cataggttaa caatatgtgt aaattatgtt tttaccagtt acaacagtag gtgaaatgac
-ccgttaagtg cttacaaaag cttaacgaca ga-agataaa agttacctta gggataacag
-ggtaattctg gacgggagaa cacatctatt ccggagtttg ccacctcgat gttgaattaa
-gactcctgga gggcgtagag gctcccaagg gtaggactgt tcgtccttta atgtct
+ccaaatataa acctgctcag tgtaaacagc cgccctagtt a---ggtgat aattaagcat
+aatctgatac cgtttaattg gcggagtgt- tgaatggtgt aacgagtgcg aagctgtctt
+agttggagaa tctatgaagt tgaaatacta gttaagatgc tagttaaaat tgtaagacga
+gaagacccta tagagcttta ctcagaaaga gtgggagttt aagtggggcg cttacctatt
+attaaaaaca taggttaaca atcagttcat tactgtgtaa attatgtttt taccagttac
+aacagtaggt gaaatgaccc gttaagtgct tacaagctt- taacgacaga -agataaaag
+ttaccttagg gataacaggg taattctgga cgggagaaca catctattcc ggagtttgcc
+acctcgatgt tgaattaaga catcctgagg gcgtagaggc tcccaagggt aggactgttc
+gtcctttaat gtct
 >Muggiaea_atlantica
-gccatactaa aacctgctca gtgtaaacag ccgccttaat ccaagggcgc gaagtaagca
-taatcggata ccgtttaatt ggcggagagt -tgaatggat aaacgagcgc aaatctgtct
-taacttaaaa ata--tgaat tagatctatt agtgaaaaag ctaatttata tagcaagacg
-aaaagacccc gtgaagctta actaggtagt tttggtgggg tgccagcacg ttaaaaaaaa
-catgggttat taaatggtgt aagctatagc tttatacaaa gtaaaaatct aaaaaatgac
-ccgcc----- tgaatgaatt ttag-acgac ataagataaa agctactccg gggataacag
-ggtaattaaa ttctgca-ac gttatgtgga attttgttta ccacctcgat gttgaattag
-gttatcctag tggagaagaa actactaaag gtgagactgt tcgtctccta gaacct
->Nanomia_bijuga
-gccaagaata aacctgccca gtgtaaacgg atgcggtatc ctaaccgtaa taaagtagca
-taatcattcg ccacttaatt ggtggatagt atgaacggtt aaacgaatat ttacctgtct
-tatatagaaa a-ttatgaaa ttaaaataat agtaaagatg ctatttaaaa ttgtaagacg
-aaaagaccct atagagctta actaggtagt ttagttgggg cgactacctt ttattaatat
-caaaggtaaa caaaatgtat aatccatctg tttaacaatt acaaaagtag gtataatgac
-ccgttattat taaaaaagaa aataacgatt aatagataaa agctacctta gggataacag
-gataatttta atttagagac catatcaaaa ttaaagtttg tcacctctat gttgaattaa
-gatatcctta tgaagcagaa tttataaagg gtaggtctgt tcgaccttta aaatct
+ccatactaaa acctgctcag tgtaaacagc cgccttaatc caagggcgcg aagtaagcat
+aatcggatac cgtttaattg gcggagagt- tgaatggata aacgagcgca aatctgtctt
+aacttaaaaa ta--tgaatt agatctatta gtgaaaaagc taatttatat agcaagacga
+aaagaccccg tgaagcttaa ctaatttagg taggtagttt tggtggggtg ccagcacgtt
+aaaaaaaaca tgg------a gttactttga attggtgtaa gctatagctt tatacaaagt
+aaaaatctaa aaaatgaccc gcc-----tg aatgatttaa g-acgacata -agataaaag
+ctactccggg gataacaggg taattaaatt ctgca-acgt tatgtggaat tttgtttacc
+acctcgatgt tgaattaggt tatcctagtg gagaagaaac tactaaaggt gagactgttc
+gtctcctaga acct
 >Craseoa_lathetica
-gctaaaaata aacctgccca gtgtaaacgg ccgccttatc ctgagggtga caatgtagca
-taatcatttg ccgcctaatt agcggagagt atgaacggat tcacgataat ttcactgtct
-taaataaaat ctatataaaa tttgaataat agttaagata ctatttagtt ttgtaagacg
-agaagaccct atagagcttt actatatagt ttagttgggg cgactgccta ataatataaa
-cttaggtaag caatatgtat aatagataaa tttaacaatt attaaagtag gtataatgac
-ccaataaaaa aattaaaaaa attattgatt aatagataaa tgctacctta gggataacag
-aataataata atagtaagac catattgcta ttatagttta tcacctctat gttgaattaa
-gatatcccag taatgtagta attactaaag gtaggtctgt tcgcccttta aaatct
+ctaaaaataa acctgcccag tgtaaacggc cgccttatcc tgagggtgac aatgtagcat
+aatcatttgc cgcctaatta gcggagagta tgaacggatt cacgataatt tcactgtctt
+aaataaaatc tatataaaat ttgaataata gttaagatac tatttagttt tgtaagacga
+gaagacccta tagagcttta ctaatgtaga aatatagttt agttggggcg actgcctaat
+aatataaact taggtaagca atacttaaat tattgtataa tagataaatt taacaattat
+taaagtaggt ataatgaccc aataaaaaaa ttaaaaaatt tattgattaa tagataaatg
+ctaccttagg gataacagaa taataataat agtaagacca tattgctatt atagtttatc
+acctctatgt tgaattaaga tatcccagta atgtagtaat tactaaaggt aggtctgttc
+gccctttaaa atct
 >Physophora_hydrostatica
-gccaagatta aacctgccca gtgtaaacgg ccgcgatata ctgattgtga taatgtagca
-taataatttg tcatttaatt ggtgaatagt atgaatggtt atacgaatat ttaactgtct
-taaaaagaaa aaatatgaaa ttggaataat agtaaagata ctatttaaaa ttgtaagacg
-aaaagaccct ataaagctta actaggtagt ttagttgggg cgactgcctt ttaataaaaa
-caaaggtaaa caaattgtat aataaataaa tttaacaatt attaaagtag gtgtaatgac
-ccgttatcaa ataaaaaagt tttaacgatt aataaataaa agctacttta gggataacag
-aataatttta actaagagat cttatttaag ttaaagtttg tcacctctat gttgaattaa
-gatatccaat agatgtagaa gtttaaaagg gtaggtctgt tcgaccttta aaatct
+ccaagattaa acctgcccag tgtaaacggc cgcgatatac tgattgtgat aatgtagcat
+aataatttgt catttaattg gtgaatagta tgaatggtta tacgaatatt taactgtctt
+aaaaagaaaa aatatgaaat tggaataata gtaaagatac tatttaaaat tgtaagacga
+aaagacccta taaagcttaa ctaaaaaaga aaggtagttt agttggggcg actgcctttt
+aataaaaaca aaggtaaaca aaatttagat tattgtataa taaataaatt taacaattat
+taaagtaggt gtaatgaccc gttatcaaat aaaaagtttt taacgattaa taaataaaag
+ctactttagg gataacagaa taattttaac taagagatct tatttaagtt aaagtttgtc
+acctctatgt tgaattaaga tatccaatag atgtagaagt ttaaaagggt aggtctgttc
+gacctttaaa atct
 >Sphaeronectes_gracilis
-gctaaatgac aacctgccca gtgtaaacgg ctgccgtaat ccaacggtac taagtaagca
-taatcggata tcgtttaatt ggcgaagtgt -tgaatggtg tcaccaatca atcactatat
-tatctttgct -attgataaa ttatattatg agtgaagata ctcattaaaa tagaaagaca
-aaaagacccc atgaagcttt actcgggagt ttaggtgggg tgccttctta ttattagaaa
-cataaatata ataaattgag aaaacaagat tttgaaagat a-aaaagtta tttgagtgac
-caggtgaaag aacctaa--- --aaatgata a--------a agttactctg gggataacag
-ggtaattttg atttagagaa tttatcgaaa ttgaagattg ccacctcgat gttgaattgg
-gatatccgta aggaatagca tccttaaaag gtaggactgt tcgtccatta aaatcc
+ctaaatgaca acctgcccag tgtaaacggc tgccgtaatc caacggtact aagtaagcat
+aatcggatat cgtttaattg gcgaagtgt- tgaatggtgt caccaatcaa tcactatatt
+atctttgct- attgataaat tatattatga gtgaagatac tcattaaaat agaaagacaa
+aaagacccca tgaagcttta ctcataattt tggggagttt aggtggggtg ccttcttatt
+attagaaaca taaataaaca aaataaaaa- ---ttgagaa aacaagattt tgaaagata-
+aaaagttatt tgagtgacca ggtgaaagaa cctaa----- --------aa atgataaaag
+ttactctggg gataacaggg taattttgat ttagagaatt tatcgaaatt gaagattgcc
+acctcgatgt tgaattggga tatccgtaag gaatagcatc cttaaaaggt aggactgttc
+gtccattaaa atcc
 >Forskalia_formosa
-gccataagaa tacctgccca gtg--aacgg ccgcggtacc ctgactgtga taatgtagca
-taataatttg ttacttaatt agtaaatagt atgaatggtt gaacgaattt tccattgtct
-ttaattaagg -attataaaa ttaaaataat agtaaagatg ctattttaaa ctgaaagacg
-aaaagaccct atagagctta actaggtagt ttagttgggg cgactgcctt ttacttttaa
-caaaggcaaa ttctttgtat aatataaata tttaacagtt ataataatag atataatgac
-cggttg---- ---------- -aaaacaata aattaataaa agctacctta gggataacag
-aataattatt attaagagat cttatcaaag taatagtttg tcacctctat gttgaattaa
-gatgtcctat gagagcagta actcataaag gtaggtctgt tcgaccttta aaatct
+ccataagaat acctgcccag tg--aacggc cgcggtaccc tgactgtgat aatgtagcat
+aataatttgt tacttaatta gtaaatagta tgaatggttg aacgaatttt ccattgtctt
+taattaagg- attataaaat taaaataata gtaaagatgc tattttaaac tgaaagacga
+aaagacccta tagagcttaa ctacttaaga ttggtagttt agttggggcg actgcctttt
+acttttaaca aaggcaaatt ctaaattgat ttctgtataa tataaatatt taacagttat
+aataatagat ataatgaccg gttg------ --------aa aaacaataaa ttaataaaag
+ctaccttagg gataacagaa taattattat taagagatct tatcaaagta atagtttgtc
+acctctatgt tgaattaaga tgtcctatga gagcagtaac tcataaaggt aggtctgttc
+gacctttaaa atct
 >Abylopsis_tetragona
-gccaggagca aacctgctca gtgtaaacag ctcccttaat ccaaggggac gaagtaagca
-taatctgata ccgtttaatt ggcggagtgt -tgaatggac taacgagcgc attattgtct
-caaatagagg aaa-atgaaa taaacatttt cgtgaagagg cgaagaaaaa tagaaggacg
-agaagacccc gtgaagcttt actaggtagt ttggatgggg tatccgcaag ttaaaagtaa
-catgagttag taaaatgtgt aaaatacatt tttatacaag gtagaaa-cg gcaaagtgac
-cctttcataa aaatttaata cttgaaagta aaagaataaa agctactccg gggataacag
-ggcatttaat ccgtgcatct gttatgtaag ataatgtttg ccacctcgat gttgaattga
-ctatacctgg tggaggagag gctaccaagg gttggactgt tcgtccatta aaagtt
+ccaggagcaa acctgctcag tgtaaacagc tcccttaatc caaggggacg aagtaagcat
+aatctgatac cgtttaattg gcggagtgt- tgaatggact aacgagcgca ttattgtctc
+aaatagagga aa-atgaaat aaacattttc gtgaagaggc gaagaaaaat agaaggacga
+gaagaccccg tgaagcttta ctaagctagt ttggtagttt ggatggggta tccgcaagtt
+aaaagtaaca tga------a gt---ttcat aattgtgtaa aatacatttt tatacaaggt
+agaaa-cggc aaagtgaccc tttcataaaa atttaacttt gaaagtaaaa -gaataaaag
+ctactccggg gataacaggg catttaatcc gtgcatctgt tatgtaagat aatgtttgcc
+acctcgatgt tgaattgact atacctggtg gaggagaggc taccaagggt tggactgttc
+gtccattaaa agtt
 >Chelophyes_appendiculata
-gccaggtaca aacctgctca gtgtaaacag ccggggtaat ccaaccctgt gaaataagca
-taatcggata ccgtttgatt ggcggggagt -tgaatggac gaacgagcgc aaagctgtct
-tgggggcagg cta-atgaaa taagcatgcc ggtgaagaga ccgacacgtt tagcaagacg
-agaagacccc gtgaagctta actcgtgagt ttgggtgggg cgcccgcaag tgaaaagtat
-cattggttac ca---ggtgt agtttacata cttacacaga gcaaatgtcg ggaaagcgac
-caggacataa actaaataaa attttcctac taaggataat agttactccg gggataacag
-agtaatgatt ccctgggaac gttaccgggg ggatcgtttg ctacctcgat gttgaattag
-cttagcgcgt ccacgaagca acggacaagc gtgggtctgt tcgcccccta gaagct
+ccaggtacaa acctgctcag tgtaaacagc cggggtaatc caaccctgtg aaataagcat
+aatcggatac cgtttgattg gcggggagt- tgaatggacg aacgagcgca aagctgtctt
+gggggcaggc ta-atgaaat aagcatgccg gtgaagagac cgacacgttt agcaagacga
+gaagaccccg tgaagcttaa ctcagccagt tggtgagttt gggtggggcg cccgcaagtg
+aaaagtatca ttg------a gt---taaag actggtgtag tttacatact tacacagagc
+aaatgtcggg aaagcgacca ggacataaac taaataattt ttcctactaa -ggataatag
+ttactccggg gataacagag taatgattcc ctgggaacgt taccgggggg atcgtttgct
+acctcgatgt tgaattagct tagcgcgtcc acgaagcaac ggacaagcgt gggtctgttc
+gccccctaga agct
 >Clausophyid_sp
-tttaattgtt aacctgccca gtgtaaacgg acgctgtaat ccaacggtga taatgtagca
-taatcggatg ccgtttaatt ggcggagagt -tgaaaggtt taacgaatat ttcattgtct
-taattagaag tcttataaaa ttgaagaaat agttaagatg ctatttttaa ttgtaagacg
-agaagaccct atagagcttt actagttagt ttaggtgggg ggcctactta ctattagaaa
-cgtaagatag taatatgttt aaattataat tttaacaatt attaaaatag acaaaa-gac
-ccgtttataa aatgaaatat ttaaacgatt aataaataaa agctacctta gggataacag
-agtaatttta actgagagat catatttaag ttaaagtttg ctacctcgat gttgaattaa
-gatatcctaa tgaagcagaa tttattaagg gtaggtctgt tcgaccttta aaatct
+ttaattgtta acctgcccag tgtaaacgga cgctgtaatc caacggtgat aatgtagcat
+aatcggatgc cgtttaattg gcggagagt- tgaaaggttt aacgaatatt tcattgtctt
+aattagaagt cttataaaat tgaagaaata gttaagatgc tatttttaat tgtaagacga
+gaagacccta tagagcttta ctaaagaaaa gggttagttt aggtgggggg cctacttact
+attagaaacg taagatagta at-taaaaat tattgtttaa attataattt taacaattat
+taaaatagac aaaa-gaccc gtttataaaa tgaaaatttt aaacgattaa taaataaaag
+ctaccttagg gataacagag taattttaac tgagagatca tatttaagtt aaagtttgct
+acctcgatgt tgaattaaga tatcctaatg aagcagaatt tattaagggt aggtctgttc
+gacctttaaa atct
 >Nectadamas_diomedeae
-gctaagaaaa aacctgccca gtgtaaacgg acgcagtata ttgactgtga taatgtagca
-taatcattcg ccatttaatt gatggatagt atgaacggtt taacgaatat ttaactgtct
-taaaaagaaa cccaataaaa tttgaataat agttaagata ctatttaaaa ttgttagacg
-aaaagaccct atagagctta actagttagt ttagttgggg tgactacctt ctattaataa
-caaaggtaaa caatatgtat aatttattaa tttaacaatt accatggtag gtataatgac
-ccgttactta aacaaaaact tataacgata cataaataaa agctacctta gggataacag
-aataatttta attacaagac catatttaaa ttaaagttta ttacctctat gttgaattaa
-gataacctaa taatgtagta gttattaaag gtaggtctgt tcgaccttta aaatct
+ctaagaaaaa acctgcccag tgtaaacgga cgcagtatat tgactgtgat aatgtagcat
+aatcattcgc catttaattg atggatagta tgaacggttt aacgaatatt taactgtctt
+aaaaagaaac ccaataaaat ttgaataata gttaagatac tatttaaaat tgttagacga
+aaagacccta tagagcttaa ctaagaaaga tagttagttt agttggggtg actaccttct
+attaataaca aaggtaaaca atagactaat tattgtataa tttattaatt taacaattac
+catggtaggt ataatgaccc gttacttaaa caaaacttaa taacgataca taaataaaag
+ctaccttagg gataacagaa taattttaat tacaagacca tatttaaatt aaagtttatt
+acctctatgt tgaattaaga taacctaata atgtagtagt tattaaaggt aggtctgttc
+gacctttaaa atct
 >Nectopyramis_natans
-gctaagaata aacctgccca gtgtaaacgg acgcagtata ctgactgtga taatgtagca
-taatcactcg ccatttaatt ggtggatagt atgaagggtt gaacgaatat ttaactgtct
-taaaatgaaa acttataaaa tttgaataat agttaagata ctatttaaaa ttgttagacg
-aaaagaccct atagagctta actagttagt ttagttgggg cgactacctc ctattacgaa
-cgtaggtaaa caatatgtat aatatataaa tttaacaatt ataaatgtag gtataatgac
-ccgttattaa aataaaaatt tataacgatt aataaataaa agctacctta gggataacag
-aataatttta actgcgagtt cttatttaag ttaaagctta tcacctcgat gttgaattaa
-gataacctaa taacgcagaa attattaaag gtgggtctgt tcgaccctta aaatct
+ctaagaataa acctgcccag tgtaaacgga cgcagtatac tgactgtgat aatgtagcat
+aatcactcgc catttaattg gtggatagta tgaagggttg aacgaatatt taactgtctt
+aaaatgaaaa cttataaaat ttgaataata gttaagatac tatttaaaat tgttagacga
+aaagacccta tagagcttaa ctaaaaagga gagttagttt agttggggcg actacctcct
+attacgaacg taggtaaaca ataacctgat tattgtataa tatataaatt taacaattat
+aaatgtaggt ataatgaccc gttattaaaa taaaatttaa taacgattaa taaataaaag
+ctaccttagg gataacagaa taattttaac tgcgagttct tatttaagtt aaagcttatc
+acctcgatgt tgaattaaga taacctaata acgcagaaat tattaaaggt gggtctgttc
+gacccttaaa atct
 >Vogtia_glabra
-ttatataaat aacctgcaca atgttaattg -------aat tcaagttttt taaagtagca
-taatcatttg ttaattaatt gttatcttgt atgaatggtg tca-aaagtt agaattgtat
-ctattataca aaatttgaaa ttagaataat agtgaacata ctatttagaa taataagacg
-aaaagaccct ataaagctt- -t--tatagt ttttttgggg aaaacgtttt ttattaacaa
-taaaa----- -----atatt ttataaaatt gacgggattt ttaataattt a--aaatgac
-aaaataaatt ttaataaata aatattttta ataaaataaa agtttcttta gggataacag
-ttcaatacta aattattgtc catataatat taagtgtttg atacctcgat gttgaattaa
-g-tatttatt ataggtag-g tttataatgt ataaaattgt tcatttttta taactt
+tatataaata acctgcacaa tgttaattg- ------aatt caagtttttt aaagtagcat
+aatcatttgt taattaattg ttatcttgta tgaatggtgt ca-aaagtta gaattgtatc
+tattatacaa aatttgaaat tagaataata gtgaacatac tatttagaat aataagacga
+aaagacccta taaagctt-- t-------at tttatagttt ttttggggaa aacgtttttt
+attaacaata aaa----at- -tccgtatat gacgggattt tttaataatt ta--------
+---------- -aaatgacaa aataaatttt aataaaaaaa tatttttaat aaaataaaag
+tttctttagg gataacagtt caatactaaa ttattgtcca tataatatta agtgtttgat
+acctcgatgt tgaattaag- ttatttttat aggtag-gtt tataatgtat aaaattgttc
+attttttata actt
 >Rhizophysa_eysenhardti
-gcttttatat aacctgccca gtgtaaacgg acgcagtaac ctgactgtgg taatgtagca
-taatcaatcg ccatttaatt gatggatagt atgaatggtt taacgagtac ttcactgtct
-tggggagaaa ttttatgaaa ttgatatagt agttaagatc ctacttaaaa ttgtaagacg
-aaaagaccct atagagctta actagttagt ttggttgggg cgaccacctt ttataataaa
-caaaggtaaa caatgtgtct aataaattga tttaacaatt acgaaagtag gtatagtgac
-ccgttaagag taataaataa tttaacgatt aataaataaa agctacctta gggataacag
-gataatttaa gcttagagat cttatcgaag ctcaagtttg tcacctctat gttgaattaa
-gatatccaaa tgatgcagaa gttattaagg gtaggtctgt tcgaccttta aaatct
+cttttatata acctgcccag tgtaaacgga cgcagtaacc tgactgtggt aatgtagcat
+aatcaatcgc catttaattg atggatagta tgaatggttt aacgagtact tcactgtctt
+ggggagaaat tttatgaaat tgatatagta gttaagatcc tacttaaaat tgtaagacga
+aaagacccta tagagcttaa ctaaaaaaga aggttagttt ggttggggcg accacctttt
+ataataaaca aaggtaaaca ataattaaat tattgtctaa taaattgatt taacaattac
+gaaagtaggt atagtgaccc gttaagagta ataaaaattt taacgattaa taaataaaag
+ctaccttagg gataacagga taatttaagc ttagagatct tatcgaagct caagtttgtc
+acctctatgt tgaattaaga tatccaaatg atgcagaagt tattaagggt aggtctgttc
+gacctttaaa atct
 >Athorybia_rosacea
-gctatgaaca aacctgccca gtgtaaacgg atgcggtatt ctgaccgtaa taaagtagca
-taatccctcg ccacttaatt agtggatagt atgaatggtt gaacgagttt ttaactgtct
-taattagaat a-ttatgaaa ttgaattaat agttaagatg ctatttaaaa ttgtaagacg
-aaaagaccct atagagctta actaggtagt ttagttgggg cgactgcctt ttaattgaaa
-caaaggtaaa caaagtgttt aattcataaa tttaacaatt ataaaagtag gtataatgac
-ccgttattat taaaaagaaa aataacgatc aatagataaa agctacctta gggataacag
-gataatttta atttagagac cttatcgaag ttaaagtttg tcacctctat gttgaattga
-gatatccatg taacgcagaa gttataaagg gtgggtctgt tcgaccttta aaatct
+ctatgaacaa acctgcccag tgtaaacgga tgcggtattc tgaccgtaat aaagtagcat
+aatccctcgc cacttaatta gtggatagta tgaatggttg aacgagtttt taactgtctt
+aattagaata -ttatgaaat tgaattaata gttaagatgc tatttaaaat tgtaagacga
+aaagacccta tagagcttaa ctaagaaagt taggtagttt agttggggcg actgcctttt
+aattgaaaca aaggtaaaca aatttattat tattgtttaa ttcataaatt taacaattat
+aaaagtaggt ataatgaccc gttattatta aaaagaaaag taacgatcaa tagataaaag
+ctaccttagg gataacagga taattttaat ttagagacct tatcgaagtt aaagtttgtc
+acctctatgt tgaattgaga tatccatgta acgcagaagt tataaagggt gggtctgttc
+gacctttaaa atct
 >Sulculeolaria_quadrivalvis
-gccaaaaaat aacctgctca gtgtaaacag ccgcccaaat ccaagggtgt gaaataagca
-taatcggatg ccgtttaatt ggcggagagt -tgaatggat tcacgagtgc gaagctgtct
-tgagtcaaag ata-ttgaag tagatctacg agtgaagaag cttgttccaa ttataagacg
-aaaagacccc gtgaagctta actaggtagt tttgatgggg tgttagcacg ttaaatagaa
-catgggttat a----agtgt aattaactta tttatacaga gtaaacatcg tttaaatgac
-ccgcctattt tttagaaaaa taag-acgac aaaggataat agctactccg gggataacag
-ggtaattgct atcagga-tt cccattttgg tagccgttta ccacctcgat gttgaattga
-gttttcctgg agataaagag gattccaagg gtaggactgt tcgtccttta ataact
+ccaaaaaata acctgctcag tgtaaacagc cgcccaaatc caagggtgtg aaataagcat
+aatcggatgc cgtttaattg gcggagagt- tgaatggatt cacgagtgcg aagctgtctt
+gagtcaaaga ta-ttgaagt agatctacga gtgaagaagc ttgttccaat tataagacga
+aaagaccccg tgaagcttaa ctaagctaaa ttggtagttt tgatggggtg ttagcacgtt
+aaatagaaca tgg------a gt---tttaa actagtgtaa ttaacttatt tatacagagt
+aaacatcgtt taaatgaccc gcctattttt tagaaataaa g-acgacaaa -ggataatag
+ctactccggg gataacaggg taattgctat cagga-ttcc cattttggta gccgtttacc
+acctcgatgt tgaattgagt tttcctggag ataaagagga ttccaagggt aggactgttc
+gtcctttaat aact
 >Hippopodius_hippopus
---------gc tatctgcaca atgtaaattg -------aat at--attatt taaagtagca
-taatcatttg ttatttaatt ggtatcttgt atgaatgttt ttatagaatt ---attttat
-taactatatg attaatgaaa ttaatatgat agtaaaaaag ctatctaaat aaattagacg
-aaaagaccct ataaagctta atagtata-t ttatttgggg aaaatgtttt ttattaaaaa
-taaaa----- ---------- --ataaaatt ttattaaaat ttcttatttg aaattactac
-ttataaatat taattaaaga tttataatta a-aaaataaa agttacttta gggataacag
-attaatataa attttatgat cgtatataaa tttatgttta atacctcgat gttgaattaa
-a-taattgtt atttgtag-g taaataataa ataatattgt tcatatttta aaattt
+-------gct atctgcacaa tgtaaattg- ------aata t--attattt aaagtagcat
+aatcatttgt tatttaattg gtatcttgta tgaatgtttt tatagaatt- --attttatt
+aactatatga ttaatgaaat taatatgata gtaaaaaagc tatctaaata aattagacga
+aaagacccta taaagcttaa tag-----ta tttata-ttt atttggggaa aatgtttttt
+attaaaaata aaa----att atttgt---t ttattaaaat tctcttattt ga--------
+---------- attactactt ataaatatta attaaatttg tataattaa- aaaataaaag
+ttactttagg gataacagat taatataaat tttatgatcg tatataaatt tatgtttaat
+acctcgatgt tgaattaaa- ttaattttat ttgtag-gta aataataaat aatattgttc
+atattttaaa attt
 >Stephalia_dilata
-gctaagaata aacctgccca gtgtaaacgg acgcagtatc ttgactgtga taatgtagca
-taatcatttg ccatttaatt aatggatagt atgaaaggtt aaacgaatat ttcactatct
-caaaaaaaaa acatataaaa ttgaaataat agttaagatg ctatttataa ttgtaagacg
-aaaagaccct atagagctta actagttagt ttagttgggg cgactacctt ttattaataa
-caaaggtaaa caaaatgtat aatttataaa tttaacaatt ataaaaatag gtatattgac
-ccgttattta taaaacaaaa tataacgatt aataaataaa agctacctta gggataacag
-aataatttta acttagagat cctatcgaag ttaaagtttg tcacctctat gttgaattaa
-gatatccaaa taatgcagaa gttataaagg gtaggtctgt tcg------- ------
+ctaagaataa acctgcccag tgtaaacgga cgcagtatct tgactgtgat aatgtagcat
+aatcatttgc catttaatta atggatagta tgaaaggtta aacgaatatt tcactatctc
+aaaaaaaaaa catataaaat tgaaataata gttaagatgc tatttataat tgtaagacga
+aaagacccta tagagcttaa ctaaaaaaga tggttagttt agttggggcg actacctttt
+attaataaca aaggtaaaca aaaaaataat tattgtataa tttataaatt taacaattat
+aaaaataggt atattgaccc gttatttata aaacaaataa taacgattaa taaataaaag
+ctaccttagg gataacagaa taattttaac ttagagatcc tatcgaagtt aaagtttgtc
+acctctatgt tgaattaaga tatccaaata atgcagaagt tataaagggt aggtctgttc
+g--------- ----
 >Gymnopraia_lapislazula
-gcactagatt aacctgccca gtgtaaacgg cggacttagc gtgaggtttt taatgtagca
-taataagttg ccctttaatt gagggagagt atgaatggta acacgaaagt tacactgtct
-taaaattata tagatttaaa ttaaaataat agttaagatg ctatttaaaa ttgtaagaca
-aaaagaccct atagagctta actggtcagt ttagttgggg caactaccat ctactaagaa
-agatggtgag caatatatat aatatatata tttaataatt gtgatggcat gcataatgac
-ccatagatat tataaaataa aactatgatt aagaaataaa agctacctta gggataacag
-aactattttc ccaaacagta cgaatggacg gggaagtttg ttacctcgat gttgaattaa
-gggatcctgg cggggtaggt gttgccaagg gtaggactgt tcgtccttta aagcct
+cactagatta acctgcccag tgtaaacggc ggacttagcg tgaggttttt aatgtagcat
+aataagttgc cctttaattg agggagagta tgaatggtaa cacgaaagtt acactgtctt
+aaaattatat agatttaaat taaaataata gttaagatgc tatttaaaat tgtaagacaa
+aaagacccta tagagcttaa ctgataaaga ttgtcagttt agttggggca actaccatct
+actaagaaag atggtgagca atatttaagt tattatataa tatatatatt taataattgt
+gatggcatgc ataatgaccc atagatatta taaaaaaaat ctatgattaa gaaataaaag
+ctaccttagg gataacagaa ctattttccc aaacagtacg aatggacggg gaagtttgtt
+acctcgatgt tgaattaagg gatcctggcg gggtaggtgt tgccaagggt aggactgttc
+gtcctttaaa gcct
 >Lensia_conoidea
-gccaaagtag aacctgctca gtgtaaacag ccgccttaat ccaagggtgc gaagtaagca
-taatcggata ccgtttaatt ggcggagtgt -tgaatggat tcacgagggc aaagctgtct
-caagttaaga atagataaac tagatataca agtgaagaag cttttttaag tagtaagacg
-aaaagacccc gtgaagctta actaggtagt tttgatgggg tgtcagcacg ttaaagagaa
-catgggttaa t----agtgt aatcaaccta tttacacagg agataacctg atcaagtgac
-ccgcc--tct ataagtaaaa taag-acgac aaaggatgat agctactccg gggataacag
-ggtaattgat cttcgta-tc gttatgtggg ggtcagttta ccacctcgat gttgaattaa
-gctttcctgg ggggggagaa agtcccaagg gtaggactgt tcgtccttta atagct
+ccaaagtaga acctgctcag tgtaaacagc cgccttaatc caagggtgcg aagtaagcat
+aatcggatac cgtttaattg gcggagtgt- tgaatggatt cacgagggca aagctgtctc
+aagttaagaa tagataaact agatatacaa gtgaagaagc ttttttaagt agtaagacga
+aaagaccccg tgaagcttaa ctaaggtttc ttggtagttt tgatggggtg tcagcacgtt
+aaagagaaca tgg------a gt---ttc-g actagtgtaa tcaacctatt tacacaggag
+ataacctgat caagtgaccc gcc--tctat aagtaatata g-acgacaaa -ggatgatag
+ctactccggg gataacaggg taattgatct tcgta-tcgt tatgtggggg tcagtttacc
+acctcgatgt tgaattaagc tttcctgggg ggggagaaag tcccaagggt aggactgttc
+gtcctttaat agct
 >Erenna_sp
-gctaagaaaa aacctgccca gtgtaaacgg atgcagtatt ctgactgtaa taatgtagca
-taatcatttg ccatttaatt aatggatagt atgaatggtt aaacgaatat ttcactgtct
-taaaaaaaaa acttattaaa ttgaagtaat agttaagatg ctatttaaaa ttgtaagacg
-aaaagaccct atagagctta actagttagt ttagttgggg cgactacctt ttattataaa
-caaaggtaaa caaaatgtat aataaataaa tttaacaatt ataaaaatag gtatattgac
-ccgttattaa taaataaaaa tataacgatt aataaataaa agctacctta gggataacag
-aataatttta atctagagat catatcgaaa ttaaagtttg tcacctctat gttgaattaa
-gatatccaaa taatgtagaa gttataaagg gtaggtctgt tcgaccttaa aaatct
+ctaagaaaaa acctgcccag tgtaaacgga tgcagtattc tgactgtaat aatgtagcat
+aatcatttgc catttaatta atggatagta tgaatggtta aacgaatatt tcactgtctt
+aaaaaaaaaa cttattaaat tgaagtaata gttaagatgc tatttaaaat tgtaagacga
+aaagacccta tagagcttaa ctaaaaaaga tagttagttt agttggggcg actacctttt
+attataaaca aaggtaaaca aaataataat tattgtataa taaataaatt taacaattat
+aaaaataggt atattgaccc gttattaata aataaaataa taacgattaa taaataaaag
+ctaccttagg gataacagaa taattttaat ctagagatca tatcgaaatt aaagtttgtc
+acctctatgt tgaattaaga tatccaaata atgtagaagt tataaagggt aggtctgttc
+gaccttaaaa atct
 >Vogtia_pentacantha
-ttataagtat attctgcaca atgtaaattg -------aaa tcttgggttt taaagtagca
-taatcaattg ttatttaatt tgtatcttgt atgaatggat ataaaaaatt aaaatttttt
-ttttcttaag ttttgtgaaa ttaaaattat agtgaggatg ctatattgaa ttataagacg
-aaaagaccct ataaagcttg ac--gatagt ttatgtgggg aaaatatttt ttattagtaa
-taaaa----- -----ttata taatcatatt attatagtat atattatttt gtcaaatgac
-attttatgta taagaaaaat taaaatttta a-aatataaa agttacttta gggataacag
-attaatatat ttattttgta cttataatta aatatgtttg atacctcgat gttgaattaa
-gttacaattt ttaggtagta ctaaaagtct tttgaattgt tcattcatta taactt
+tataagtata ttctgcacaa tgtaaattg- ------aaat cttgggtttt aaagtagcat
+aatcaattgt tatttaattt gtatcttgta tgaatggata taaaaaatta aaattttttt
+tttcttaagt tttgtgaaat taaaattata gtgaggatgc tatattgaat tataagacga
+aaagacccta taaagcttga c-------tt ttgatagttt atgtggggaa aatatttttt
+attagtaata aaa----att atatttttat attatagtat attattattt tg--------
+---------- caaatgacat tttatgtata agaaattatg aaattttaa- aatataaaag
+ttactttagg gataacagat taatatattt attttgtact tataattaaa tatgtttgat
+acctcgatgt tgaattaagt ttacaatttt aggtagtact aaaagtcttt tgaattgttc
+attcattata actt
 >Bargmannia_elongata
-gctcaaaata aacctgccca gtgtaaacgg acgcagtatc ttgactgtgg taatgtagca
-taataatttg ccatttaatt ggtggatggt atgaatggtt aaacgaatat ttcattgtct
-taagaaaaaa acttataaaa ttaaattaat agttaagatg ctatttaaaa ttgtaagacg
-aaaagaccct atagagctta actagttagt ttagttgggg cgactacctt ttacttaaaa
-caaaggtaaa caaagtgtat aaaaaataat tttaacaatt ataaaaatag gtttattgac
-ccgttatttt tataaaaaaa tataacgatt aataaataaa agctacctta gggataacag
-aataatttta gtttagagat cttatcgaag ctaaagtttg ttacctcgat gttgaattaa
-gatttcccaa taatgcagaa gttattaaag gtaggtctgt tcgaccttta aaatct
+ctcaaaataa acctgcccag tgtaaacgga cgcagtatct tgactgtggt aatgtagcat
+aataatttgc catttaattg gtggatggta tgaatggtta aacgaatatt tcattgtctt
+aagaaaaaaa cttataaaat taaattaata gttaagatgc tatttaaaat tgtaagacga
+aaagacccta tagagcttaa ctaattaaga ttgttagttt agttggggcg actacctttt
+acttaaaaca aaggtaaaca aaaaaataat tattgtataa aaaataattt taacaattat
+aaaaataggt ttattgaccc gttattttta taaaaaataa taacgattaa taaataaaag
+ctaccttagg gataacagaa taattttagt ttagagatct tatcgaagct aaagtttgtt
+acctcgatgt tgaattaaga tttcccaata atgcagaagt tattaaaggt aggtctgttc
+gacctttaaa atct
 >Porpita_porpita
-gccccagaat gacctgctca ctgtaaatag atgcggtatt ctaaccgtaa taatgtagca
-taataattcg ccatttaatt aatggatggt atgaaaggtc aaacgagtac atcactgtct
-taattagaaa tcttatgaaa atggaattgt agtaaagata ctatactaaa ctgtaagacg
-aaaagaccct atagagctta actaggtagt ttagttgggg tgactgtttt ctaaaataaa
-cgaaaacgat caatatgtat aatttataat tttaacagtt attaaaatag gaataatgac
-ccgttatgta ttatgaatat c-taacgatc tacaaataaa agctacctta gggataacag
-gataatattg ttttagagtt catatcaagg acaaagttta tcacctctat gttgaattaa
-gataccctga agatgcagaa gttttcgaag gtaggtctgt tcgaccttta aaatct
+ccccagaatg acctgctcac tgtaaataga tgcggtattc taaccgtaat aatgtagcat
+aataattcgc catttaatta atggatggta tgaaaggtca aacgagtaca tcactgtctt
+aattagaaat cttatgaaaa tggaattgta gtaaagatac tatactaaac tgtaagacga
+aaagacccta tagagcttaa ctaagaaagg taggtagttt agttggggtg actgttttct
+aaaataaacg aaaacgatca atcgaataat tactgtataa tttataattt taacagttat
+taaaatagga ataatgaccc gttatgtatt atgaaatc-g taacgatcta caaataaaag
+ctaccttagg gataacagga taatattgtt ttagagttca tatcaaggac aaagtttatc
+acctctatgt tgaattaaga taccctgaag atgcagaagt tttcgaaggt aggtctgttc
+gacctttaaa atct
 >Velella_velella
-gcccttgaaa cacctgctca atgtcaaaag atgcggtata ctaaccgtaa taatgtagca
-taataattcg ccatttaatt aatggatggt atgaaaggtc aaacgagtat atcactgtct
-taattagaga tattgtgaaa ataggctaat agtaaagaca ctattttaaa ttgtaagacg
-aaaagaccct atagagcttg actaggtagt ttagttgggg tgactgtttt ctataacaaa
-cgagaacgat caaaatgtat aacttataag tttaacagtt attataatag gaaaaatgac
-ccgttgcaca aaatcaattc tgcaacgatc tacaaataaa agctacctta gggataacag
-gataatattg ccttagagtt catatcaaag gcaaagttta tcacctctat gttgaattaa
-gatatcctaa agatgcagca gtttttaagg gtaggtctgt tcgaccttta aaatct
+cccttgaaac acctgctcaa tgtcaaaaga tgcggtatac taaccgtaat aatgtagcat
+aataattcgc catttaatta atggatggta tgaaaggtca aacgagtata tcactgtctt
+aattagagat attgtgaaaa taggctaata gtaaagacac tattttaaat tgtaagacga
+aaagacccta tagagcttga ctaagaaagg taggtagttt agttggggtg actgttttct
+ataacaaacg agaacgatca aactgttaat tactgtataa cttataagtt taacagttat
+tataatagga aaaatgaccc gttgcacaaa atcaatctgg caacgatcta caaataaaag
+ctaccttagg gataacagga taatattgcc ttagagttca tatcaaaggc aaagtttatc
+acctctatgt tgaattaaga tatcctaaag atgcagcagt ttttaagggt aggtctgttc
+gacctttaaa atct
