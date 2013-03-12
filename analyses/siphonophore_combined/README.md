@@ -93,3 +93,49 @@ the raxml analysis:
 This will generate several output files, including the tree and a .info file 
 with model parameters, among other things.
 
+
+## Running MrBayes
+
+While RAxML takes phylip files, MrBayes takes nexus files. The MrBayes commands 
+can even be embedded right into the same file that has the data. MrBayes, 
+however, requires a simplified nexus file format that doesn't have all the 
+blocks and metadata that Mesquite includes in nexus files by default. 
+Fortunately, Mesquite can export simplified nexus files that meet all of the 
+requirements of MrBayes.
+
+In Mesquite, open the combined.nex file created above. From the 'File' menu, 
+select 'Export...', then select 'Export NEXUS for MrBayes', and click 'OK'. 
+Click 'Export' in the window that comes up, and save the new file as 
+'combined_mb.nex'. 
+
+This will create a simplified nexus that MrBayes can read, and also produces 
+a MrBayes block that sets up an analysis under default settings. Open the new 
+file in a text editor and modify this block as follows (your charset locations 
+may be slightly different):
+
+
+	begin mrbayes;
+		log start filename=mb.log;
+		set autoclose=yes nowarn=yes;
+		outgroup Porpita_porpita;
+	
+		[ Define the gene regions ]
+		CHARSET  r16s  =  1-494;
+		CHARSET  r18s  =  495-2248;
+		
+		[ Set up the partition ]
+		partition by_locus = 2 : r16s , r18s; 
+		set partition=by_locus;
+        
+        [ Specify the GTR+Gamma model ]
+        lset applyto=(all) nst=6 rates=gamma;
+        
+        [ Unlink parameters across partitions ]
+        unlink revmat=(all)	statefreq=(all) shape = (all);
+        prset applyto=(all) ratepr=variable;
+        
+		mcmcp nruns=2 ngen= 10000000 printfreq=1000  samplefreq=100 nchains=4 savebrlens=yes filename=siph_combined;	
+		mcmc;
+	end;
+
+
