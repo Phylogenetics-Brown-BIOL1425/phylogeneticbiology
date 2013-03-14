@@ -117,6 +117,10 @@ Open the new file in a text editor and paste in the following block of commands
 	begin mrbayes;
 		log start filename=mb.log;
 		set autoclose=yes nowarn=yes;
+	
+		[ Load the data ]
+		execute mb_data.nex;
+		
 		outgroup Porpita_porpita;
 	
 		[ Define the gene regions ]
@@ -126,14 +130,15 @@ Open the new file in a text editor and paste in the following block of commands
 		[ Set up the partition ]
 		partition by_locus = 2 : r16s , r18s; 
 		set partition=by_locus;
-        
-        [ Specify the GTR+Gamma model ]
-        lset applyto=(all) nst=6 rates=gamma;
-        
-        [ Unlink parameters across partitions ]
-        unlink revmat=(all)	statefreq=(all) shape = (all);
-        prset applyto=(all) ratepr=variable;
-        
+		
+		[ Specify the GTR+Gamma model ]
+		lset applyto=(all) nst=6 rates=gamma;
+		
+		[ Unlink parameters across partitions ]
+		unlink revmat=(all) statefreq=(all) shape = (all);
+		prset applyto=(all) ratepr=variable;
+		
+		[ Setup and run the analysis ]
 		mcmcp nruns=2 ngen= 2000000 printfreq=1000  samplefreq=500 nchains=4 savebrlens=yes filename=siph_combined;	
 		mcmc;
 	end;
