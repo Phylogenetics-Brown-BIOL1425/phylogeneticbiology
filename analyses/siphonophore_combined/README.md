@@ -110,7 +110,7 @@ MrBayes block separately. Leave the 'Simplify names' checkbox checked.
 Click 'Export' in the window that comes up, and save the new file as 
 'mb_data.nex'. 
 
-Open the new file in a text editor and paste in the following block of commands 
+Open a new file in a text editor and paste in the following block of commands 
 (your charset locations may be slightly different):
 
 
