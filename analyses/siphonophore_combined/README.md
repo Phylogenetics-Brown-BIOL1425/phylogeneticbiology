@@ -105,13 +105,13 @@ requirements of MrBayes.
 
 In Mesquite, open the combined.nex file created above. From the 'File' menu, 
 select 'Export...', then select 'Export NEXUS for MrBayes', and click 'OK'. 
+Delete all the text in the 'MrBayes block' window, we are going to create a 
+MrBayes block separately. Leave the 'Simplify names' checkbox checked. 
 Click 'Export' in the window that comes up, and save the new file as 
-'combined_mb.nex'. 
+'mb_data.nex'. 
 
-This will create a simplified nexus that MrBayes can read, and also produces 
-a MrBayes block that sets up an analysis under default settings. Open the new 
-file in a text editor and modify this block as follows (your charset locations 
-may be slightly different):
+Open the new file in a text editor and paste in the following block of commands 
+(your charset locations may be slightly different):
 
 
 	begin mrbayes;
@@ -134,8 +134,24 @@ may be slightly different):
         unlink revmat=(all)	statefreq=(all) shape = (all);
         prset applyto=(all) ratepr=variable;
         
-		mcmcp nruns=2 ngen= 10000000 printfreq=1000  samplefreq=100 nchains=4 savebrlens=yes filename=siph_combined;	
+		mcmcp nruns=2 ngen= 2000000 printfreq=1000  samplefreq=500 nchains=4 savebrlens=yes filename=siph_combined;	
 		mcmc;
 	end;
+
+Save this file as 'mb_analysis.nex'
+
+Copy over the mpi_mb.sh batch file from the same directory as 
+this README.md. Take a look at the batch file to see how MrBayes will be 
+launched. The block above specifies 2 runs, each with 4 chains. This takes a 
+total of 8 cores. Note that the batch file requests one node with 8 cores. 
+
+Submit your job with:
+
+	sbatch mpi_mb.sh
+	
+Once complete, move the siph_combined.* files to your laptop. Open 
+[Tracer](http://tree.bio.ed.ac.uk/software/tracer/), and use it to inspect the 
+.p (profile) files for each run. Examine mixing, burn-in, and other aspects of 
+all parameters.
 
 
