@@ -78,17 +78,17 @@ Baum and Smith chapter 10, [Felsenstein 1985](http://www.jstor.org/stable/246160
 
 - Monday, April 1.
 
-- Wednesday, April 3. Group presentations: Matthew Leonard, Po Bhattacharyya, Samuel 
-Church present the paper 
-[doi:10.1126/science.1157704](http://dx.doi.org/10.1126/science.1157704); 
-Ning Hou and Miho Connolly present the paper 
+- Wednesday, April 3. Group presentation:  Ning Hou and Miho Connolly present the paper 
 [doi:10.1371/journal.pone.0015530](http://dx.doi.org/10.1371/journal.pone.0015530).
 Using phylogenies to study character evolution. Reading: review last week's 
 reading.
 
 - Monday, April 8. 
 
-- Wednesday, April 10. Group presentation: Kristin Stover, Lillian Hancock, and Rosalyn 
+- Wednesday, April 10. Group presentations: Matthew Leonard, Po Bhattacharyya, Samuel 
+Church present the paper 
+[doi:10.1126/science.1157704](http://dx.doi.org/10.1126/science.1157704);
+Kristin Stover, Lillian Hancock, and Rosalyn 
 Price-Waldman present the paper 
 [doi:10.1098/rspb.2011.2301](http://dx.doi.org/10.1098/rspb.2011.2301).
 

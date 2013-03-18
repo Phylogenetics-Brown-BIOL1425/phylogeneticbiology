@@ -96,6 +96,10 @@ with model parameters, among other things.
 
 ## Running MrBayes
 
+This is a very brief introduction to MrBayes. More detailed tutorials are 
+available at the [MrBayes site](http://mrbayes.sourceforge.net/wiki/index.php/Tutorial_3.2) 
+and in [Tracy Heath's example](https://molevol.mbl.edu/wiki/index.php/MrBayes).
+
 While RAxML takes phylip files, MrBayes takes nexus files. The MrBayes commands 
 can even be embedded right into the same file that has the data. MrBayes, 
 however, requires a simplified nexus file format that doesn't have all the 
@@ -110,13 +114,17 @@ MrBayes block separately. Leave the 'Simplify names' checkbox checked.
 Click 'Export' in the window that comes up, and save the new file as 
 'mb_data.nex'. 
 
-Open the new file in a text editor and paste in the following block of commands 
+Open a new file in a text editor and paste in the following block of commands 
 (your charset locations may be slightly different):
 
 
 	begin mrbayes;
 		log start filename=mb.log;
 		set autoclose=yes nowarn=yes;
+	
+		[ Load the data ]
+		execute mb_data.nex;
+		
 		outgroup Porpita_porpita;
 	
 		[ Define the gene regions ]
@@ -126,14 +134,15 @@ Open the new file in a text editor and paste in the following block of commands
 		[ Set up the partition ]
 		partition by_locus = 2 : r16s , r18s; 
 		set partition=by_locus;
-        
-        [ Specify the GTR+Gamma model ]
-        lset applyto=(all) nst=6 rates=gamma;
-        
-        [ Unlink parameters across partitions ]
-        unlink revmat=(all)	statefreq=(all) shape = (all);
-        prset applyto=(all) ratepr=variable;
-        
+		
+		[ Specify the GTR+Gamma model ]
+		lset applyto=(all) nst=6 rates=gamma;
+		
+		[ Unlink parameters across partitions ]
+		unlink revmat=(all) statefreq=(all) shape = (all);
+		prset applyto=(all) ratepr=variable;
+		
+		[ Setup and run the analysis ]
 		mcmcp nruns=2 ngen= 2000000 printfreq=1000  samplefreq=500 nchains=4 savebrlens=yes filename=siph_combined;	
 		mcmc;
 	end;
@@ -152,6 +161,27 @@ Submit your job with:
 Once complete, move the siph_combined.* files to your laptop. Open 
 [Tracer](http://tree.bio.ed.ac.uk/software/tracer/), and use it to inspect the 
 .p (profile) files for each run. Examine mixing, burn-in, and other aspects of 
-all parameters.
+all parameters. Also, take a look at the mb.log file. This records a variety of 
+details about the the run as it proceeds, including the standard deviations of 
+the split frequencies. These 
+help you understand how long of a run is long enough. The smaller the value the 
+better, and you want it to be lower than 0.01 by the time you finish. In the 
+run I did, it had dropped to 0.003973 at 2 million generations.
+
+The runs I did burned in before 100,000 generations. We sampled every 500 
+generations, so that is a burnin of 200 trees. We'll now use the MrBayes 
+command `sumt` to summarize the post-burnin trees.
+
+In the directory where you ran the mrbayes analysis, launch an interactive 
+MrBayes session with the command `mb-serial` (the name of this command will be 
+different on different clusters). Then, when you get the MrBayes prompt, 
+execute the following two commands:
+
+	execute mb_data.nex;
+	sumt filename=siph_combined burnin=200 nruns=2;
+	
+The first command loads the data. The second one summarizes the trees. More 
+information on the `sumt` command is available at the 
+[MrBayes site](http://mrbayes.sourceforge.net/Help/sumt.html).
 
 
