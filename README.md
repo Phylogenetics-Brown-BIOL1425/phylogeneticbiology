@@ -39,10 +39,12 @@ Lecture: `lectures/Lecture_2.pdf`
 - Wednesday, February 6. Maximum likelihood. Reading: Baum and Smith chapters 8, 
 and Holder, M. & Lewis, P. O. Phylogeny estimation: traditional and Bayesian 
 approaches. Nat Rev Genet 4, 275–284 (2003). 
-[doi:10.1038/nrg1044](http://dx.doi.org/10.1038/nrg1044). Lecture: We will draw 
+[doi:10.1038/nrg1044](http://dx.doi.org/10.1038/nrg1044). Lecture: in addition 
+to `lectures/Lecture_3.pdf`, we will draw 
 on [Paul Lewis's](http://www.eeb.uconn.edu/people/plewis) excellent 
 [likelihood lecture](http://www.eeb.uconn.edu/people/plewis/downloads/wh2012/Likelihood_WoodsHole_24July2012_1-per-page.pdf) 
 from the [Workshop in Molecular Evolution](https://molevol.mbl.edu/wiki/index.php/Main_Page).
+
 
 - Monday, February 11. Getting acquainted with tools and the cluster. Activity: 
 `analyses/siphonophore_16s` through viewing the phylogeny.
@@ -59,22 +61,24 @@ Lecture: We will draw on [Paul Lewis's](http://www.eeb.uconn.edu/people/plewis)
 - Monday, February 25. Working with tree files. 
 
 - Wednesday, February 27. Multiple sequence alignment, exotic models, distance 
-methods, consistency.
+methods, consistency. Lecture: `lectures/Lecture_6.pdf`
 
 - Monday, March 4. No lab.
 
 - Wednesday, March 6. Phylogenetic project design. Reading:
-[Hydra phylogeny](http://dx.doi.org/10.1016/j.ympev.2012.12.016)
+[Hydra phylogeny](http://dx.doi.org/10.1016/j.ympev.2012.12.016). 
+Lecture: `lectures/Lecture_7.pdf`
 
 - Monday, March 11. Combining data across genes.
 
 - Wednesday, March 13. Testing Phylogenetic Hypotheses. Reading: Baum and Smith 
-Chapter 9. 
+Chapter 9. Lecture: `lectures/Lecture_8.pdf`
 
 - Monday, March 18. Bayesian analysis.
 
 - Wednesday, March 20. Using phylogenies to study character evolution. Reading: 
 Baum and Smith chapter 10, [Felsenstein 1985](http://www.jstor.org/stable/2461605).
+Lecture: `lectures/Lecture_9.pdf`
 
 - Monday, April 1.
 
@@ -117,6 +121,9 @@ Presentations should be 20-30 minutes. By March 6 each group should form up,
 pick a paper, and schedule their presentation. Group presentations must be made 
 on or before April 17. Scheduling will be organized so that there is no more 
 than one group presentation per class. 
+
+- Friday, April 5. Complete the assignment described in 
+  `assignments/hydroidolina-combined`.
 
 - Wednesday, May 1. The written component of the final project is due by the 
 beginning of class. Presentations of final projects in class.
