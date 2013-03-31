@@ -80,7 +80,7 @@ Chapter 9. Lecture: `lectures/Lecture_8.pdf`
 Baum and Smith chapter 10, [Felsenstein 1985](http://www.jstor.org/stable/2461605).
 Lecture: `lectures/Lecture_9.pdf`
 
-- Monday, April 1.
+- Monday, April 1. Independent contrasts with ape and R.
 
 - Wednesday, April 3. Group presentation:  Ning Hou and Miho Connolly present the paper 
 [doi:10.1371/journal.pone.0015530](http://dx.doi.org/10.1371/journal.pone.0015530).
