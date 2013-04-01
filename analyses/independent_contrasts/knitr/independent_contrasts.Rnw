@@ -1,0 +1,461 @@
+\documentclass[11pt]{article}
+
+%% This document source is based on the excellent:
+%% http://www.math.smith.edu/~nhorton/sleuth/
+%%
+%% Specifically, 
+%% http://www.math.smith.edu/~nhorton/sleuth/chapter02.Rnw
+
+\usepackage{natbib}
+\usepackage[margin=1in,bottom=.5in,includehead,includefoot]{geometry}
+\usepackage{hyperref}
+\usepackage{language}
+\usepackage{alltt}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+%% Now begin customising things. See the fancyhdr docs for more info.
+
+\chead{}
+\lhead[\sf \thepage]{\sf \leftmark}
+\rhead[\sf \leftmark]{\sf \thepage}
+\lfoot{}
+\cfoot{Independent contrasts}
+\rfoot{}
+
+\newcounter{myenumi}
+\newcommand{\saveenumi}{\setcounter{myenumi}{\value{enumi}}}
+\newcommand{\reuseenumi}{\setcounter{enumi}{\value{myenumi}}}
+
+\pagestyle{fancy}
+
+\def\R{{\sf R}}
+\def\Rstudio{{\sf RStudio}}
+\def\RStudio{{\sf RStudio}}
+\def\term#1{\textbf{#1}}
+\def\tab#1{{\sf #1}}
+
+
+\usepackage{relsize}
+
+\newlength{\tempfmlength}
+\newsavebox{\fmbox}
+\newenvironment{fmpage}[1]
+     {
+   \medskip
+   \setlength{\tempfmlength}{#1}
+   \begin{lrbox}{\fmbox}
+     \begin{minipage}{#1}
+     \vspace*{.02\tempfmlength}
+		 \hfill
+	   \begin{minipage}{.95 \tempfmlength}}
+		 {\end{minipage}\hfill
+		 \vspace*{.015\tempfmlength}
+		 \end{minipage}\end{lrbox}\fbox{\usebox{\fmbox}}
+	 \medskip
+	 }
+
+
+\newenvironment{boxedText}[1][.98\textwidth]%
+{%
+\begin{center}
+\begin{fmpage}{#1}
+}%
+{%
+\end{fmpage}
+\end{center}
+}
+
+\newenvironment{boxedTable}[2][tbp]%
+{%
+\begin{table}[#1]
+  \refstepcounter{table}
+  \begin{center}
+\begin{fmpage}{.98\textwidth}
+  \begin{center}
+	\sf \large Box~\expandafter\thetable. #2
+\end{center}
+\medskip
+}%
+{%
+\end{fmpage}
+\end{center}
+\end{table}		% need to do something about exercises that follow boxedTable
+}
+
+
+\newcommand{\cran}{\href{http://www.R-project.org/}{CRAN}}
+
+\title{Phylogenetic Independent Contrasts in R}
+
+\author{
+Casey Dunn}
+
+\date{\today}
+
+<<echo=FALSE>>=
+options(width=70)
+@
+
+
+
+\begin{document}
+
+
+\maketitle
+\tableofcontents
+
+%\parindent=0pt
+
+
+\SweaveOpts{
+  	dev="pdf",
+	fig.path="figures/",
+	prompt=FALSE,   
+	comment="#"    # turn off commenting of ouput (but perhaps we should not do this either
+	}
+
+<<setup,echo=FALSE,message=FALSE>>=
+showOriginal=FALSE
+showNew=TRUE
+@ 
+
+\section{Introduction}
+
+This example analysis presents the basics phylogenetic independent contrasts 
+\citep{Felsenstein:1985ua}.
+It expands on the example presented at the R phylogenetics wiki 
+(\url{http://www.r-phylo.org/wiki/HowTo/Phylogenetic_Independent_Contrasts}).
+
+This analysis uses the programming language R.
+In the past decade, a large community of phylogenetic 
+biologists interested in character evolution have written many analysis tools 
+in R. This set of tools provides a rich environment for the study of character 
+evolution. 
+
+
+\section{Getting oriented with R}
+
+R, like python and many other languages, can be used interactively, where you 
+enter a few commands at a time, or in batch mode, where a series of commands are 
+placed in a file and executed all at once. We will use R interactively, and 
+load R code that others have already written for phylogenetic analyses as we 
+go.
+
+There are already \emph{many} general introductions, tutorials, and quick-references 
+for R. I therefore won't provide a background on R itself, we will dive right 
+into some analyses.
+
+There is detailed information on phylogenetic analysis with R at both 
+\href{http://www.r-phylo.org/wiki/Main_Page}{the R phylo wiki} and the 
+\href{http://cran.r-project.org/web/views/Phylogenetics.html}{CRAN task page for phylogenetics}.
+
+For the analyses below, you will need to install the `ape` library in R.
+
+
+\section{Getting set up and loading the data}
+
+Copy the data files (`Geospiza.txt` and `Geospiza.nex`) to a directory on your 
+computer. Open the R interface (which was installed alongside the rest of the 
+R components) or open a terminal window and launch an interactive R session 
+with the command `R`.
+
+Now, change to the directory where your data files are:
+
+<<eval=FALSE>>=
+setwd('DATADIR')
+@
+
+
+Where `DATADIR` is the directory where you put the data files. The R command 
+`setwd()` is much like the shell command `cd` - it controls your working 
+directory.
+
+Load the ape library, which has the functions we will use for phylogenetic 
+independent contrasts:
+
+<<>>=
+library(ape)
+@
+
+Load and prepare the data:
+
+<<eval=FALSE>>=
+geodata<-read.table("Geospiza.txt")
+geotree<-read.nexus("Geospiza.nex")
+@
+
+<<echo=FALSE>>=
+geodata <- read.table("../Geospiza.txt")
+geotree <- read.nexus("../Geospiza.nex")
+@
+
+We now need to remove a taxon in the tree that isn't in the data file.
+
+<<>>=
+geotree <- drop.tip(geotree, "olivacea")
+@
+    
+Plot the tree:
+
+<<>>=
+plot(geotree)
+@
+
+
+And take a look at the character data:
+
+<<>>=
+geodata
+@
+
+Data are available for five different characters for all the taxa in the tree.
+We'll look at two of these characters, wing length and tarsus length. Extract 
+these columns as their own variables to simplify later commands:
+
+<<>>=
+wingL <- geodata$wingL
+tarsusL <- geodata$tarsusL
+names(wingL) <- row.names(geodata)
+names(tarsusL) <- row.names(geodata)
+@
+
+We can now plot these data directly onto the tips of the tree:
+
+<<>>=
+plot( geotree, label.offset = 0.04 )
+tiplabels( round(wingL, 2) )
+@
+
+<<>>=
+plot( geotree, label.offset = 0.04 )
+tiplabels( round(tarsusL, 2) )
+@
+
+
+\section{Calculating independent contrasts}
+
+Calcualte the independent contrasts for each of the variables:
+
+<<>>=
+ContrastwingL <- pic(wingL, geotree)
+ContrasttarsusL <- pic(tarsusL, geotree)
+@
+
+And plot them on the tree:
+
+<<>>=
+plot (geotree)
+nodelabels( round(ContrastwingL, 3), adj = c(0, -0.5), frame="n" )
+nodelabels( round(ContrasttarsusL, 3), adj = c(0, 1), frame="n" )
+@
+
+
+
+
+\section{Investigating the relationships between the variables}
+
+<<>>=
+RegressTarsusWing <- lm( ContrastwingL~ContrasttarsusL -1 )
+summary.lm( RegressTarsusWing )
+@
+
+
+<<>>=
+plot( ContrastwingL, ContrasttarsusL )
+abline( RegressTarsusWing )
+@
+
+
+\section{What if we didn't consider the phylogeny?}
+
+
+<<>>=
+RegressTarsusWingNaive <- lm( wingL~tarsusL )
+summary.lm( RegressTarsusWingNaive )
+@
+
+
+<<>>=
+plot( wingL, tarsusL )
+abline( RegressTarsusWingNaive )
+@
+
+
+\section{Understanding how the contrasts are calculated}
+
+In the above code, the function pic() took care of a few things. It calculated 
+the ancestral character states as well as the contrasts. In this section, let's 
+unpack these steps to walk through how the contrasts were calculated. These 
+steps are not necessary in a typical analysis--they are only presented here to 
+demonstrate how it works.
+
+
+\subsection{Phylogenetic trees in R}
+
+First, let's lift up the hood on how the phylogenetic tree is stored. 
+The tree has 25 nodes--the 13 tips (ie, external nodes) and the 12 internal 
+nodes. These nodes are labeled 1-25, with the tips always coming first. After 
+the tips come the internal nodes. The phy tree object that is implemented in 
+the ape library holds various data about these nodes and the edges (ie, 
+braches) that connect them.
+
+Take a look at the structure of our tree object.
+
+<<>>=
+str(geotree)
+geotree$edge
+geotree$edge.length
+geotree$Nnode
+geotree$tip.label 
+@
+
+The edge attribute describes how the edges connect the the nodes. This is an 
+array with one row per edge and two columns. The edge name is just the row 
+number. The first column gives the starting node of the edge, and the second 
+column gives the ending node.
+
+The edge.length is the lengths of each of the edges. These are organized in 
+the same order as in the edge rows.
+
+Nnode simply holds the number of internal nodes. tip.label gives the names 
+of the external nodes (tips).
+
+The primary take-home message is that each node has a number that refers to it. 
+The observed data correspond to external nodes. Ancestral reconstructions 
+and independent correspond to internal nodes. In addition, each edge has a 
+number that refers to it.
+
+You can plot the node numbers right onto the tree. ape handles tips and 
+internal nodes a bit differently, so we will label them on the same tree with 
+two separate commands:
+
+<<>>=
+plot( geotree )
+tiplabels( 1:13 )
+nodelabels( 14:25 )
+@
+
+Similarly, you can plot the edge labels right onto the tree:
+
+<<>>=
+plot( geotree )
+edgelabels( 1:24 )
+@
+
+
+\subsection{Preparing the character data}
+
+Now take a look at the tarsusL data. Calculate the ancestral character states:
+
+<<>>=
+ancestralTarsusL <- ace(tarsusL, geotree, method='pic')$ace
+ancestralTarsusL
+@
+
+This creates a vector of the reconstructed values of tarsusL at the internal 
+nodes. These values have names 14-25, correspoding to the numbers of the 
+internal nodes. Plot these on the tree, along with the values at the tips:
+
+<<>>=
+plot( geotree )
+tiplabels( round( tarsusL, 2 ) )
+nodelabels( round( ancestralTarsusL, 2 ) )
+@
+
+For later convenience, combine all these node values into a single vector:
+
+<<>>=
+nodeValues <- c( tarsusL, ancestralTarsusL )
+names( nodeValues ) <- 1:25
+@
+
+This provides an overview of the evolution of tarsusL, including both the 
+observed values at the tips and the inferred values at the ancestral nodes.
+
+
+\subsection{Preparing the variances}
+
+The expected variance of a contrast is the sum of the branch lengths across 
+which the contrast is calculated \citep{Felsenstein:1985ua}. Since the contrast 
+for each internal node is calculated from its two immediate descendents, the 
+variance of the contrast for an internal node is the sum of the branch lenghts 
+that arise from the node. This can be calculated from our tree object as 
+follows:
+
+<<>>=
+x <- cbind(geotree$edge[,1], geotree$edge.length)
+bl <- aggregate( x, by=list(x[,1]), FUN=sum )
+v <- bl[,3]
+names( v ) <- bl[,1]
+v
+@
+
+We will use these variances when we scale the contrasts below.
+
+\subsection{Calculating the contrasts}
+
+From \cite{Felsenstein:1985ua}, the scaled contrast at an internal node is the 
+difference in values at the descendent nodes divided by the sum length of the 
+branches connecting them.
+
+Start with node 22, which is the most recent common ancestor of tips 1 and 2. 
+From above, we know that the edge connecting node 22 to node 1 is edge 9, and 
+that the edge connecting node 22 to node 2 is edge 10. You can get their 
+lengths as follows:
+
+<<>>=
+geotree$edge.length[9]
+geotree$edge.length[10]
+@
+
+
+
+Now you have everything you need to calculate the scaled contrast for node 22:
+
+<<>>=
+( nodeValues[1] - nodeValues[2] ) / ( geotree$edge.length[9] + geotree$edge.length[10] )
+@
+
+
+
+\section{How this document was made}
+This document is a computable data report compiled directly from the data. 
+To recreate this file from the data, you will need to install:
+
+\begin{itemize}
+  \item R (\url{http://www.r-project.org}). This document was generated with 
+  version 2.15.2.
+  \item The R package knitr (\url{http://yihui.name/knitr/}), which can be 
+  installed from within R. This document was generated with version 0.9.
+  \item pdflatex, which comes with LaTeX distributions 
+  (\url{http://www.latex-project.org/ftp.html}). This document was generated 
+  with version 3.1415926-2.4-1.40.13.
+\end{itemize}
+
+From within the knitr directory, launch R and run:
+
+<<eval=FALSE>>=
+library(knitr)
+knit("independent_contrasts.Rnw")
+quit()
+@
+
+This will generate a new tex file. To compile this tex file into a pdf 
+file, run the following at the shell command line:
+
+<<eval=FALSE, prompt=FALSE>>=
+pdflatex independent_contrasts.tex
+@
+
+In addition to recreating this document as-is, you can directly edit and add to 
+the analyses in the .Rnw source file. You can also copy the R source code from 
+the .Rnw file.
+
+\bibliographystyle{amnat}
+
+\bibliography{references}
+
+
+\end{document}

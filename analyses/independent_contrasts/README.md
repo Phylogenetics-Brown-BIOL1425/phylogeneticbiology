@@ -35,11 +35,7 @@ There is detailed information on phylogenetic analysis with R at both
 For the analyses below, you will need to install the `ape` library in R.
 
 
-## Phylogenetic Independent Contrast
-
-This example expands on that presented at the 
-(R phylogenetics wiki)[http://www.r-phylo.org/wiki/HowTo/Phylogenetic_Independent_Contrasts].
-The data files are also included in the same directory as this document. 
+## Phylogenetic Independent Contrast 
 
 Copy the data files (`Geospiza.txt` and `Geospiza.nex`) to a directory on your 
 computer. Open the R interface (which was installed alongside the rest of the 
