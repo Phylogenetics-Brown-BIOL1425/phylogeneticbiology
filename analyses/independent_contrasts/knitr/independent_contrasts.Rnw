@@ -283,6 +283,135 @@ plot( wingL, tarsusL )
 
 
 
+
+\section{Understanding how the contrasts are calculated}
+
+In the above code, the function pic() took care of a few things. It calculated 
+the ancestral character states as well as the contrasts. In this section, let's 
+unpack these steps to walk through how the contrasts were calculated. These 
+steps are not necessary in a typical analysis--they are only presented here to 
+demonstrate how it works.
+
+
+\subsection{Phylogenetic trees in R}
+
+First, let's lift up the hood on how the phylogenetic tree is stored. 
+The tree has 25 nodes--the 13 tips (ie, external nodes) and the 12 internal 
+nodes. These nodes are labeled 1-25, with the tips always coming first. After 
+the tips come the internal nodes. The phy tree object that is implemented in 
+the ape library holds various data about these nodes and the edges (ie, 
+braches) that connect them.
+
+Take a look at the structure of our tree object.
+
+<<>>=
+str(geotree)
+geotree$edge
+geotree$edge.length
+geotree$Nnode
+geotree$tip.label 
+@
+
+The edge attribute describes how the edges connect the the nodes. This is an 
+array with one row per edge and two columns. The edge name is just the row 
+number. The first column gives the starting node of the edge, and the second 
+column gives the ending node.
+
+The edge.length is the lengths of each of the edges. These are organized in 
+the same order as in the edge rows.
+
+Nnode simply holds the number of internal nodes. tip.label gives the names 
+of the external nodes (tips).
+
+The primary take-home message is that each node has a number that refers to it. 
+The observed data correspond to external nodes. Ancestral reconstructions 
+and independent correspond to internal nodes. In addition, each edge has a 
+number that refers to it.
+
+You can plot the node numbers right onto the tree. ape handles tips and 
+internal nodes a bit differently, so we will label them on the same tree with 
+two separate commands:
+
+<<>>=
+plot( geotree )
+tiplabels( 1:13 )
+nodelabels( 14:25 )
+@
+
+Similarly, you can plot the edge labels right onto the tree:
+
+<<>>=
+plot( geotree )
+edgelabels( 1:24 )
+@
+
+
+\subsection{Preparing the character data}
+
+Now take a look at the tarsusL data. Calculate the ancestral character states:
+
+<<>>=
+ancestralTarsusL <- ace(tarsusL, geotree, method='pic')$ace
+ancestralTarsusL
+@
+
+This creates a vector of the reconstructed values of tarsusL at the internal 
+nodes. These values have names 14-25, correspoding to the numbers of the 
+internal nodes. Plot these on the tree, along with the values at the tips:
+
+<<>>=
+plot( geotree )
+tiplabels( round( tarsusL, 2 ) )
+nodelabels( round( ancestralTarsusL, 2 ) )
+@
+
+For later convenience, combine all these node values into a single vector:
+
+<<>>=
+nodeValues <- c( tarsusL, ancestralTarsusL )
+names( nodeValues ) <- 1:25
+@
+
+This provides an overview of the evolution of tarsusL, including both the 
+observed values at the tips and the inferred values at the ancestral nodes.
+
+We will use these variances when we scale the contrasts below.
+
+\subsection{Calculating the contrasts}
+
+From \cite{Felsenstein:1985ua}, the contrast at an internal node is the 
+difference in values at the descendent nodes.
+
+Start with node 22, which is the most recent common ancestor of tips 1 and 2. 
+
+<<>>=
+contrast.22 <- ( nodeValues[1] - nodeValues[2] )
+contrast.22
+@
+
+
+From above, we know that the edge connecting node 22 to node 1 is edge 9, and 
+that the edge connecting node 22 to node 2 is edge 10. You can get their 
+lengths as follows:
+
+<<>>=
+geotree$edge.length[9]
+geotree$edge.length[10]
+@
+
+
+
+Now you have everything you need to calculate the scaled contrast for node 22:
+
+<<>>=
+( contrast.22 ) / sqrt( geotree$edge.length[9] + geotree$edge.length[10] )
+@
+
+
+
+
+
+
 \section{How this document was made}
 This document is a computable data report compiled directly from the data. 
 To recreate this file from the data, you will need to install:
