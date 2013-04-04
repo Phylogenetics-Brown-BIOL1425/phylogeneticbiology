@@ -283,6 +283,211 @@ plot( wingL, tarsusL )
 
 
 
+\section{Understanding how the contrasts are calculated}
+
+In the above code, the function pic() took care of all the steps needed to 
+calculate independent contrasts. In this section, we walk through these steps 
+one by one to illustrate each of them.
+
+We'll use a smaller tree and dataset than above. The dataset is the example 
+dataset that is provided with the pic() function.
+
+The following commands load the data and tree:
+
+<<>>=
+tree.primates <- read.tree(text="((((Homo:0.21,Pongo:0.21):0.28,Macaca:0.49):0.13,Ateles:0.62):0.38,Galago:1.00);")
+
+X <- c(4.09434, 3.61092, 2.37024, 2.02815, -1.46968)
+Y <- c(4.74493, 3.33220, 3.36730, 2.89037, 2.30259)
+names(X) <- names(Y) <- c("Homo", "Pongo", "Macaca", "Ateles", "Galago")
+@
+
+
+\subsection{Phylogenetic trees in R}
+
+Before we get into the calculations themselves, let's lift up the hood on how 
+the phylogenetic tree is stored. 
+The phy tree object that is implemented in 
+the ape library holds various data about these nodes and the edges (ie, 
+braches) that connect them.
+
+Take a look at the structure of our tree object.
+
+<<>>=
+str(tree.primates)
+tree.primates$edge
+tree.primates$edge.length
+tree.primates$Nnode
+tree.primates$tip.label 
+@
+
+The edge matrix describes how the edges connect the the nodes. It has one row 
+per edge, and two columns. The first column gives the starting node of the edge, and the second 
+column gives the ending node. The edge number is just the row 
+number. 
+
+The edge.length vector contains the lengths of each of the edges.
+
+Nnode simply holds the number of internal nodes. tip.label gives the names 
+of the external nodes (tips).
+
+The primary take-home message is that each node has a number that refers to it. 
+The observed data correspond to external nodes. Ancestral reconstructions 
+and independent contrasts will correspond to internal nodes. In addition, each 
+edge has a number that refers to it. We can use this number to look up the 
+edge length.
+
+You can plot the node numbers right onto the tree. ape handles tips and 
+internal nodes a bit differently, so we will label them on the same tree with 
+two separate commands:
+
+<<>>=
+plot( tree.primates, label.offset = 0.04 )
+tiplabels( 1:5 )
+nodelabels( 6:9 )
+@
+
+Similarly, you can plot the edge labels right onto the tree:
+
+<<>>=
+plot( tree.primates )
+edgelabels( 1:8 )
+@
+
+And the branch lengths:
+
+<<>>=
+plot( tree.primates )
+edgelabels( round(tree.primates$edge.length,2) )
+@
+
+\subsection{Adjusting the branch lengths}
+
+The lengths of internal branches must be adjusted to reflect the increased 
+variance associated with the inference of ancestral character states. Below, 
+we create a copy of all the branch lengths and then correct the lengths of the 
+three internal branches.
+
+<<>>=
+v <- tree.primates$edge.length
+
+v[3] <- v[3] + ( v[4] * v[5] ) / ( v[4] + v[5] )
+v[2] <- v[2] + ( v[3] * v[6] ) / ( v[3] + v[6] )
+v[1] <- v[1] + ( v[7] * v[2] ) / ( v[7] + v[2] )
+
+plot( tree.primates )
+edgelabels( round(a,2) )
+@
+
+\subsection{Preparing the character data}
+
+The internal character states are calculated as weighted averages of the 
+states at the descendant nodes. This calculation is described by Equation 3 of 
+\cite{Felsenstein:1985ua}. Since the ancestral character state of the root node 
+isn't used in any contrast calculations, we won't worry about it.
+
+
+<<>>=
+
+aX.9 <- ( X[1]*(1/v[4]) + X[2]*(1/v[5]) ) / ( (1/v[4]) + (1/v[5]) )
+aX.8 <- ( X[3]*(1/v[6]) + aX.9*(1/v[3]) ) / ( (1/v[3]) + (1/v[6]) )
+aX.7 <- ( X[4]*(1/v[7]) + aX.8*(1/v[2]) ) / ( (1/v[7]) + (1/v[2]) )
+
+names(aX.9) <- NULL
+names(aX.8) <- NULL
+names(aX.7) <- NULL
+
+aX.9
+aX.8
+aX.7
+
+@
+
+A slightly different but equivalent formulation of these calculations is 
+presented for the calculations of $X_i$ in Table 1 of \cite{Felsenstein:1985ua}. 
+According to this alternative formulation, the ancestral character states for 
+nodes 9 and 8 would be calculated as:
+
+<<>>=
+aX.9.new <- ( X[1]*v[5] + X[2]*v[4] ) / ( v[4] + v[5] )
+aX.8.new <- ( X[3]*v[3] + aX.9*v[6] ) / ( v[3] + v[6] )
+
+names(aX.9.new) <- NULL
+names(aX.8.new) <- NULL
+
+aX.9.new
+aX.8.new
+@
+
+
+We can also calculate the ancestral character states with the ape function 
+ace:
+
+<<>>=
+aX <- ace(X, tree.primates, method = "pic", scaled = FALSE)$ace
+aX
+@
+
+Note that the values for the states at nodes 7-9 are the same as those we 
+calculated above. Now, plot the observed values and inferred ancestral 
+character states:
+
+<<>>=
+plot(tree.primates, label.offset = 0.04)
+tiplabels(round(X, 2))
+nodelabels( round(aX, 2) )
+@
+
+For later convenience, combine all these state values into a single vector:
+
+<<>>=
+nX <- c( X, aX )
+names( nX ) <- 1:9
+nX
+@
+
+\subsection{Calculating the contrasts}
+
+From \cite{Felsenstein:1985ua}, the contrast at an internal node is the 
+difference in values at the descendent nodes:
+
+<<>>=
+contrasts <- c( nX[7]-nX[5], nX[8]-nX[4],  nX[9]-nX[3],  nX[1]-nX[2] )
+names(contrasts) <- 6:9
+contrasts
+@
+
+That's it. The independent contrasts are just a series of subtractions.
+
+
+Now, compare the values we calculated to what we get with the pic function:
+
+<<>>=
+pic.X.ns <- pic(X, tree.primates, scaled = FALSE, var.contrasts = TRUE)
+pic.X.ns
+@
+
+The values are the same as what we got above.
+
+For most downstream calculations, we want to scale the contrasts to normalize 
+the expected differences according to branch lengths. I turned off this 
+scaling above so that we could directly compare the pic() results to our own 
+results.
+
+The branch length is proportional to the variance. To normalize, we'll divide 
+by the standard deviation. The square root of the variance of each contrast 
+is the standard deviation for that contrast:
+
+<<>>=
+pic.X.ns[,1]/sqrt( pic.X.ns[,2] )
+@
+
+These scaled vales are the same as what we get when we have pic() do the 
+scaling for us:
+
+<<>>=
+pic(X, tree.primates, scaled = TRUE, var.contrasts = TRUE)
+@
 
 
 \section{How this document was made}
