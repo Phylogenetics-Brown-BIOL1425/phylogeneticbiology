@@ -295,7 +295,8 @@ dataset that is provided with the pic() function.
 The following commands load the data and tree:
 
 <<>>=
-tree.primates <- read.tree(text="((((Homo:0.21,Pongo:0.21):0.28,Macaca:0.49):0.13,Ateles:0.62):0.38,Galago:1.00);")
+t<-"((((Homo:0.21,Pongo:0.21):0.28,Macaca:0.49):0.13,Ateles:0.62):0.38,Galago:1.00);"
+tree.primates <- read.tree(text=t)
 
 X <- c(4.09434, 3.61092, 2.37024, 2.02815, -1.46968)
 Y <- c(4.74493, 3.33220, 3.36730, 2.89037, 2.30259)
