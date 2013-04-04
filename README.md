@@ -88,14 +88,15 @@ Lecture: `lectures/Lecture_9.pdf`
 Using phylogenies to study character evolution. Reading: review last week's 
 reading.
 
-- Monday, April 8. 
+- Monday, April 8. Phylogenetic analysis in R continued.
 
 - Wednesday, April 10. Group presentations: Matthew Leonard, Po Bhattacharyya, Samuel 
 Church present the paper 
 [doi:10.1126/science.1157704](http://dx.doi.org/10.1126/science.1157704);
 Kristin Stover, Lillian Hancock, and Rosalyn 
 Price-Waldman present the paper 
-[doi:10.1098/rspb.2011.2301](http://dx.doi.org/10.1098/rspb.2011.2301).
+[doi:10.1098/rspb.2011.2301](http://dx.doi.org/10.1098/rspb.2011.2301). Lecture: 
+populations and phylogenies. Reading: Baum and Smith Chapter 6.
 
 - Monday, April 15. 
 
@@ -103,9 +104,9 @@ Price-Waldman present the paper
 Berger present the paper
 [doi:10.1371/journal.pgen.1000144](http://dx.doi.org/10.1371/journal.pgen.1000144)
 
-- Monday, April 22. 
+- Monday, April 22. Lecture: Phylogenomics. 
 
-- Wednesday, April 24.
+- Wednesday, April 24. Lecture: Phylogenies in time. Reading: Baum and Smith Chapter 11.
  
 - Monday, April 29. 
 
