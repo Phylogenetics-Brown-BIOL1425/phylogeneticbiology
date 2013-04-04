@@ -286,36 +286,46 @@ plot( wingL, tarsusL )
 
 \section{Understanding how the contrasts are calculated}
 
-In the above code, the function pic() took care of a few things. It calculated 
-the ancestral character states as well as the contrasts. In this section, let's 
-unpack these steps to walk through how the contrasts were calculated. These 
-steps are not necessary in a typical analysis--they are only presented here to 
-demonstrate how it works.
+In the above code, the function pic() took care of all the steps needed to 
+calculate independent contrasts. In this section, we walk through these steps 
+one by one to illustrate each of them.
+
+We'll use a smaller tree and dataset than above. The dataset is the example 
+dataset that is provided with the pic() function.
+
+The following commands load the data and tree:
+
+<<>>=
+tree.primates <- read.tree(text="((((Homo:0.21,Pongo:0.21):0.28,Macaca:0.49):0.13,Ateles:0.62):0.38,Galago:1.00);")
+
+X <- c(4.09434, 3.61092, 2.37024, 2.02815, -1.46968)
+Y <- c(4.74493, 3.33220, 3.36730, 2.89037, 2.30259)
+names(X) <- names(Y) <- c("Homo", "Pongo", "Macaca", "Ateles", "Galago")
+@
 
 
 \subsection{Phylogenetic trees in R}
 
-First, let's lift up the hood on how the phylogenetic tree is stored. 
-The tree has 25 nodes--the 13 tips (ie, external nodes) and the 12 internal 
-nodes. These nodes are labeled 1-25, with the tips always coming first. After 
-the tips come the internal nodes. The phy tree object that is implemented in 
+Before we get into the calculations themselves, let's lift up the hood on how 
+the phylogenetic tree is stored. 
+The phy tree object that is implemented in 
 the ape library holds various data about these nodes and the edges (ie, 
 braches) that connect them.
 
 Take a look at the structure of our tree object.
 
 <<>>=
-str(geotree)
-geotree$edge
-geotree$edge.length
-geotree$Nnode
-geotree$tip.label 
+str(tree.primates)
+tree.primates$edge
+tree.primates$edge.length
+tree.primates$Nnode
+tree.primates$tip.label 
 @
 
-The edge attribute describes how the edges connect the the nodes. This is an 
-array with one row per edge and two columns. The edge name is just the row 
-number. The first column gives the starting node of the edge, and the second 
-column gives the ending node.
+The edge matrix describes how the edges connect the the nodes. It has one row 
+per edge, and two columns. The first column gives the starting node of the edge, and the second 
+column gives the ending node. The edge number is just the row 
+number. 
 
 The edge.length is the lengths of each of the edges. These are organized in 
 the same order as in the edge rows.
@@ -333,26 +343,89 @@ internal nodes a bit differently, so we will label them on the same tree with
 two separate commands:
 
 <<>>=
-plot( geotree )
-tiplabels( 1:13 )
-nodelabels( 14:25 )
+plot( tree.primates, label.offset = 0.04 )
+tiplabels( 1:5 )
+nodelabels( 6:9 )
 @
 
 Similarly, you can plot the edge labels right onto the tree:
 
 <<>>=
-plot( geotree )
-edgelabels( 1:24 )
+plot( tree.primates )
+edgelabels( 1:8 )
+@
+
+And the branch lengths:
+
+<<>>=
+plot( tree.primates )
+edgelabels( round(tree.primates$edge.length,2) )
 @
 
 
-\subsection{Preparing the character data}
+\subsection{Adjusting the branch lengths}
 
-Now take a look at the tarsusL data. Calculate the ancestral character states:
+The lengths of internal branches must be adjusted to reflect the increased 
+variance associated with the inference of ancestral character states. There are 
+only three internal branch lengths, so we'll take care of those by hand.
 
 <<>>=
-ancestralTarsusL <- ace(tarsusL, geotree, method='pic')$ace
-ancestralTarsusL
+v <- tree.primates$edge.length
+
+v[3] <- v[3] + ( v[4] * v[5] ) / ( v[4] + v[5] )
+v[2] <- v[2] + ( v[3] * v[6] ) / ( v[3] + v[6] )
+v[1] <- v[1] + ( v[7] * v[2] ) / ( v[7] + v[2] )
+
+plot( tree.primates )
+edgelabels( round(a,2) )
+@
+
+\subsection{Preparing the character data}
+
+The internal character states are calculated as weighted averages of the 
+states at the descendant nodes. This calculation is described by Equation 3 of 
+\cite{Felsenstein:1985ua}.
+
+
+<<>>=
+
+aX.9 <- ( X[1]*(1/v[4]) + X[2]*(1/v[5]) ) / ( (1/v[4]) + (1/v[5]) )
+aX.8 <- ( X[3]*(1/v[6]) + aX.9*(1/v[3]) ) / ( (1/v[3]) + (1/v[6]) )
+aX.7 <- ( X[4]*(1/v[7]) + aX.8*(1/v[2]) ) / ( (1/v[7]) + (1/v[2]) )
+
+names(aX.9) <- NULL
+names(aX.8) <- NULL
+names(aX.7) <- NULL
+
+aX.9
+aX.8
+aX.7
+
+@
+
+A slightly different but equivalent formulation of these calculations is 
+presented for the calculations of $X_i$ in Table 1 of \cite{Felsenstein:1985ua}. 
+According to this alternative formulation, the ancestral character state for 
+nodes 9 and 8 would be calculated as:
+
+<<>>=
+aX.9.new <- ( X[1]*v[5] + X[2]*v[4] ) / ( v[4] + v[5] )
+aX.8.new <- ( X[3]*v[3] + aX.9*v[6] ) / ( v[3] + v[6] )
+
+names(aX.9.new) <- NULL
+names(aX.8.new) <- NULL
+
+aX.9.new
+aX.8.new
+@
+
+
+
+Now take a look at the X data. Calculate the ancestral character states:
+
+<<>>=
+aX <- ace(X, tree.primates, method = "pic", scaled = FALSE)$ace
+aX
 @
 
 This creates a vector of the reconstructed values of tarsusL at the internal 
@@ -360,16 +433,17 @@ nodes. These values have names 14-25, correspoding to the numbers of the
 internal nodes. Plot these on the tree, along with the values at the tips:
 
 <<>>=
-plot( geotree )
-tiplabels( round( tarsusL, 2 ) )
-nodelabels( round( ancestralTarsusL, 2 ) )
+plot(tree.primates, label.offset = 0.04)
+tiplabels(round(X, 2))
+nodelabels( round(aX, 2) )
 @
 
 For later convenience, combine all these node values into a single vector:
 
 <<>>=
-nodeValues <- c( tarsusL, ancestralTarsusL )
-names( nodeValues ) <- 1:25
+nX <- c( X, aX )
+names( nX ) <- 1:9
+nX
 @
 
 This provides an overview of the evolution of tarsusL, including both the 
@@ -382,21 +456,21 @@ We will use these variances when we scale the contrasts below.
 From \cite{Felsenstein:1985ua}, the contrast at an internal node is the 
 difference in values at the descendent nodes.
 
-Start with node 22, which is the most recent common ancestor of tips 1 and 2. 
 
 <<>>=
-contrast.22 <- ( nodeValues[1] - nodeValues[2] )
-contrast.22
+contrasts <- c( nX[7]-nX[5], nX[8]-nX[4],  nX[9]-nX[3],  nX[1]-nX[2] )
+names(contrasts) <- 6:9
+contrasts
 @
 
 
-From above, we know that the edge connecting node 22 to node 1 is edge 9, and 
-that the edge connecting node 22 to node 2 is edge 10. You can get their 
-lengths as follows:
+Now, compare this to what we get with the pic function:
 
 <<>>=
-geotree$edge.length[9]
-geotree$edge.length[10]
+pic.X.ns <- pic(X, tree.primates, scaled = FALSE, var.contrasts = TRUE)
+pic.X.ns
+pic.X.ns[,1]/sqrt( pic.X.ns[,2] )
+pic(X, tree.primates, scaled = TRUE, var.contrasts = TRUE)
 @
 
 
@@ -404,7 +478,7 @@ geotree$edge.length[10]
 Now you have everything you need to calculate the scaled contrast for node 22:
 
 <<>>=
-( contrast.22 ) / sqrt( geotree$edge.length[9] + geotree$edge.length[10] )
+
 @
 
 
