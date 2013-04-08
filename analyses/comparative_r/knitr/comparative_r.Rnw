@@ -142,7 +142,8 @@ analyses below, you will need to install the following libraries in R:
 
 Update them if they are not the latest version.
 
-\section{Simulating trees}
+\section{Simulations}
+\subsection{Simulating trees}
 
 First, load ape:
 
@@ -153,7 +154,7 @@ library(ape)
 The simplest way to generate a random tree is with the rcoal() function:
 
 <<>>=
-t <- rcoal( 8 )
+t <- rcoal( 20 )
 plot( t )
 @
 
@@ -162,18 +163,20 @@ trees, the related function rtree() can be used to generate trees whose tips
 are not contemporaneous.
 
 
-\section{Simulating phenotypic data on trees}
+\subsection{Simulating phenotypic data on trees}
 
 The sim.char() function from the geiger library is a convenient tool for 
 simulating character evolution. 
 
-We'll simulate two characters, each with a variance of 1 and a covariance with 
-each other of 0.3. First, make a variance-covariance matrix describes this 
-relationship:
+We'll simulate three characters, each with a variance of 1. The fist two 
+characters will have a covariance of 0.7 with each other. The third characters 
+will have a covariance of 0 with the other characters. First, make a 
+variance-covariance matrix describes this relationship:
 
 <<>>=
-vcv <- c( 1, 0.3, 0.3, 1 )
-dim( vcv ) <- c( 2, 2 )
+vcv <- diag( 3 )
+vcv[1,2] <- 0.7
+vcv[2,1] <- 0.7
 vcv
 @
 
@@ -182,22 +185,25 @@ Now, generate 500 simulated datasets on tree t according to vcv:
 
 <<>>=
 library(geiger)
-xy <- sim.char( t, vcv, nsims = 500, model = "brownian", root.state = 1 )
-xy[,,1]
+D <- sim.char( t, vcv, nsims = 500, model = "brownian", root.state = 0 )
+D[,,1]
 @
 
 This shows just the first simulation.
 
-You can plot the data right onto the tree. The phylobase library has some nice 
-tools for plotting miltivariate data:
+You can plot the data right onto the tree. The adephylo library has some nice 
+tools for plotting miltivariate data, but we first need to combine the tree 
+and data into a phylo4d object:
 
 
 <<>>=
 library( adephylo )
-xy4d <- phylo4d( t, xy[,,1] )
-table.phylo4d( xy4d, box=FALSE )
-
+D4 <- phylo4d( t, D[,,1] )
+table.phylo4d( D4, box=FALSE )
 @
+
+
+
 
 
 
