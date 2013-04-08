@@ -154,7 +154,7 @@ library(ape)
 The simplest way to generate a random tree is with the rcoal() function:
 
 <<>>=
-t <- rcoal( 20 )
+t <- rcoal( 30 )
 plot( t )
 @
 
@@ -180,12 +180,12 @@ vcv[2,1] <- 0.7
 vcv
 @
 
-Now, generate 500 simulated datasets on tree t according to vcv:
+Now, generate multiple simulated datasets on tree t according to vcv:
 
 
 <<>>=
 library(geiger)
-D <- sim.char( t, vcv, nsims = 500, model = "brownian", root.state = 0 )
+D <- sim.char( t, vcv, nsims = 100, model = "brownian", root.state = 0 )
 D[,,1]
 @
 
@@ -203,8 +203,62 @@ table.phylo4d( D4, box=FALSE )
 @
 
 
+\section{Independent contrasts}
+
+Now construct independent contrasts for each of the three variables:
+
+<<>>=
+ic1 <- pic( D[,1,1], t )
+ic2 <- pic( D[,2,1], t )
+ic3 <- pic( D[,3,1], t )
+
+cov( cbind( ic1, ic2, ic3 ) )
+@
 
 
+
+
+
+This matrix is based on a single simulation, and will differ by chance from the 
+original vcv matrix that we defined above. 
+
+
+
+\section{Phylogenetic signal}
+
+Many studies use $K$ \citep{Blomberg:2003jg} to assess the 
+``phylogenetic signal'' of a character. Under a Brownian motion model on a 
+phylogenetic tree, a $K$ of 1 is expected. For $K<1$, relatives resemble each 
+other less than expected. For $K>1$, relatives resemble each 
+other more than expected.
+
+This measure has been implemented in the picante library. 
+
+
+<<>>=
+library(picante)
+Kcalc( D[,1,1], t )
+@
+
+Now take a look at $K$ for a variable that has been simulated without 
+consideration of the tree:
+
+<<>>=
+ntips <- length( t$tip.label )
+x <- rnorm( ntips, mean=0, sd=1 )
+names(x) <- names( D[,1,1] ) 
+Kcalc( x, t )
+@
+
+Neither of these values are exactly 1, but it is not clear if the difference 
+is significant. This can be addressed via randomization tests as implemented 
+by the phylosignal() function
+
+
+<<>>=
+phylosignal( D[,1,1], t )
+phylosignal( x, t )
+@
 
 
 \section{How this document was made}
