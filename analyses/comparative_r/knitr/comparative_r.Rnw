@@ -129,11 +129,16 @@ phylogenetic data with R.
 There is detailed information on phylogenetic analysis with R at both 
 \href{http://www.r-phylo.org/wiki/Main_Page}{the R phylo wiki} and the 
 \href{http://cran.r-project.org/web/views/Phylogenetics.html}{CRAN task page for phylogenetics}.
+Also consult the excellent book by \cite{Paradis:2012wn}.
 
 Make sure that you have the most recent version of R installed. For the 
 analyses below, you will need to install the following libraries in R:
-* ape
-* geiger
+
+\begin{itemize}
+\item ape
+\item geiger
+\item phylobase
+\end{itemize}
 
 Update them if they are not the latest version.
 
@@ -145,14 +150,54 @@ First, load ape:
 library(ape)
 @
 
-The simplest way to generate a random tree is with the rtree() function:
+The simplest way to generate a random tree is with the rcoal() function:
 
 <<>>=
-plot( rtree( 8 ) )
+t <- rcoal( 8 )
+plot( t )
 @
 
-The only required argument is the number of taxa. Unless otherwise specified, 
-the branch lengths are drawn from a uniform distribution between 0 and 1. 
+The only required argument is the number of taxa. rcoal() generates ultrametric 
+trees, the related function rtree() can be used to generate trees whose tips 
+are not contemporaneous.
+
+
+\section{Simulating phenotypic data on trees}
+
+The sim.char() function from the geiger library is a convenient tool for 
+simulating character evolution. 
+
+We'll simulate two characters, each with a variance of 1 and a covariance with 
+each other of 0.3. First, make a variance-covariance matrix describes this 
+relationship:
+
+<<>>=
+vcv <- c( 1, 0.3, 0.3, 1 )
+dim( vcv ) <- c( 2, 2 )
+vcv
+@
+
+Now, generate 500 simulated datasets on tree t according to vcv:
+
+
+<<>>=
+library(geiger)
+xy <- sim.char( t, vcv, nsims = 500, model = "brownian", root.state = 1 )
+xy[,,1]
+@
+
+This shows just the first simulation.
+
+You can plot the data right onto the tree. The phylobase library has some nice 
+tools for plotting miltivariate data:
+
+
+<<>>=
+library( adephylo )
+xy4d <- phylo4d( t, xy[,,1] )
+table.phylo4d( xy4d, box=FALSE )
+
+@
 
 
 
