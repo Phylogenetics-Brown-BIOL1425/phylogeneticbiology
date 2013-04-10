@@ -95,8 +95,8 @@ Church present the paper
 [doi:10.1126/science.1157704](http://dx.doi.org/10.1126/science.1157704);
 Kristin Stover, Lillian Hancock, and Rosalyn 
 Price-Waldman present the paper 
-[doi:10.1098/rspb.2011.2301](http://dx.doi.org/10.1098/rspb.2011.2301). Lecture: 
-populations and phylogenies. Reading: Baum and Smith Chapter 6.
+[doi:10.1098/rspb.2011.2301](http://dx.doi.org/10.1098/rspb.2011.2301). Lecture 11.  
+Populations and phylogenies. Reading: Baum and Smith Chapter 6.
 
 - Monday, April 15. 
 
