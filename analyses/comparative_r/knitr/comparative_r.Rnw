@@ -109,17 +109,17 @@ options(width=70)
 %\parindent=0pt
 
 
-\SweaveOpts{
-  	dev="pdf",
-	fig.path="figures/",
-	prompt=FALSE,   
-	comment="#"    # turn off commenting of ouput (but perhaps we should not do this either
-	}
+
 
 <<setup,echo=FALSE,message=FALSE>>=
 showOriginal=FALSE
 showNew=TRUE
 @ 
+
+
+<<echo=FALSE>>=
+rm(list = ls())
+@
 
 \section{Introduction}
 
@@ -185,7 +185,7 @@ Now, generate multiple simulated datasets on tree t according to vcv:
 
 <<>>=
 library(geiger)
-D <- sim.char( t, vcv, nsims = 100, model = "brownian", root.state = 0 )
+D <- sim.char( t, vcv, nsim = 100, model = "BM", root = 0 )
 D[,,1]
 @
 
@@ -266,13 +266,11 @@ This document is a computable data report compiled directly from the data.
 To recreate this file from the data, you will need to install:
 
 \begin{itemize}
-  \item R (\url{http://www.r-project.org}). This document was generated with 
-  version 2.15.2.
+  \item R (\url{http://www.r-project.org}).
   \item The R package knitr (\url{http://yihui.name/knitr/}), which can be 
-  installed from within R. This document was generated with version 0.9.
+  installed from within R.
   \item pdflatex, which comes with LaTeX distributions 
-  (\url{http://www.latex-project.org/ftp.html}). This document was generated 
-  with version 3.1415926-2.4-1.40.13.
+  (\url{http://www.latex-project.org/ftp.html}).
 \end{itemize}
 
 From within the knitr directory, launch R and run:
@@ -293,6 +291,13 @@ pdflatex comparative_r.tex
 In addition to recreating this document as-is, you can directly edit and add to 
 the analyses in the .Rnw source file. You can also copy the R source code from 
 the .Rnw file.
+
+The following shows the versions of R software that were used to generate this 
+document:
+
+<<>>=
+sessionInfo()
+@
 
 \bibliographystyle{amnat}
 
