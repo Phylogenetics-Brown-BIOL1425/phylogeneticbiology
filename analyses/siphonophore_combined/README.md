@@ -239,8 +239,9 @@ A consensus tree is generated as follows:
     java -jar ~/bin/phyutility_2_2_4/phyutility.jar -con -t 0.5 \
     -in siph_combined.run1.t.burned -out consensus.tre
 
-### Assessing leaf stability
+### Identify unstable taxa
 
 Find unstable taxa:
 
-	java -jar ~/bin/phyutility_2_2_4/phyutility.jar -ls 
+	java -jar ~/bin/phyutility_2_2_4/phyutility.jar -ls -in \
+	siph_combined.run1.t.burned.sub > stability.txt
