@@ -1,0 +1,52 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=42;
+	taxlabels
+	Bargmannia_elongata
+	Gymnopraia_lapislazula
+	Athorybia_rosacea
+	Stephalia_dilata
+	Vogtia_pentacantha
+	Forskalia_asymmetrica
+	Craseoa_lathetica
+	Cordagalma_cordiforme
+	Rosacea_flaccida
+	Clausophyid_sp
+	Abylopsis_tetragona
+	Diphyes_dispar
+	Hippopodius_hippopus
+	Chelophyes_appendiculata
+	Bargmannia_amoena
+	Agalma_elegans
+	Physalia_physalis
+	Stephanomia_amphytridis
+	Nanomia_bijuga
+	Physophora_hydrostatica
+	Forskalia_tholoides
+	Velella_velella
+	Forskalia_edwardsi
+	Lensia_conoidea
+	Praya_dubia
+	Muggiaea_atlantica
+	Clausophyes_ovata
+	Halistemma_rubrum
+	Rhizophysa_filiformis
+	Erenna_sp
+	Sulculeolaria_quadrivalvis
+	Rhizophysa_eysenhardti
+	Nectopyramis_natans
+	Agalma_okeni
+	Apolemia_sp
+	Chuniphyes_multidentata
+	Forskalia_formosa
+	Sphaeronectes_gracilis
+	Porpita_porpita
+	Agalma_clausi
+	Nectadamas_diomedeae
+	Vogtia_glabra
+;
+end;
+
+begin trees;
+	tree [&u] tree_1 = (Lensia_conoidea:0.02905963010953066,Sulculeolaria_quadrivalvis:0.038826061020996866,(Muggiaea_atlantica:0.04641899787137391,(Chelophyes_appendiculata:0.10206705876813539,(Sphaeronectes_gracilis:0.11979803916184974,((Clausophyid_sp:0.032728944772291726,((Craseoa_lathetica:0.04748780721106512,((((Apolemia_sp:0.016822752558138077,((Physalia_physalis:0.05217802529272124,(Rhizophysa_filiformis:0.014131280710527145,Rhizophysa_eysenhardti:0.014809564839262336)[&"Consensus support(%)"=99.78952907129703]:0.009648779214802884)[&"Consensus support(%)"=100.0]:0.02493573147147505,(Velella_velella:0.02232990921506839,Porpita_porpita:0.015449873542551595)[&"Consensus support(%)"=100.0]:0.12445255878417445)[&"Consensus support(%)"=100.0]:0.01856194595516227)[&"Consensus support(%)"=100.0]:0.009677693407135344,(Bargmannia_elongata:0.009910317876214925,Bargmannia_amoena:0.009421825300762373)[&"Consensus support(%)"=100.0]:0.02291763990848798)[&"Consensus support(%)"=98.57932123125494]:0.006106645102081934,(((Physophora_hydrostatica:0.029573720272683207,(Forskalia_asymmetrica:0.02652009038027512,(Forskalia_formosa:0.012953734437723267,(Forskalia_tholoides:0.020064129906282688,Forskalia_edwardsi:0.004239106314657145)[&"Consensus support(%)"=99.55274927650618]:0.012449774764413387)[&"Consensus support(%)"=89.13443830570903]:0.011317065085278164)[&"Consensus support(%)"=100.0]:0.050107746722149626)[&"Consensus support(%)"=100.0]:0.011479395496681002,(Nanomia_bijuga:0.03039839464277944,(Halistemma_rubrum:0.012203730828617131,((Athorybia_rosacea:0.009067195046853927,Agalma_okeni:0.006000152145161925)[&"Consensus support(%)"=96.23783214943435]:0.004151504387664552,(Agalma_elegans:0.004811831138276778,Agalma_clausi:0.004626993986662967)[&"Consensus support(%)"=59.957905814259405]:0.0028018628823151203)[&"Consensus support(%)"=99.97369113391213]:0.00790010309464055)[&"Consensus support(%)"=99.76322020520915]:0.006371567976528547)[&"Consensus support(%)"=100.0]:0.013283955110890323)[&"Consensus support(%)"=99.78952907129703]:0.006149730271210967,(Stephalia_dilata:0.009326600165108298,Cordagalma_cordiforme:0.12883400351382496)[&"Consensus support(%)"=72.63877926861352]:0.004349962863366011,(Stephanomia_amphytridis:0.006516082141176539,Erenna_sp:0.009747669981188117)[&"Consensus support(%)"=58.69508024204156]:0.0022388967941980647)[&"Consensus support(%)"=94.31728492501973]:0.003961160356948347)[&"Consensus support(%)"=99.92107340173638]:0.012452572609075467,(Praya_dubia:0.028130657546263864,(Nectopyramis_natans:0.01617132007074552,Nectadamas_diomedeae:0.023744716977062298)[&"Consensus support(%)"=99.97369113391213]:0.008863513954706753)[&"Consensus support(%)"=55.74848724019995]:0.003597636158987987)[&"Consensus support(%)"=99.84214680347277]:0.018453533827850466)[&"Consensus support(%)"=89.26598263614838]:0.013304586241868888,(Gymnopraia_lapislazula:0.0887240172832315,(Rosacea_flaccida:0.07421582775559128,(Vogtia_pentacantha:0.06600945780296415,(Hippopodius_hippopus:0.08972666573956385,Vogtia_glabra:0.04582447896597705)[&"Consensus support(%)"=99.57905814259405]:0.02988792399547034)[&"Consensus support(%)"=100.0]:0.17824831843218836)[&"Consensus support(%)"=70.90239410681399]:0.02379839223578686)[&"Consensus support(%)"=69.79742173112339]:0.014430210542002097)[&"Consensus support(%)"=97.0270981320705]:0.016134337942058822)[&"Consensus support(%)"=100.0]:0.04606531308613834,(Clausophyes_ovata:0.025892870583922933,Chuniphyes_multidentata:0.047664512047240135)[&"Consensus support(%)"=96.36937647987371]:0.012819844608673109)[&"Consensus support(%)"=100.0]:0.03931902886390725)[&"Consensus support(%)"=100.0]:0.06532334857800326,(Abylopsis_tetragona:0.05238592862638203,Diphyes_dispar:0.046821926236391725)[&"Consensus support(%)"=98.81610102604577]:0.017276224848579366)[&"Consensus support(%)"=98.00052617732176]:0.015743635055445012)[&"Consensus support(%)"=100.0]:0.024924001008714915);
+end;

@@ -184,4 +184,63 @@ The first command loads the data. The second one summarizes the trees. More
 information on the `sumt` command is available at the 
 [MrBayes site](http://mrbayes.sourceforge.net/Help/sumt.html).
 
+## Exploring the trees with phyutility
 
+Phyutility is a tool for batch manipulation of trees. It performs some routine 
+tasks, and implements several new methods.
+
+### Installing Phyutility
+
+Phyutility can be downloaded [here](http://code.google.com/p/phyutility/). 
+Download and expand it, and move the new folder to `~/bin`.
+
+Phyutility is is written in Java, a language that requires a "runtime engine" 
+in order to execute. You may already have Java installed. If not, it can be 
+downloaded [here](http://java.com/en/download/index.jsp).
+
+There are a few ways to call Phyutility at the command line. Here we will 
+launch java directly, and pass it the location of the phyutility program with 
+the `-jar` argument:
+
+    java -jar ~/bin/phyutility_2_2_4/phyutility.jar [phyutility arguments...]
+
+The manual is included in the unpacked files, take a look at it to get a feel 
+for the program.
+
+
+### Preparing the files for this example
+
+We will subsample the posterior distribution of trees to save time and make it 
+easier to pass files around in class. Here is how this is done (you can skip 
+these steps if you already have the subsampled trees):
+
+Copy the tree file:
+
+    cp siph_combined.run1.t siph_combined.run1.t.burned
+    
+Open `siph_combined.run1.t.burned` in text wrangler, delete all trees before 
+100000 generations. This is a sample way to manually burn in the trees.
+
+
+Now do the subsampling. We'll just delete lines that don't have a tree 
+generation that is a multiple of 10000, ie have 4 zeroes at the end:
+
+	egrep "tree gen.\d+0000 " \
+	siph_combined.run1.t.burned > siph_combined.run1.t.burned.sub
+
+Then open `siph_combined.run1.t.burned.sub` in a text editor and paste the 
+headers and footers back in from `siph_combined.run1.t.burned`.
+
+
+### Making a consensus tree
+
+A consensus tree is generated as follows:
+
+    java -jar ~/bin/phyutility_2_2_4/phyutility.jar -con -t 0.5 \
+    -in siph_combined.run1.t.burned -out consensus.tre
+
+### Assessing leaf stability
+
+Find unstable taxa:
+
+	java -jar ~/bin/phyutility_2_2_4/phyutility.jar -ls 
