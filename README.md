@@ -98,13 +98,15 @@ Price-Waldman present the paper
 [doi:10.1098/rspb.2011.2301](http://dx.doi.org/10.1098/rspb.2011.2301). Lecture 11.  
 Populations and phylogenies. Reading: Baum and Smith Chapter 6.
 
-- Monday, April 15. 
+- Monday, April 15. An introduction to working with trees in phyutility. See 
+`analyses/siphonophore_combined`.
 
 - Wednesday, April 17. Group presentation: Anthony Bui, Lei Ma, and Melanie 
 Berger present the paper
-[doi:10.1371/journal.pgen.1000144](http://dx.doi.org/10.1371/journal.pgen.1000144)
+[doi:10.1371/journal.pgen.1000144](http://dx.doi.org/10.1371/journal.pgen.1000144). 
+Lecture: Phylogenomics. 
 
-- Monday, April 22. Lecture: Phylogenomics. 
+- Monday, April 22. 
 
 - Wednesday, April 24. Lecture: Phylogenies in time. Reading: Baum and Smith Chapter 11.
  

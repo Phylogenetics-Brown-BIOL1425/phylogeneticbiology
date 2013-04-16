@@ -237,11 +237,37 @@ headers and footers back in from `siph_combined.run1.t.burned`.
 A consensus tree is generated as follows:
 
     java -jar ~/bin/phyutility_2_2_4/phyutility.jar -con -t 0.5 \
-    -in siph_combined.run1.t.burned -out consensus.tre
+    -in siph_combined.run1.t.burned.sub -out consensus.tre
+
 
 ### Identify unstable taxa
 
-Find unstable taxa:
+The following calculates the Leaf Stability Index, as defined by 
+[Thorley and Wilkinson 1999](http://dx.doi.org/10.1006/jtbi.1999.0999), for 
+each taxon:
 
 	java -jar ~/bin/phyutility_2_2_4/phyutility.jar -ls -in \
 	siph_combined.run1.t.burned.sub > stability.txt
+	
+The results are written to the `stability.txt` file. THis analysis reveals that 
+Cordagalma_cordiforme is the least stable taxa.
+
+
+### Pruning taxa
+
+Now that we know that Cordagalma_cordiforme is the least stable taxon, let's 
+remove it from the psoterior tree set and see what the support for the 
+relationships remaining taxa is:
+
+    java -jar ~/bin/phyutility_2_2_4/phyutility.jar -pr -in \
+    siph_combined.run1.t.burned.sub -out no_cordagalma.tre -names Cordagalma_cordiforme
+    
+    java -jar ~/bin/phyutility_2_2_4/phyutility.jar -vert -in no_cordagalma.tre \
+    -out no_cordagalma.nex
+    
+    java -jar ~/bin/phyutility_2_2_4/phyutility.jar -con -t 0.5 \
+    -in no_cordagalma.nex -out consensus_nocordo.tre
+
+Note that we converted the tree to nexus format before calculating the 
+consensus. This is required by phyutility in order to include support values 
+on the consensus tree.
