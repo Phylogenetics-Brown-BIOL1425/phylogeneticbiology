@@ -45,6 +45,11 @@ runs, and my interpretations of the results as they pertain to the original
 question. I have achieved all the goals of executing and documenting my 
 analyses in a single file.
 
+The nice thing about this approach is that it is very simple and quite general- 
+writing well commented code is good practice no matter the language, and you 
+can always add in as much as you like if you want to turn the comments into full 
+blown documentation.
+
 But there are a few few things that are inconvenient. In particular, the results 
 of the analysis are disembodied from the code and supporting discussion. 
 Anyone that reviews the analysis (including yourself) will have to flip between 
@@ -58,16 +63,76 @@ document, the code, and the results of the analyses. One such tool is
 [knitr](http://yihui.name/knitr/). You can then share the source file and the 
 report. Providing both allows others to reproduce and modify our analyses, and 
 also to take a look at what you did without needing to recompute it all 
-themselves.
+themselves. knitr can be used to organize your analyses as you do them, to 
+generate supplementary files for a manuscript, or even to generate a manuscript 
+itself. 
 
 knitr supports multiple document markup languages, including 
 [LaTeX](http://www.latex-project.org) and 
 [Markdown](http://daringfireball.net/projects/markdown/). LaTeX is generally 
 used to generate pdf reports and Markdown to generate html reports, though, 
 with some trouble, any format of report can be produced from any type of 
-document. knitr is commonly used for R code, though it does support other 
+document. Markdown is simpler to learn than LaTeX, and is a good place to start.
+
+knitr is commonly used for R code, though it does support other 
 programming languages including Python.
 
-knit can be used to organize your analyses as you do them, to generate 
-supplementary files for a manuscript, or even to generate a manuscript itself. 
+Take a look at the included `my_analysis.Rmd` file. It is a combination of 
+Markdown-formatted text and R code. To build the html report, run the following 
+in R:
 
+    library(knitr)
+    knit2html("my_analysis.Rmd")
+    
+This generates a few file, `my_analysis.html`, and a directory `figures/`, which 
+contains the plots. Open `my_analysis.html` in a web browser to see the report, 
+plots and all.
+
+You can generate data reports with knitr wherever R is available - from the 
+terminal window, in the console that comes with R, or in 
+[Rstudio](http://www.rstudio.com). RStudio provides a single interface to edit 
+the Rmd file, execute the code, and view the report side-by-side. The 
+[RStudio documentation](http://www.rstudio.com/ide/docs/authoring/using_markdown) 
+also has some nice general information on using R with Markdown.
+
+
+# Work interactively on your code and notebook
+
+In the knitr examples above, the source code and the report are separate 
+entities. The report has all the code, but to conveniently re-execute the 
+analysis you need the source too. Why not just make the report itself 
+executable? That is what [iPython Notebook](http://ipython.org/notebook.html) 
+has done.
+
+# Use a version control tool
+
+In order for people to read, understand, and execute your analyses, you need to 
+share the files with them. You will need to back up your files as you work on 
+them, and sometimes keep track of different versions (eg, a version of the files 
+that correspond to a published analysis, a version where you are trying a 
+different approach to the analysis, and a version with changes suggested by a 
+colleague). And most analyses are highly collaborative - different people are 
+working on different parts, or developing code together. Managing all the files 
+that are part of even a simple analysis can start to be more work than the 
+analysis itself.
+
+Version control tools address all of these needs in a single, integrated 
+framework. Using version control should become as routine as opening a text 
+editor as you work on your project. It can feel like a steep learning curve at 
+first, but your time will quickly be paid back.
+
+Version control tools keep track of different versions of files, and can even 
+help merge them when there are multiple conflicting versions that need to be 
+integrated. These files can be all on one computer, or spread across multiple 
+computers, so they are a natural framework for backup and collaboration.
+
+[git](http://git-scm.com) is the most widely used version control system. There 
+are multiple online tools for hosting git repositories, including 
+[github](https://github.com) and [bitbucket](https://bitbucket.org/). These 
+sites make it simple to post your code.
+
+There are many 
+[git tutorials](http://sixrevisions.com/resources/git-tutorials-beginners/) out 
+there. Familiarize yourself with using git on your own computer at first, then 
+sign up for a free account at one of the sites mentioned above and follow their 
+instructions for posting your repository.
