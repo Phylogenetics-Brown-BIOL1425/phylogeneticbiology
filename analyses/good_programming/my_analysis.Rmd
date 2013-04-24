@@ -9,8 +9,8 @@ characters on a tree with 8 species.
 
 Get set up, and construct the covariance matrix
 
-```r
-library(geiger)
+```{r}
+library(geiger, verbose=FALSE)
 library(Matrix)
 library(picante)
 
@@ -20,24 +20,24 @@ TrueCov = as.matrix(TrueCov)
 ```
 
 Simulate the tree and data
-```r
+```{r fig.width=7, fig.height=6}
 tree = rcoal(8)
 plot(tree)
 D = sim.char(tree, TrueCov, nsim=1, model='BM')
 ```
 
 Calculate the independent contrasts
-```r
+```{r}
 contrasts = apply( D, 2, function(a) pic(a, tree) )
 ```
 
 Calculate the observed correlations from the contrasts
-```r
+```{r}
 ObsCor = cor.table(contrasts)$r
 ```
 Display the original and observed matrices
 
-```r
+```{r graphics}
 image(TrueCov, main='Original')
 image(ObsCor, main='Observed')
 ```
@@ -52,3 +52,19 @@ non-zero.
 This means that we have to be careful interpretting covariances in 
 comparative phylogenetic analyses when the number of variables exceeds 
 the number of species. In particular, there can be many false positives.
+
+# Building this document
+
+To compile an html report from source, execute the following in R.
+
+```{r compile, eval=FALSE}
+library(knitr)
+knit2html('my_analysis.Rmd')
+```
+
+The following provides details on the versions of tools that were used to 
+generate the report.
+
+```{r}
+sessionInfo()
+```
