@@ -1,10 +1,5 @@
 # Literate and reproducible programming
 
-In this course you write your own programs in bash (the shell scripts 
-used to automate and control your analyses in the cluster) and R. You also 
-use other programs written in a variety of languages, including C, C++, Java, 
-and Python.
-
 Your own programs serve two related purposes. First, there is the obvious 
 purpose of executing the analysis. Second, though, is a goal that is just as 
 important to science as the analysis itself - recording the steps of the 
@@ -22,7 +17,7 @@ analyses, and others to reproduce and modify them. It is also human readable,
 allowing the reader to understand the intent, implementation, and results of 
 your work.
 
-This is the world of literate and reproducible programming.
+This is literate and reproducible programming.
 
 
 # Embed your notebook into your code as comments
@@ -33,47 +28,8 @@ file that aren't executed, they are intended only for people that read the
 program file itself. In many languages, including R and Python, text after a 
 `#` is ignored when the program is run.
 
-Your analysis could, for example, consist of a file named `my_analysis.r`, and 
-have the following contents:
-
-    # The goal of this analysis is to see how will phylogenetically independent 
-    # contrasts can reconstruct character covariance when the number of 
-    # characters exceeds the number of species. In this case we will look at 30 
-    # characters on a tree with 8 species.
-    
-    # Get set up, and construct the covariance matrix
-    library(geiger)
-    library(Matrix)
-    library(picante)
-    
-    TrueCov = bdiag(matrix(rep(0.9, 100), 10), matrix(rep(0.5, 100), 10), diag(10))
-    diag(TrueCov) = 1
-    TrueCov = as.matrix(TrueCov)
-    
-    # Simulate the tree and data
-    tree = rcoal(8)
-	plot(tree)
-    D = sim.char(tree, TrueCov, nsim=1, model='BM')
-	
-    # Calculate the independent contrasts
-    contrasts = apply( D, 2, function(a) pic(a, tree) )
-    
-    # Calculate the observed correlations from the contrasts
-    ObsCor = cor.table(contrasts)$r
-    
-    # Display the original and observed matrices
-    
-    image(TrueCov, main='Original')
-    image(ObsCor, main='Observed')
-    
-    # Relative to the true matrix, the observed matrix is quite noisy. Many of 
-    # the elements that should be 0 are instead estimated to be quite strong, 
-    # and there is quite a bit of variation within blocks that should be 
-    # non-zero.
-    #
-    # This means that we have to be careful interpretting covariances in 
-    # comparative phylogenetic analyses when the number of variables exceeds 
-    # the number of species. In particular, there can be many false positives.
+Your analysis could, for example, consist of a file named `my_analysis.r`. See 
+the example file by this name.
 
 You can then run your analysis by entering the following at the command line:
 
@@ -93,3 +49,25 @@ But there are a few few things that are inconvenient. In particular, the results
 of the analysis are disembodied from the code and supporting discussion. 
 Anyone that reviews the analysis (including yourself) will have to flip between 
 three files - the source, the text output, and the plots.
+
+# Embed your code in your notebook
+
+There are a series of new tools that allow you to embed your code into a
+document, and then generate a data report that include the text from the 
+document, the code, and the results of the analyses. One such tool is 
+[knitr](http://yihui.name/knitr/). You can then share the source file and the 
+report. Providing both allows others to reproduce and modify our analyses, and 
+also to take a look at what you did without needing to recompute it all 
+themselves.
+
+knitr supports multiple document markup languages, including 
+[LaTeX](http://www.latex-project.org) and 
+[Markdown](http://daringfireball.net/projects/markdown/). LaTeX is generally 
+used to generate pdf reports and Markdown to generate html reports, though, 
+with some trouble, any format of report can be produced from any type of 
+document. knitr is commonly used for R code, though it does support other 
+programming languages including Python.
+
+knit can be used to organize your analyses as you do them, to generate 
+supplementary files for a manuscript, or even to generate a manuscript itself. 
+
