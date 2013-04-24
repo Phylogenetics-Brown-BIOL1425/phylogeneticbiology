@@ -1,0 +1,88 @@
+
+R version 3.0.0 (2013-04-03) -- "Masked Marvel"
+Copyright (C) 2013 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin10.8.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> # The goal of this analysis is to see how will phylogenetically independent 
+> # contrasts can reconstruct character covariance when the number of 
+> # characters exceeds the number of species. In this case we will look at 30 
+> # characters on a tree with 8 species.
+> 
+> # Get set up, and construct the covariance matrix
+> library(geiger)
+Loading required package: ape
+Loading required package: MASS
+Loading required package: mvtnorm
+Loading required package: msm
+Loading required package: subplex
+Loading required package: deSolve
+Loading required package: colorspace
+Loading required package: digest
+Loading required package: Rcpp
+Loading required package: coda
+Loading required package: lattice
+Loading required package: ncbit
+
+Attaching package: ‘geiger’
+
+The following object is masked from ‘package:ape’:
+
+    drop.tip, vcv.phylo
+
+The following object is masked from ‘package:base’:
+
+    load, transform
+
+> library(Matrix)
+> library(picante)
+Loading required package: vegan
+Loading required package: permute
+This is vegan 2.0-7
+Loading required package: nlme
+> 
+> TrueCov = bdiag(matrix(rep(0.9, 100), 10), matrix(rep(0.5, 100), 10), diag(10))
+> diag(TrueCov) = 1
+> TrueCov = as.matrix(TrueCov)
+> 
+> # Simulate the tree and data
+> tree = rcoal(8)
+> plot(tree)
+> D = sim.char(tree, TrueCov, nsim=1, model='BM')
+> 
+> # Calculate the independent contrasts
+> contrasts = apply( D, 2, function(a) pic(a, tree) )
+> 
+> # Calculate the observed correlations from the contrasts
+> ObsCor = cor.table(contrasts)$r
+> 
+> # Display the original and observed matrices
+> 
+> image(TrueCov, main='Original')
+> image(ObsCor, main='Observed')
+> 
+> # Relative to the true matrix, the observed matrix is quite noisy. Many of 
+> # the elements that should be 0 are instead estimated to be quite strong, 
+> # and there is quite a bit of variation within blocks that should be 
+> # non-zero.
+> #
+> # This means that we have to be careful interpretting covariances in 
+> # comparative phylogenetic analyses when the number of variables exceeds 
+> # the number of species. In particular, there can be many false positives.
+> 
+> proc.time()
+   user  system elapsed 
+  3.305   0.148   4.031 
