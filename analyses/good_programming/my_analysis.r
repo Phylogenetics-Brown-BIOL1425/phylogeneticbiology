@@ -33,6 +33,6 @@ image(ObsCor, main='Observed')
 # and there is quite a bit of variation within blocks that should be 
 # non-zero.
 #
-# This means that we have to be careful interpretting covariances in 
+# This means that we have to be careful interpreting covariances in 
 # comparative phylogenetic analyses when the number of variables exceeds 
 # the number of species. In particular, there can be many false positives.

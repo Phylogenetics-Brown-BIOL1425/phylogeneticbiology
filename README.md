@@ -115,16 +115,6 @@ Lecture: Phylogenomics.
 - Wednesday, May 1. Final project presentations.
 
 
-## Changes for next time
-
-The next time the course is offered:
-
-- More on discrete character evolution (model testing, reconstruction, 
-analyses of relationships between multiple characters)
-
-- More R labs on character evolution
-
-
 ## Assignments
 
 - Friday, March 1. Complete the assignment described in 
