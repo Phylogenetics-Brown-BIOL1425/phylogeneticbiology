@@ -1,7 +1,5 @@
 #! /usr/bin/env python
-import re, sys
-
-usage = """
+"""
 Shortens the header of NCBI fasta files to Genus_species_gi
 
 usage:
@@ -13,6 +11,7 @@ Written by Casey Dunn, Brown University, February 4, 2013.
 
 
 """
+import re, sys
 
 def shorten_headers( in_name ):
 	infile = open( in_name, "rU" )
@@ -25,7 +24,7 @@ def shorten_headers( in_name ):
 
 if __name__ == "__main__":
 	if len(sys.argv) < 2:
-		print usage
+		print __doc__
 		sys.exit( 0 )
 	in_name = sys.argv[1]
 	print shorten_headers( in_name )
