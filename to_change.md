@@ -3,7 +3,7 @@
 - More on discrete character evolution (model testing, reconstruction, 
   analyses of relationships between multiple characters).
 
-- More R labs on character evolution.
+- More R labs on character evolution. Should include a session on phytools.
 
 - Labs were too fast, more time to follow along and apply what we cover.
 
