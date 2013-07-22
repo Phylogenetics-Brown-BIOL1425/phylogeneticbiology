@@ -10,7 +10,7 @@ command and a notebook with a description and interpretation of what you did.
 
 But since the code and your notebook both serve different parts of the same 
 purpose (ie, recording what you did) it can be more 
-convenient and clear to combine them into a single file. This file is  
+convenient and clear to combine them into a single file. This file is 
 executable by the computer, allowing you to quickly revise and update your 
 analyses, and allowing others to reproduce and modify them. It is also 
 human-readable, allowing anyone (including you) to understand the intent, 
