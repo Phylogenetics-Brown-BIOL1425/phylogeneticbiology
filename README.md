@@ -18,7 +18,7 @@ Casey Dunn's Phylogenetic Biology course (Biology 1425) at Brown University.
 **Contact:** casey\_dunn@brown.edu. Please prefix the subject line of
 e-mails related to the class with “phylobio:”
 
-**Office Hours:** W 1:00-2:30pm, Walter Hall (80 Waterman St.) Room 301
+**Office Hours:** Tuesday 10:30am-12:00pm, Walter Hall (80 Waterman St.) Room 301
 
 ## Enrollment
 
