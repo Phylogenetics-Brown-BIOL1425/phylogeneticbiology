@@ -305,8 +305,9 @@ Hillis, C Moritz, & B. K. Mable. [Sinauer Associates](http://www.sinauer.com/det
 
 Please check the schedule a week in advance for revisions.
 
+
 | Week | Date | Topic | Reading |
----------------------------------
+|------|------|-------|---------|
 | 1 | 1/28/2016 | Introduction to tree thinking | B&S chapters 1-3 |
 | 2 | 2/2/2016 | Introduction to phylogenetic inference: tree space, optimality criteria, and searching. `lectures/Lecture_2.pdf` | B&S chapters 4,6,7 |
 | 2 | 2/4/2016 | Lab: Getting around at the command line, logging in to remote computers. | Haddock and Dunn chapters 4-5,20, pages 383-396 |
