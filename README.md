@@ -18,7 +18,7 @@ Casey Dunn's Phylogenetic Biology course (Biology 1425) at Brown University.
 **Contact:** casey\_dunn@brown.edu. Please prefix the subject line of
 e-mails related to the class with “phylobio:”
 
-**Office Hours:** W 1:00-2:30pm, Walter Hall (80 Waterman St.) Room 301
+**Office Hours:** Tuesday 10:30am-12:00pm, Walter Hall (80 Waterman St.) Room 301
 
 ## Enrollment
 
@@ -36,8 +36,9 @@ them to study evolution. We will also examine the application of these
 tools to particular problems in the literature and emerging areas of
 study.
 
-This seminar will include lectures by the professor, as well as student
-presentations and frequent open discussions.
+Most weeks, there will be a lecture on Tuesday and a combined paper 
+discussion and lab on Thursdays. Papers and lab exercises will be 
+posted on this syllabus at least a week in advance.
 
 
 ## Prerequisites 
@@ -58,30 +59,29 @@ areas, or in closely related ares such as computer science and math.
     new method, reconstructing the phylogeny of a particular group of
     organisms, examining the evolution of one more more characters on a
     tree, or examination of the behavior of a particular method. The
-    final project will be summarized as a scientific paper in PLoS One
-    format, see http://www.plosone.org/static/guidelines.action for
-    formatting details. In addition, each student will make a 10 minute
-    presentation summarizing their work.
+    final project will be developed and submitted as a shared git 
+    repository. The professor and other students will review the project 
+    as it is developed so that it can be iteratively improved, tested, 
+    and refined. At the end of the course, each student will 
+    make a 10 minute presentation summarizing their work.
 
--   <span>**Analysis assignments, 20%** </span>. There will be several
-    take-home phylogenetic analysis assignments. These will provide you
+-   <span>**Analysis assignments, 25%** </span>. There will be several
+    analysis assignments provided as git repositories. These will provide you
     with the opportunity to apply your new skills to example datasets.
 
--   <span>**Class participation, 15%** </span>. Takes attendance and
-    participation in class discussions into account.
+-   <span>**Class participation, 15%** </span>. Attendance and
+    participation in class discussions will be taken into account.
 
--   <span>**Group presentation, 15%**</span>. Groups of 4 students will
+-   <span>**Discussion leader, 20%**</span>. Students will
     lead discussions of papers that describe particular methods and
-    applications. Groups are expected to summarize the methods and
+    applications. They are expected to summarize the methods and
     results of the paper, tie the paper to other topics covered in
     class, and lead a discussion that examines its strengths,
     weaknesses, and implications. The prepared presentation should last
-    15 minutes, and will be followed by discussion for 5-10 minutes.
-    Everyone in the class should read each paper prior to the
-    presentation.
+    about 20 minutes, and will be followed by discussion for about 20 minutes.
+    Each student will present 2 papers, either solo or in collaboration with 
+    other students.
 
--   <span>**Individual presentation, 10%**</span>. Each student will
-    make a 10 minute presentation about a scientific paper.
 
 ## Reading
 
@@ -108,12 +108,27 @@ The assignments and final project will require that you have access to a
 computer running Unix or Linux. If you have an Apple Mac or a computer
 with Linux installed, you are already set. If your computer runs
 Microsoft Windows you have a couple options. You can run your analyses
-in a computer lab with Apple Macs or Linux computers, or you can install
-Linux on your windows computer within a virtual machine. This page has
-links that explain how to set up a virtual machine:
-http://practicalcomputing.org/preworkshop
+in a computer lab with Apple Macs or Linux computers, use a 
+[raspberry pi](https://www.raspberrypi.org/) (several will be available), 
+or you can install Linux on your windows computer within a 
+[virtual machine](http://practicalcomputing.org/preworkshop). 
 
-## Course Outline
+We will also use Brown's high performance computing cluster 
+[Oscar](https://web1.ccv.brown.edu/technologies/computing) 
+for computationally intensive analyses.
+
+Specific computational skills we will teach and use include:
+
+- The command line (bash) and simple shell scripts
+- Text manipulation (data, code, and prose)
+- Introductory data analysis in R
+- [git](https://git-scm.com/), a version control tool and so much more. In
+combination with [github](https://github.com/), we will use git to store and 
+share files, track changes to files, provide feedback to each other, back up
+files, move files, and disseminate our work. 
+
+
+## Topics we will cover
 
 ### Tree Thinking
 
@@ -212,28 +227,10 @@ http://practicalcomputing.org/preworkshop
 
 5.  Simultaneous estimation of gene trees and species trees
 
+
 ### Final Project Presentations
 
 1.  Final Project presentations
-
-
-
-## Assignments
-
-- Complete the assignment described in 
-`assignments/hydroidolina` through 'Phylogenetic analyses of each gene'
-
-- Group presentations. Groups can consist of 2-4 registered students. 
-Presentations should be 20-30 minutes. By March 6 each group should form up, 
-pick a paper, and schedule their presentation. Group presentations must be made 
-on or before April 17. Scheduling will be organized so that there is no more 
-than one group presentation per class. 
-
-- Complete the assignment described in 
-  `assignments/hydroidolina-combined`.
-
-- The written component of the final project is due by the 
-beginning of class. Presentations of final projects in class.
 
 
 ## Software to install on your own computer
@@ -241,9 +238,6 @@ beginning of class. Presentations of final projects in class.
 You will use the following programs to work with phylogenies on your laptop. We 
 will use computationally intensive programs, such as raxml and mrbayes, on the 
 cluster.
-
-
-### For all computers:
 
 - [Mesquite](http://mesquiteproject.org/mesquite/mesquite.html). Mesquite will 
 require that you also install Java. OS X will prompt you to install Java when 
@@ -258,17 +252,7 @@ Java on Microsoft Windows from the [Java site](http://www.java.com/en/download/i
 
 - [Tracer](http://tree.bio.ed.ac.uk/software/tracer/)
 
-
-### For OS X (ie, Macs):
-
-- [TextWrangler](http://www.barebones.com/products/textwrangler/)
-
-
-### For Microsoft Windows:
-
-- [Notepad++](http://notepad-plus-plus.org)
-
-- [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
+- [Sublime Text 3](http://www.sublimetext.com/3)
 
 
 ##External links
@@ -277,8 +261,8 @@ The following sites have a wide variety of material that is relevant to the
 theory and and practice of phylogenetic biology.
 
 An extensive list of tools, tutorials, and examples of phylogenetic tools in 
-the programming language R:
-[r-phylo](http://www.r-phylo.org/wiki/Main_Page)
+the programming language R maintained by Briam O'Meara:
+[CRAN Task View: Phylogenetics](https://cran.r-project.org/web/views/Phylogenetics.html)
 
 The Workshop on Molecular Evolution at Woods Hole. This is an intensive summer 
 course on phylogenetics, with an emphasis on building phylogenetic trees. Check 
@@ -288,7 +272,7 @@ out the faculty pages for lecture pdfs:
 The Applied Phylogenetics Workshop in Bodega Bay. This is another summer course 
 on phylogenetics, but with a bit more emphasis on using phylogenies to test 
 evolutionary questions:
-[Applied Phylogenetics Workshop](http://bodegaphylo.wikispot.org)
+[Applied Phylogenetics Workshop](http://treethinkers.org/tutorials/)
 
 The site for the book I co-authored with Steve Haddock, Practical Computing for 
 Biologists:
@@ -316,6 +300,41 @@ Felsenstein, J. (2004) Inferring phylogenies.
 Swofford, D. L., Olsen, G. J., Waddell, P. J., & Hillis, D. M. (1996). 
 Phylogenetic inference. In: Molecular Systematics, Second Edition. eds: D. M. 
 Hillis, C Moritz, & B. K. Mable. [Sinauer Associates](http://www.sinauer.com/detail.php?id=1775)
+
+## Schedule
+
+Please check the schedule a week in advance for revisions.
+
+| Week | Date | Topic | Reading |
+---------------------------------
+| 1 | 1/28/2016 | Introduction to tree thinking | B&S chapters 1-3 |
+| 2 | 2/2/2016 | Introduction to phylogenetic inference: tree space, optimality criteria, and searching. `lectures/Lecture_2.pdf` | B&S chapters 4,6,7 |
+| 2 | 2/4/2016 | Lab: Getting around at the command line, logging in to remote computers. | Haddock and Dunn chapters 4-5,20, pages 383-396 |
+| 3 | 2/9/2016 | Maximum likelihood. `lectures/Lecture_3.pdf` | B&S chapters 8; [Holder and Lewis 2003](http://dx.doi.org/10.1038/nrg1044) |
+| 3 | 2/11/2016 |  |  |
+| 4 | 2/16/2016 | Maximum likelihood continued, summarizing tree sets, bootstraps, bayesian inference | Look over last week's reading |
+| 4 | 2/18/2016 |  |  |
+| 5 | 2/23/2016 | No class - President's Day |  |
+| 5 | 2/25/2016 |  |  |
+| 6 | 3/1/2016 | Bayesian continued | no new reading |
+| 6 | 3/3/2016 |  |  |
+| 7 | 3/8/2016 | Multiple sequence alignment, exotic models, distance, methods, consistency. Lecture: `lectures/Lecture_6.pdf` |  |
+| 7 | 3/10/2016 |  |  |
+| 8 | 3/15/2016 | Phylogenetic project design. `lectures/Lecture_7.pdf` | [Hydra phylogeny](http://dx.doi.org/10.1016/j.ympev.2012.12.016) |
+| 8 | 3/17/2016 |  |  |
+| 9 | 3/22/2016 | Testing Phylogenetic Hypotheses. `lectures/Lecture_8.pdf` | B&S chapter 9 |
+| 9 | 3/24/2016 |  |  |
+| 10 | 4/5/2016 | Using phylogenies to study character evolution. `lectures/Lecture_9.pdf` | B&S chapter 10, [Felsenstein 1985](http://www.jstor.org/stable/2461605) |
+| 10 | 4/7/2016 | Lab: Independent contrasts with ape and R. Work through  `analyses/independent_contrasts.pdf` |  |
+| 11 | 4/12/2016 | Phylogenies in time. | B&S chapter 11 |
+| 11 | 4/14/2016 |  |  |
+| 12 | 4/19/2016 | TBD |  |
+| 12 | 4/21/2016 |  |  |
+| 13 | 4/26/2016 | TBD |  |
+| 13 | 4/28/2016 |  |  |
+| 14 | 5/3/2016 | TBD |  |
+| 14 | 5/5/2016 |  |  |
+|  | 5/10/2016 |  |  |
 
 
 ## Licenses
