@@ -313,7 +313,7 @@ Please check the schedule a week in advance for revisions.
 | 1 | 1/28/2016 | Introduction to tree thinking | B&S chapters 1-3 |
 | 2 | 2/2/2016 | Introduction to phylogenetic inference: tree space, optimality criteria, and searching. `lectures/Lecture_2.pdf` | B&S chapters 4,6,7 |
 | 2 | 2/4/2016 | Lab: Getting around at the command line, logging in to remote computers. | Haddock and Dunn chapters 4-5,20, pages 383-396 |
-| 3 | 2/9/2016 | Maximum likelihood. `lectures/Lecture_3.pdf` | B&S chapters 8; [Holder and Lewis 2003](http://dx.doi.org/10.1038/nrg1044) |
+| 3 | 2/9/2016 | Maximum likelihood. `lectures/Lecture_3.pdf`, `lectures/Lewis_Likelihood.pdf` | B&S chapters 8; [Holder and Lewis 2003](http://dx.doi.org/10.1038/nrg1044) |
 | 3 | 2/11/2016 | Lab: Working with git  | Handout (provided in previous week) |
 | 4 | 2/16/2016 | Maximum likelihood continued, summarizing tree sets, bootstraps, bayesian inference | Look over last week's reading |
 | 4 | 2/18/2016 |  |  |
