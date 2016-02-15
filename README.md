@@ -314,9 +314,9 @@ Please check the schedule a week in advance for revisions.
 | 2 | 2/2/2016 | Introduction to phylogenetic inference: tree space, optimality criteria, and searching. `lectures/Lecture_2.pdf` | B&S chapters 4,6,7 |
 | 2 | 2/4/2016 | Lab: Getting around at the command line, logging in to remote computers. | Haddock and Dunn chapters 4-5,20, pages 383-396 |
 | 3 | 2/9/2016 | Maximum likelihood. `lectures/Lecture_3.pdf`, `lectures/Lewis_Likelihood.pdf` | B&S chapters 8; [Holder and Lewis 2003](http://dx.doi.org/10.1038/nrg1044) |
-| 3 | 2/11/2016 | Lab: Working with git  | Handout (provided in previous week) |
+| 3 | 2/11/2016 | Lab: Working with git, [siphonophore16s exercise](https://github.com/Phylogenetics-Brown-BIOL1425/siphonophore16s)  | Handout (provided in previous week) |
 | 4 | 2/16/2016 | Maximum likelihood continued, summarizing tree sets, bootstraps, bayesian inference | Look over last week's reading |
-| 4 | 2/18/2016 |  |  |
+| 4 | 2/18/2016 | Phylogenetic Ecology, led by Alex Damian Serrano | [Verdú and Pausas 2007](http://dx.doi.org/10.1111/j.1365-2745.2007.01300.x), [Bellec et al. 2014](http://dx.doi.org/10.1186/1471-2148-14-59) |
 | 5 | 2/23/2016 | No class - President's Day |  |
 | 5 | 2/25/2016 |  |  |
 | 6 | 3/1/2016 | Bayesian continued | no new reading |
