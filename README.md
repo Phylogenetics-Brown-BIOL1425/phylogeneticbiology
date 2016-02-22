@@ -303,6 +303,13 @@ Swofford, D. L., Olsen, G. J., Waddell, P. J., & Hillis, D. M. (1996).
 Phylogenetic inference. In: Molecular Systematics, Second Edition. eds: D. M. 
 Hillis, C Moritz, & B. K. Mable. [Sinauer Associates](http://www.sinauer.com/detail.php?id=1775)
 
+
+Here are some papers that illustrate interesting applications for phylogenetics, key concepts, and methods. We will draw from some of these for reading in the class.
+
+Gire SK, Goba A, Andersen KG, Sealfon RSG, Park DJ, Kanneh L, Jalloh S, Momoh M, Fullah M, Dudas G, et al.: Genomic surveillance elucidates Ebola virus origin and transmission during the 2014 outbreak. Science 2014, 345:1369–1372.  http://dx.doi.org/10.1126/science.1259657
+
+Maddison WP: Gene Trees in Species Trees. Syst. Biol. 1997, 46:523–536. http://dx.doi.org/10.1093/sysbio/46.3.523
+
 ## Schedule
 
 Please check the schedule a week in advance for revisions.
@@ -318,7 +325,7 @@ Please check the schedule a week in advance for revisions.
 | 4 | 2/16/2016 | Maximum likelihood continued, summarizing tree sets, bootstraps, bayesian inference | Look over last week's reading |
 | 4 | 2/18/2016 | Phylogenetic Ecology, led by Alex Damian Serrano | [Verdú and Pausas 2007](http://dx.doi.org/10.1111/j.1365-2745.2007.01300.x), [Bellec et al. 2014](http://dx.doi.org/10.1186/1471-2148-14-59) |
 | 5 | 2/23/2016 | No class - President's Day |  |
-| 5 | 2/25/2016 |  |  |
+| 5 | 2/25/2016 |  | [Maddison 1997](http://dx.doi.org/10.1093/sysbio/46.3.523) |
 | 6 | 3/1/2016 | Bayesian continued | no new reading |
 | 6 | 3/3/2016 |  |  |
 | 7 | 3/8/2016 | Multiple sequence alignment, exotic models, distance, methods, consistency. Lecture: `lectures/Lecture_6.pdf` |  |
