@@ -293,22 +293,22 @@ analyses:
 
 The following resources provide additional background.
 
-Paradis, E. (2011) Analysis of Phylogenetics and Evolution with R. 
+> Paradis, E. (2011) Analysis of Phylogenetics and Evolution with R. 
 [Springer](http://www.springer.com/life+sciences/evolutionary+%26+developmental+biology/book/978-0-387-32914-7)
 
-Felsenstein, J. (2004) Inferring phylogenies. 
+> Felsenstein, J. (2004) Inferring phylogenies. 
 [Sinauer Associates](http://www.sinauer.com/detail.php?id=1775).
 
-Swofford, D. L., Olsen, G. J., Waddell, P. J., & Hillis, D. M. (1996). 
+> Swofford, D. L., Olsen, G. J., Waddell, P. J., & Hillis, D. M. (1996). 
 Phylogenetic inference. In: Molecular Systematics, Second Edition. eds: D. M. 
 Hillis, C Moritz, & B. K. Mable. [Sinauer Associates](http://www.sinauer.com/detail.php?id=1775)
 
 
 Here are some papers that illustrate interesting applications for phylogenetics, key concepts, and methods. We will draw from some of these for reading in the class.
 
-Gire SK, Goba A, Andersen KG, Sealfon RSG, Park DJ, Kanneh L, Jalloh S, Momoh M, Fullah M, Dudas G, et al.: Genomic surveillance elucidates Ebola virus origin and transmission during the 2014 outbreak. Science 2014, 345:1369–1372.  http://dx.doi.org/10.1126/science.1259657
+> Gire SK, Goba A, Andersen KG, Sealfon RSG, Park DJ, Kanneh L, Jalloh S, Momoh M, Fullah M, Dudas G, et al.: Genomic surveillance elucidates Ebola virus origin and transmission during the 2014 outbreak. Science 2014, 345:1369–1372.  http://dx.doi.org/10.1126/science.1259657
 
-Maddison WP: Gene Trees in Species Trees. Syst. Biol. 1997, 46:523–536. http://dx.doi.org/10.1093/sysbio/46.3.523
+> Maddison WP: Gene Trees in Species Trees. Syst. Biol. 1997, 46:523–536. http://dx.doi.org/10.1093/sysbio/46.3.523
 
 ## Schedule
 
