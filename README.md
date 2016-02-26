@@ -308,7 +308,15 @@ Here are some papers that illustrate interesting applications for phylogenetics,
 
 > Gire SK, Goba A, Andersen KG, Sealfon RSG, Park DJ, Kanneh L, Jalloh S, Momoh M, Fullah M, Dudas G, et al.: Genomic surveillance elucidates Ebola virus origin and transmission during the 2014 outbreak. Science 2014, 345:1369–1372.  http://dx.doi.org/10.1126/science.1259657
 
+> Guang A, Zapata F, Howison M, Lawrence CE, Dunn CW: An Integrated Perspective on Phylogenetic Workflows. Trends in Ecology & Evolution 2016, 31:116–126. http://dx.doi.org/10.1016/j.tree.2015.12.007
+
+> Hillis DM, Huelsenbeck JP, Cunningham CW: Application and accuracy of molecular phylogenies. Science 1994, 264:671–677. http://dx.doi.org/10.1126/science.8171318
+
+> Huelsenbeck JP, Hillis DM: Success of Phylogenetic Methods in the Four-Taxon Case. Syst. Biol. 1993, 42:247–264. http://dx.doi.org/10.1093/sysbio/42.3.247
+
 > Maddison WP: Gene Trees in Species Trees. Syst. Biol. 1997, 46:523–536. http://dx.doi.org/10.1093/sysbio/46.3.523
+
+
 
 ## Schedule
 
@@ -327,21 +335,21 @@ Please check the schedule a week in advance for revisions.
 | 5 | 2/23/2016 | No class - President's Day |  |
 | 5 | 2/25/2016 |  | [Maddison 1997](http://dx.doi.org/10.1093/sysbio/46.3.523) |
 | 6 | 3/1/2016 | Bayesian continued | no new reading |
-| 6 | 3/3/2016 |  |  |
-| 7 | 3/8/2016 | Multiple sequence alignment, exotic models, distance, methods, consistency. Lecture: `lectures/Lecture_6.pdf` |  |
-| 7 | 3/10/2016 |  |  |
+| 6 | 3/3/2016 |  | Seidman:[Gire et al. 2014](http://dx.doi.org/10.1126/science.1259657) |
+| 7 | 3/8/2016 | Multiple sequence alignment, exotic models, distance, methods, consistency. Lecture: `lectures/Lecture_6.pdf` | Nunez:TBD |
+| 7 | 3/10/2016 |  | Nunez and Carter:TBD; Sano TBD |
 | 8 | 3/15/2016 | Phylogenetic project design. `lectures/Lecture_7.pdf` | [Hydra phylogeny](http://dx.doi.org/10.1016/j.ympev.2012.12.016) |
-| 8 | 3/17/2016 |  |  |
-| 9 | 3/22/2016 | Testing Phylogenetic Hypotheses. `lectures/Lecture_8.pdf` | B&S chapter 9 |
-| 9 | 3/24/2016 |  |  |
-| 10 | 4/5/2016 | Using phylogenies to study character evolution. `lectures/Lecture_9.pdf` | B&S chapter 10, [Felsenstein 1985](http://www.jstor.org/stable/2461605) |
+| 8 | 3/17/2016 |  | Michael:TBD |
+| 9 | 3/22/2016 | Testing Phylogenetic Hypotheses. `lectures/Lecture_8.pdf` | B&S chapter 9;    Thomas:TBD hypothesis testing |
+| 9 | 3/24/2016 |  |    Napoli and Subramanian: TBD |
+| 10 | 4/5/2016 | Using phylogenies to study character evolution. `lectures/Lecture_9.pdf` | B&S chapter 10; Moeglein:[Felsenstein 1985](http://www.jstor.org/stable/2461605) |
 | 10 | 4/7/2016 | Lab: Independent contrasts with ape and R. Work through  `analyses/independent_contrasts.pdf` |  |
-| 11 | 4/12/2016 | Phylogenies in time. | B&S chapter 11 |
-| 11 | 4/14/2016 |  |  |
-| 12 | 4/19/2016 | TBD |  |
-| 12 | 4/21/2016 |  |  |
+| 11 | 4/12/2016 | Phylogenies in time. | B&S chapter 11; Bonacorsi and Carter:TBD time calibration; Napoli and Subramanian: TBD time calibration |
+| 11 | 4/14/2016 |  |   Seidman:TBD; Neil:TBD |
+| 12 | 4/19/2016 | TBD | Moeglein and Bonacorsi: TBD ecological applications; Neil:TBD |
+| 12 | 4/21/2016 |  | Thomas and Sano: TBD |
 | 13 | 4/26/2016 | TBD |  |
-| 13 | 4/28/2016 |  |  |
+| 13 | 4/28/2016 |  | Michael:TBD |
 | 14 | 5/3/2016 | TBD |  |
 | 14 | 5/5/2016 |  |  |
 |  | 5/10/2016 |  |  |
