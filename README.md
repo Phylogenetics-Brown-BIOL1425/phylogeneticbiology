@@ -306,13 +306,25 @@ Hillis, C Moritz, & B. K. Mable. [Sinauer Associates](http://www.sinauer.com/det
 
 Here are some papers that illustrate interesting applications for phylogenetics, key concepts, and methods. We will draw from some of these for reading in the class.
 
+> De Queiroz K: Species concepts and species delimitation. Syst. Biol. 2007, 56:879–886. http://dx.doi.org/10.1080/10635150701701083
+
+> Drummond AJ, Ho SYW, Phillips MJ, Rambaut A: Relaxed phylogenetics and dating with confidence. PLoS Biol. 2006, 4:e88. http://dx.doi.org/10.1371/journal.pbio.0040088
+
 > Gire SK, Goba A, Andersen KG, Sealfon RSG, Park DJ, Kanneh L, Jalloh S, Momoh M, Fullah M, Dudas G, et al.: Genomic surveillance elucidates Ebola virus origin and transmission during the 2014 outbreak. Science 2014, 345:1369–1372.  http://dx.doi.org/10.1126/science.1259657
 
 > Guang A, Zapata F, Howison M, Lawrence CE, Dunn CW: An Integrated Perspective on Phylogenetic Workflows. Trends in Ecology & Evolution 2016, 31:116–126. http://dx.doi.org/10.1016/j.tree.2015.12.007
 
+> Heath TA, Zwickl DJ, Kim J, Hillis DM: Taxon sampling affects inferences of macroevolutionary processes from phylogenetic trees. Syst. Biol. 2008, 57:160–166. http://dx.doi.org/10.1080/10635150701884640
+
 > Hillis DM, Huelsenbeck JP, Cunningham CW: Application and accuracy of molecular phylogenies. Science 1994, 264:671–677. http://dx.doi.org/10.1126/science.8171318
 
+> Holder M, Lewis PO: Phylogeny estimation: traditional and Bayesian approaches. Nat Rev Genet 2003, 4:275–284. http://dx.doi.org/10.1038/nrg1044
+
+> Huelsenbeck JP, Ronquist F, Nielsen R, Bollback JP: Bayesian inference of phylogeny and its impact on evolutionary biology. Science 2001, 294:2310–2314. http://dx.doi.org/10.1126/science.1065889
+
 > Huelsenbeck JP, Hillis DM: Success of Phylogenetic Methods in the Four-Taxon Case. Syst. Biol. 1993, 42:247–264. http://dx.doi.org/10.1093/sysbio/42.3.247
+
+> Knowles LL: Statistical Phylogeography. Annu. Rev. Ecol. Evol. Syst. 2009, 40:593–612. http://dx.doi.org/10.1146/annurev.ecolsys.38.091206.095702
 
 > Maddison WP: Gene Trees in Species Trees. Syst. Biol. 1997, 46:523–536. http://dx.doi.org/10.1093/sysbio/46.3.523
 
