@@ -342,15 +342,15 @@ Please check the schedule a week in advance for revisions.
 | 2 | 2/4/2016 | Lab: Getting around at the command line, logging in to remote computers. | Haddock and Dunn chapters 4-5,20, pages 383-396 |
 | 3 | 2/9/2016 | Maximum likelihood. `lectures/Lecture_3.pdf`, `lectures/Lewis_Likelihood.pdf` | B&S chapters 8; [Holder and Lewis 2003](http://dx.doi.org/10.1038/nrg1044) |
 | 3 | 2/11/2016 | Lab: Working with git, [siphonophore16s exercise](https://github.com/Phylogenetics-Brown-BIOL1425/siphonophore16s)  | Handout (provided in previous week) |
-| 4 | 2/16/2016 | Maximum likelihood continued, summarizing tree sets, bootstraps, bayesian inference | Look over last week's reading |
+| 4 | 2/16/2016 | Maximum likelihood continued, summarizing tree sets, bootstraps | Look over last week's reading |
 | 4 | 2/18/2016 | Phylogenetic Ecology, led by Alex Damian Serrano | [Verdú and Pausas 2007](http://dx.doi.org/10.1111/j.1365-2745.2007.01300.x), [Bellec et al. 2014](http://dx.doi.org/10.1186/1471-2148-14-59) |
 | 5 | 2/23/2016 | No class - President's Day |  |
 | 5 | 2/25/2016 |  | [Maddison 1997](http://dx.doi.org/10.1093/sysbio/46.3.523) |
-| 6 | 3/1/2016 | Bayesian continued | no new reading |
+| 6 | 3/1/2016 | Bayesian phylogenetics | no new reading |
 | 6 | 3/3/2016 |  | Seidman:[Gire et al. 2014](http://dx.doi.org/10.1126/science.1259657) |
 | 7 | 3/8/2016 | Multiple sequence alignment, exotic models, distance, methods, consistency. Lecture: `lectures/Lecture_6.pdf` | Nunez:TBD |
 | 7 | 3/10/2016 |  | Nunez and Carter:TBD; Sano TBD |
-| 8 | 3/15/2016 | Phylogenetic project design. `lectures/Lecture_7.pdf` | [Hydra phylogeny](http://dx.doi.org/10.1016/j.ympev.2012.12.016) |
+| 8 | 3/15/2016 | TBD |  |
 | 8 | 3/17/2016 |  | Michael:TBD |
 | 9 | 3/22/2016 | Testing Phylogenetic Hypotheses. `lectures/Lecture_8.pdf` | B&S chapter 9;    Thomas:TBD hypothesis testing |
 | 9 | 3/24/2016 |  |    Napoli and Subramanian: TBD |
@@ -360,7 +360,7 @@ Please check the schedule a week in advance for revisions.
 | 11 | 4/14/2016 |  |   Seidman:TBD; Neil:TBD |
 | 12 | 4/19/2016 | TBD | Moeglein and Bonacorsi: TBD ecological applications; Neil:TBD |
 | 12 | 4/21/2016 |  | Thomas and Sano: TBD |
-| 13 | 4/26/2016 | TBD |  |
+| 13 | 4/26/2016 | Phylogenetic project design. `lectures/Lecture_7.pdf` | [Hydra phylogeny](http://dx.doi.org/10.1016/j.ympev.2012.12.016) |
 | 13 | 4/28/2016 |  | Michael:TBD |
 | 14 | 5/3/2016 | TBD |  |
 | 14 | 5/5/2016 |  |  |
