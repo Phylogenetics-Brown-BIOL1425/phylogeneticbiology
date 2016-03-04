@@ -349,7 +349,7 @@ Please check the schedule a week in advance for revisions.
 | 6 | 3/1/2016 | Bayesian phylogenetics | no new reading |
 | 6 | 3/3/2016 |  | Seidman:[Gire et al. 2014](http://dx.doi.org/10.1126/science.1259657) |
 | 7 | 3/8/2016 | Multiple sequence alignment, exotic models, distance, methods, consistency. Lecture: `lectures/Lecture_6.pdf` | Nunez:TBD |
-| 7 | 3/10/2016 |  | Nunez and Carter:TBD; Sano: [Chiara et al 2012](http://dx.doi.org/10.1186/1741-7007-10-65) |
+| 7 | 3/10/2016 |  | Nunez and Carter: [Brusatte and Carr 2016](http://dx.doi.org/10.1038/srep20252); Sano: [Chiara et al 2012](http://dx.doi.org/10.1186/1741-7007-10-65) |
 | 8 | 3/15/2016 | TBD |  |
 | 8 | 3/17/2016 |  | Michael:TBD |
 | 9 | 3/22/2016 | Testing Phylogenetic Hypotheses. `lectures/Lecture_8.pdf` | B&S chapter 9;    Thomas:TBD hypothesis testing |
