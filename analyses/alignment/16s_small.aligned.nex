@@ -1,0 +1,109 @@
+#NEXUS
+[written Tue Mar 08 12:43:46 EST 2016 by Mesquite  version 3.03 (build 702) at c.local/10.3.145.97]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=25;
+	TAXLABELS
+		'Nemertesia_antennina' 'Halopteris_minuta' 'Plumularia_hyalina' 'Aglaophenia_tubiformis' 'Halecium_muricatum' 'Lafoea_dumosa' 'Anthohebella_parasitica' 'Agalma_elegans' 'Cordagalma_cordiforme' 'Forskalia_edwardsi' 'Stephanomia_amphytridis' 'Physalia_physalis' 'Praya_dubia' 'Apolemia_sp' 'Clausophyes_ovata' 'Nanomia_bijuga' 'Physophora_hydrostatica' 'Nectadamas_diomedeae' 'Nectopyramis_natans' 'Sulculeolaria_quadrivalvis' 'Hippopodius_hippopus' 'Stephalia_dilata' 'Halistemma_rubrum' 'Erenna_sp' 'Clytia_noliformis' 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=53;
+	FORMAT DATATYPE = DNA GAP = - MISSING = ?;
+	MATRIX
+	'Nemertesia_antennina'      cgagggtttcactgtctcaaatgtaga-g---atataaaaattgaaataatag
+	'Halopteris_minuta'         cgaagacttaactgtcttaaaaataag-----ataaaaaaattaagattatag
+	'Plumularia_hyalina'        cgaaaatttcactgtcttaaatgtaaa-a---ctaaaaaaattgaaataatag
+	'Aglaophenia_tubiformis'    cgaaaattccactgtcttatgtaataa-a-----aaaaaaatttaagtcatag
+	'Halecium_muricatum'        cgaatattccactgtcttaaaaagaaata--atcaaaaaaattgaaataatag
+	'Lafoea_dumosa'             cgaatatctcactgtcttaaaaaaaat-c---tttcgaaaattagaataatag
+	'Anthohebella_parasitica'   cgaatattccactgtcttagagagaaa-----acccaaaaattagaataatag
+	'Agalma_elegans'            cgaatttttagctgtcttaattagaat-a----ttatgaaattgaaataatag
+	'Cordagalma_cordiforme'     caaaaaaataatttttttttttaatag-----aaattaaaattaatataatag
+	'Forskalia_edwardsi'        cgaatttcccattgtctctgattaaga-----tttatgaaattaaaataatag
+	'Stephanomia_amphytridis'   cgaatatttcactgtcttaaaaaaaaa-a---cttatgaaattgaaataatag
+	'Physalia_physalis'         cgagcatctcactgtcttgaggagaaa-c---cctatgaaattggattcgtag
+	'Praya_dubia'               cgaatatttcattgttttaaaaaaaac-a---tatataaaatttgaataatag
+	'Apolemia_sp'               cgaattcttcactgtcttaagaaaaaa-a---tttataaaattgaaataatag
+	'Clausophyes_ovata'         cgagtgcgaagctgtcttagttggaga-a---tctatgaagttgaaatactag
+	'Nanomia_bijuga'            cgaatatttacctgtcttatatagaaa-a----ttatgaaattaaaataatag
+	'Physophora_hydrostatica'   cgaatatttaactgtcttaaaaagaaa-a---aatatgaaattggaataatag
+	'Nectadamas_diomedeae'      cgaatatttaactgtcttaaaaagaaa-c---ccaataaaatttgaataatag
+	'Nectopyramis_natans'       cgaatatttaactgtcttaaaatgaaa-a---cttataaaatttgaataatag
+	'Sulculeolaria_quadrivalvis' cgagtgcgaagctgtcttgagtcaaag-a---atattgaagtagatctacgag
+	'Hippopodius_hippopus'      ----tatagaattattttattaactat-atgattaatgaaattaatatgatag
+	'Stephalia_dilata'          cgaatatttcactatctcaaaaaaaaaca---catataaaattgaaataatag
+	'Halistemma_rubrum'         cgagtttttaactgtcttaataagaaa-a---tttatgaaatagaaataatag
+	'Erenna_sp'                 cgaatatttcactgtcttaaaaaaaaa-a---cttattaaattgaagtaatag
+	'Clytia_noliformis'         cgaatattccactgtcttaagaagaatta-----aaggaaattgaaataatag
+
+;
+
+
+
+END;
+
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1 -  53;
+
+END;
+
+BEGIN NOTES;
+
+	TAXABITS   TAXA = Taxa NAME = newlyAddedTaxon on =  1 -  25;
+
+END;
+
+BEGIN CODONS;
+	CODESET * UNTITLED   =  universal:  1 -  53;
+
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Jukes-Cantor':  1 -  53;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1457459027167;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 5945024465905386609;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 1115543320869403635;
+			mqVersion 303;
+			checksumv 0 3 1773360161 null  getNumChars 53 numChars 53 getNumTaxa 25 numTaxa 25   short true   bits 1152921504606846991   states 15   sumSquaresStatesOnly 28026.0 sumSquares 3.504881374004815E20 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState true false 100;
+			setPopoutState 400;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 700 464;
+			setLocation 8 8;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		endTell;
+end;
+
+
