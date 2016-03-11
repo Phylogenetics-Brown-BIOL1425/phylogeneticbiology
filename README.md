@@ -359,9 +359,9 @@ Please check the schedule a week in advance for revisions.
 | 11 | 4/12/2016 | Phylogenies in time. | B&S chapter 11; Bonacorsi and Carter:TBD time calibration; Napoli and Subramanian: TBD time calibration |
 | 11 | 4/14/2016 |  |   Seidman:TBD; Neil:TBD |
 | 12 | 4/19/2016 | TBD | Moeglein and Bonacorsi: TBD ecological applications; Neil:TBD |
-| 12 | 4/21/2016 |  | Thomas and Sano: TBD |
+| 12 | 4/21/2016 |  | Thomas and Sano: TBD; Sannerud: [Heath et al. 2008](http://dx.doi.org/10.1080/10635150701884640) |
 | 13 | 4/26/2016 | Phylogenetic project design. `lectures/Lecture_7.pdf` | [Hydra phylogeny](http://dx.doi.org/10.1016/j.ympev.2012.12.016) |
-| 13 | 4/28/2016 |  | Michael:TBD |
+| 13 | 4/28/2016 |  | Michael:TBD Sannerud: [Guang et al. 2016](http://dx.doi.org/10.1016/j.tree.2015.12.007)|
 | 14 | 5/3/2016 | TBD |  |
 | 14 | 5/5/2016 |  |  |
 |  | 5/10/2016 |  |  |
