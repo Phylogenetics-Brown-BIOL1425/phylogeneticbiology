@@ -304,7 +304,7 @@ Phylogenetic inference. In: Molecular Systematics, Second Edition. eds: D. M.
 Hillis, C Moritz, & B. K. Mable. [Sinauer Associates](http://www.sinauer.com/detail.php?id=1775)
 
 
-Here are some papers that illustrate interesting applications for phylogenetics, key concepts, and methods. We will draw from some of these for reading in the class.
+Here are some papers that illustrate interesting applications for phylogenetics, key concepts, and methods. Many papers on this list were compiled by [Felipe Zapata](http://zapatalab.info/). We will draw from some of these for reading in the class.
 
 > De Queiroz K: Species concepts and species delimitation. Syst. Biol. 2007, 56:879–886. http://dx.doi.org/10.1080/10635150701701083
 
@@ -328,6 +328,39 @@ Here are some papers that illustrate interesting applications for phylogenetics,
 
 > Maddison WP: Gene Trees in Species Trees. Syst. Biol. 1997, 46:523–536. http://dx.doi.org/10.1093/sysbio/46.3.523
 
+>Asynchronous Diversification in a Specialized Plant-Pollinator Mutualism http://www.sciencemag.org/cgi/doi/10.1126/science.1209175
+
+>Exceptional Convergence on the Macroevolutionary Landscape in Island Lizard Radiations http://www.sciencemag.org/cgi/doi/10.1126/science.1232392
+
+>The Role of Geography and Ecological Opportunity in the Diversification of Day Geckos (Phelsuma) http://sysbio.oxfordjournals.org/cgi/doi/10.1080/10635150802304779
+
+>Patterns of Variation in Levels of Homoplasy http://www.jstor.org/stable/2409392?origin=crossref
+
+>Locating evolutionary precursors on a phylogenetic tree. http://onlinelibrary.wiley.com/doi/10.1111/j.1558-5646.2012.01720.x/abstract
+
+>Tempo and mode of evolutionary radiation in iguanian lizards. http://www.ncbi.nlm.nih.gov/pubmed/12920297
+
+>Independently evolving species in asexual bdelloid rotifers. http://www.ncbi.nlm.nih.gov/pubmed/17373857
+
+>A likelihood framework for inferring the evolution of geographic range on phylogenetic trees. http://doi.wiley.com/10.1111/j.0014-3820.2005.tb00940.x
+
+>Inferring rates of change in flower symmetry in asterid angiosperms doi:10.1080/106351599260201
+
+>Exploring the Phylogenetic Structure of Ecological Communities: An Example for Rain Forest Trees. http://www.jstor.org/stable/10.1086/303378
+
+>Species coexistence and the dynamics of phenotypic evolution in adaptive radiation http://dx.doi.org/10.1038/nature12874
+
+>An Integrative Method for Delimiting Cohesion Species: Finding the Population-Species Interface in a Group of Californian Trapdoor Spiders with Extreme Genetic Divergence and Geographic Structuring http://sysbio.oxfordjournals.org/cgi/doi/10.1080/10635150802302443
+
+>Using heterochrony to detect modularity in the evolution of stem diversity in the plant family moringaceae http://onlinelibrary.wiley.com/doi/10.1111/j.0014-3820.2006.tb01151.x/abstract
+
+>Insights on the evolution of plant succulence from a remarkable radiation in Madagascar (Euphorbia). http://sysbio.oxfordjournals.org/cgi/doi/10.1093/sysbio/syu035
+
+>Articulating “Archiannelids”: Phylogenomics and Annelid Relationships, with Emphasis on Meiofaunal Taxa http://mbe.oxfordjournals.org/lookup/doi/10.1093/molbev/msv157
+
+>Poor Fit to the Multispecies Coalescent is Widely Detectable in Empirical Data http://sysbio.oxfordjournals.org/cgi/doi/10.1093/sysbio/syt057
+
+>Source identification in two criminal cases using phylogenetic analysis of HIV-1 DNA sequences http://www.pnas.org/content/107/50/21242.abstract
 
 
 ## Schedule
