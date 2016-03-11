@@ -344,7 +344,7 @@ Here are some papers that illustrate interesting applications for phylogenetics,
 
 >A likelihood framework for inferring the evolution of geographic range on phylogenetic trees. http://doi.wiley.com/10.1111/j.0014-3820.2005.tb00940.x
 
->Inferring rates of change in flower symmetry in asterid angiosperms doi:10.1080/106351599260201
+>Inferring rates of change in flower symmetry in asterid angiosperms http://dx.doi.org/10.1080/106351599260201
 
 >Exploring the Phylogenetic Structure of Ecological Communities: An Example for Rain Forest Trees. http://www.jstor.org/stable/10.1086/303378
 
