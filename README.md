@@ -62,7 +62,7 @@ areas, or in closely related ares such as computer science and math.
     organisms, examining the evolution of one more more characters on a
     tree, or examination of the behavior of a particular method. The
     final project will be developed and submitted as a shared git 
-    repository. The professor and other students will review the project 
+    repository forked from a standard [template](https://github.com/Phylogenetics-Brown-BIOL1425/phylobio_final_project). The professor and other students will review the project 
     as it is developed so that it can be iteratively improved, tested, 
     and refined. At the end of the course, each student will 
     make a 10 minute presentation summarizing their work.
