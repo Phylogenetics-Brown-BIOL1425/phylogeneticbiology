@@ -385,7 +385,7 @@ Please check the schedule a week in advance for revisions.
 | 7 | 3/10/2016 |  | Nunez and Carter: [Hohna et al 2014](http://dx.doi.org/10.1093/sysbio/syu039); Sano: [Chiara et al 2012](http://dx.doi.org/10.1186/1741-7007-10-65) |
 | 8 | 3/15/2016 | TBD |  |
 | 8 | 3/17/2016 |  | Michael:TBD |
-| 9 | 3/22/2016 | Testing Phylogenetic Hypotheses. `lectures/Lecture_8.pdf` | B&S chapter 9;    Thomas:[Bergsten et al. 2013](http://www.jstor.org/10.1093/sysbio/syt029) |
+| 9 | 3/22/2016 | Testing Phylogenetic Hypotheses. `lectures/Lecture_8.pdf` | B&S chapter 9;    Thomas: [Bergsten et al. 2013](http://dx.doi.org/10.1093/sysbio/syt029) |
 | 9 | 3/24/2016 |  |    Napoli and Subramanian: [Brusatte and Carr 2016](http://dx.doi.org/10.1038/srep20252) |
 | 10 | 4/5/2016 | Using phylogenies to study character evolution. `lectures/Lecture_9.pdf` | B&S chapter 10; Moeglein:[Felsenstein 1985](http://www.jstor.org/stable/2461605) |
 | 10 | 4/7/2016 | Lab: Independent contrasts with ape and R. Work through  `analyses/independent_contrasts.pdf` |  |
