@@ -389,7 +389,7 @@ Please check the schedule a week in advance for revisions.
 | 9 | 3/24/2016 |  |    Napoli and Subramanian: [Brusatte and Carr 2016](http://dx.doi.org/10.1038/srep20252) |
 | 10 | 4/5/2016 | Using phylogenies to study character evolution. `lectures/Lecture_9.pdf` | B&S chapter 10; Moeglein:[Felsenstein 1985](http://www.jstor.org/stable/2461605) |
 | 10 | 4/7/2016 | Lab: Independent contrasts with ape and R. Work through  `analyses/independent_contrasts.pdf` |  |
-| 11 | 4/12/2016 | Phylogenies in time. | B&S chapter 11; Bonacorsi and Carter:TBD time calibration; Napoli and Subramanian: [Harmon et al 2003](http://dx.doi.org/10.1126/science.1084786) |
+| 11 | 4/12/2016 | Phylogenies in time. | B&S chapter 11; Bonacorsi and Carter: [Nagalingum et al 2011](http://dx.doi.org/10.1126/science.1209926); Napoli and Subramanian: [Harmon et al 2003](http://dx.doi.org/10.1126/science.1084786) |
 | 11 | 4/14/2016 |  |   Seidman:TBD; Neil:TBD |
 | 12 | 4/19/2016 | TBD | Moeglein and Bonacorsi: TBD ecological applications; Neil:TBD |
 | 12 | 4/21/2016 |  | Thomas and Sano: [Hendriksen et al 2011](http://dx.doi.org/10.1128/mBio.00157-11); Sannerud: [Heath et al. 2008](http://dx.doi.org/10.1080/10635150701884640) |
