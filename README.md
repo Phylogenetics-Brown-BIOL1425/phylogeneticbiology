@@ -386,7 +386,7 @@ Please check the schedule a week in advance for revisions.
 | 8 | 3/15/2016 | TBD |  |
 | 8 | 3/17/2016 |  | Bayesian lab |
 | 9 | 3/22/2016 | Testing Phylogenetic Hypotheses. `lectures/Lecture_8.pdf` | B&S chapter 9;    Thomas: [Bergsten et al. 2013](http://dx.doi.org/10.1093/sysbio/syt029) |
-| 9 | 3/24/2016 |  |    Napoli and Subramanian: [Brusatte and Carr 2016](http://dx.doi.org/10.1038/srep20252); Michael:TBD |
+| 9 | 3/24/2016 |  |    Napoli and Subramanian: [Brusatte and Carr 2016](http://dx.doi.org/10.1038/srep20252); Michael: [Brastianos et al. 2015](http://dx.doi.org/10.1158/2159-8290.CD-15-0369) |
 | 10 | 4/5/2016 | Using phylogenies to study character evolution. `lectures/Lecture_9.pdf` | B&S chapter 10; Moeglein:[Felsenstein 1985](http://www.jstor.org/stable/2461605) |
 | 10 | 4/7/2016 | Lab: Independent contrasts with ape and R. Work through  `analyses/independent_contrasts.pdf` |  |
 | 11 | 4/12/2016 | Phylogenies in time. | B&S chapter 11; Bonacorsi and Carter: [Nagalingum et al 2011](http://dx.doi.org/10.1126/science.1209926); Napoli and Subramanian: [Harmon et al 2003](http://dx.doi.org/10.1126/science.1084786) |
