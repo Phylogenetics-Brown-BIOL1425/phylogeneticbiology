@@ -384,7 +384,7 @@ Please check the schedule a week in advance for revisions.
 | 7 | 3/8/2016 | Multiple sequence alignment, exotic models, distance, methods, consistency. Lecture: `lectures/Lecture_6.pdf` | Nunez: [Tan et al. 2015](http://dx.doi.org/10.1093/sysbio/syv033) |
 | 7 | 3/10/2016 |  | Nunez and Carter: [Hohna et al 2014](http://dx.doi.org/10.1093/sysbio/syu039); Sano: [Chiara et al 2012](http://dx.doi.org/10.1186/1741-7007-10-65) |
 | 8 | 3/15/2016 | TBD |  |
-| 8 | 3/17/2016 |  | Bayesian lab |
+| 8 | 3/17/2016 |  | [Bayesian lab](https://github.com/Phylogenetics-Brown-BIOL1425/bayes_intro) |
 | 9 | 3/22/2016 | Testing Phylogenetic Hypotheses. `lectures/Lecture_8.pdf` | B&S chapter 9;    Thomas: [Bergsten et al. 2013](http://dx.doi.org/10.1093/sysbio/syt029) |
 | 9 | 3/24/2016 |  |    Napoli and Subramanian: [Brusatte and Carr 2016](http://dx.doi.org/10.1038/srep20252); Michael: [Brastianos et al. 2015](http://dx.doi.org/10.1158/2159-8290.CD-15-0369) |
 | 10 | 4/5/2016 | Using phylogenies to study character evolution. `lectures/Lecture_9.pdf` | B&S chapter 10; Moeglein:[Felsenstein 1985](http://www.jstor.org/stable/2461605) |
