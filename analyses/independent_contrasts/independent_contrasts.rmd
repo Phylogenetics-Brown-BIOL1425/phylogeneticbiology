@@ -8,9 +8,8 @@ Casey Dunn
 ## Introduction
 
 This example analysis presents the basics phylogenetic independent contrasts 
-\citep{Felsenstein:1985ua}.
-It expands on the example presented at the R phylogenetics wiki 
-(\url{http://www.r-phylo.org/wiki/HowTo/Phylogenetic_Independent_Contrasts}).
+(Felsenstein 1985).
+It expands on the example presented at the [R phylogenetics wiki](http://www.r-phylo.org/wiki/HowTo/Phylogenetic_Independent_Contrasts).
 
 This analysis uses the programming language R.
 In the past decade, a large community of phylogenetic 
@@ -27,13 +26,11 @@ placed in a file and executed all at once. We will use R interactively, and
 load R code that others have already written for phylogenetic analyses as we 
 go.
 
-There are already \emph{many} general introductions, tutorials, and quick-references 
+There are already many general introductions, tutorials, and quick-references 
 for R. I therefore won't provide a background on R itself, we will dive right 
 into some analyses.
 
-There is detailed information on phylogenetic analysis with R at both 
-\href{http://www.r-phylo.org/wiki/Main_Page}{the R phylo wiki} and the 
-\href{http://cran.r-project.org/web/views/Phylogenetics.html}{CRAN task page for phylogenetics}.
+There is detailed information on phylogenetic analysis with R at both the [R phylo wiki](http://www.r-phylo.org/wiki/Main_Page) and the [CRAN task page for phylogenetics](http://cran.r-project.org/web/views/Phylogenetics.html).
 
 For the analyses below, you will need to install the `ape` library in R.
 
@@ -75,6 +72,11 @@ We now need to remove a taxon in the tree that isn't in the data file.
 
 ```{r}
 geotree <- drop.tip(geotree, "olivacea")
+```
+And order the data matrix so that the taxa appear in the same order as in the tree variable.
+
+```{r}
+geodata <- geodata[match(geotree$tip.label, rownames(geodata) ),]
 ```
     
 Plot the tree:
@@ -148,17 +150,18 @@ abline( RegressTarsusWing )
 ```
 
 
-\section{What if we didn't consider the phylogeny?}
+## What if we didn't consider the phylogeny?
 
 
 ```{r}
-RegressTarsusWingNaive <- lm( wingL~tarsusL )
+RegressTarsusWingNaive <- lm( wingL~tarsusL -1 )
 summary.lm( RegressTarsusWingNaive )
 ```
 
 
 ```{r}
 plot( wingL, tarsusL )
+abline( RegressTarsusWingNaive )
 ```
 
 
@@ -264,7 +267,7 @@ edgelabels( round(v,2) )
 
 The internal character states are calculated as weighted averages of the 
 states at the descendant nodes. This calculation is described by Equation 3 of 
-\cite{Felsenstein:1985ua}. Since the ancestral character state of the root node 
+(Felsenstein 1985ua). Since the ancestral character state of the root node 
 isn't used in any contrast calculations, we won't worry about it.
 
 
@@ -285,7 +288,7 @@ aX.7
 ```
 
 A slightly different but equivalent formulation of these calculations is 
-presented for the calculations of $X_i$ in Table 1 of \cite{Felsenstein:1985ua}. 
+presented for the calculations of $X_i$ in Table 1 of Felsenstein (1985). 
 According to this alternative formulation, the ancestral character states for 
 nodes 9 and 8 would be calculated as:
 
@@ -329,7 +332,7 @@ nX
 
 ### Calculating the contrasts 
 
-From \cite{Felsenstein:1985ua}, the contrast at an internal node is the 
+From Felsenstein (1985), the contrast at an internal node is the 
 difference in values at the descendent nodes:
 
 ```{r}
