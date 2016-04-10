@@ -1,3 +1,3 @@
 # Independent contrasts
 
-See `independent_contrasts.pdf`.
+See `independent_contrasts.html`.
