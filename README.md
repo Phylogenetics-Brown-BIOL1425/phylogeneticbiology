@@ -291,7 +291,7 @@ analyses:
 
 ## Further Reading
 
-The following resources provide additional background.
+The following resources provide additional background, and as papers to select from to read for class. Other papers can be selected as well. * indicates critical papers that should be read in each course.
 
 > Paradis, E. (2011) Analysis of Phylogenetics and Evolution with R. 
 [Springer](http://www.springer.com/life+sciences/evolutionary+%26+developmental+biology/book/978-0-387-32914-7)
@@ -309,6 +309,8 @@ Here are some papers that illustrate interesting applications for phylogenetics,
 > De Queiroz K: Species concepts and species delimitation. Syst. Biol. 2007, 56:879–886. http://dx.doi.org/10.1080/10635150701701083
 
 > Drummond AJ, Ho SYW, Phillips MJ, Rambaut A: Relaxed phylogenetics and dating with confidence. PLoS Biol. 2006, 4:e88. http://dx.doi.org/10.1371/journal.pbio.0040088
+
+> * Felsenstein J: Phylogenies and the Comparative Method [Internet]. American Naturalist 1985, 125:1–15. http://www.jstor.org/stable/2461605
 
 > Gire SK, Goba A, Andersen KG, Sealfon RSG, Park DJ, Kanneh L, Jalloh S, Momoh M, Fullah M, Dudas G, et al.: Genomic surveillance elucidates Ebola virus origin and transmission during the 2014 outbreak. Science 2014, 345:1369–1372.  http://dx.doi.org/10.1126/science.1259657
 
@@ -338,7 +340,7 @@ Here are some papers that illustrate interesting applications for phylogenetics,
 
 >Locating evolutionary precursors on a phylogenetic tree. http://onlinelibrary.wiley.com/doi/10.1111/j.1558-5646.2012.01720.x/abstract
 
->Tempo and mode of evolutionary radiation in iguanian lizards. http://www.ncbi.nlm.nih.gov/pubmed/12920297
+> * Tempo and mode of evolutionary radiation in iguanian lizards. http://www.ncbi.nlm.nih.gov/pubmed/12920297
 
 >Independently evolving species in asexual bdelloid rotifers. http://www.ncbi.nlm.nih.gov/pubmed/17373857
 
@@ -361,6 +363,8 @@ Here are some papers that illustrate interesting applications for phylogenetics,
 >Poor Fit to the Multispecies Coalescent is Widely Detectable in Empirical Data http://sysbio.oxfordjournals.org/cgi/doi/10.1093/sysbio/syt057
 
 >Source identification in two criminal cases using phylogenetic analysis of HIV-1 DNA sequences http://www.pnas.org/content/107/50/21242.abstract
+
+
 
 
 ## Schedule
