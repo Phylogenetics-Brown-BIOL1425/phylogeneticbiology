@@ -395,10 +395,10 @@ Please check the schedule a week in advance for revisions.
 | 10 | 4/7/2016 | Lab: Independent contrasts with ape and R. Work through  [comparative_r](https://github.com/Phylogenetics-Brown-BIOL1425/comparative_r) and [independent_contrasts](https://github.com/Phylogenetics-Brown-BIOL1425/independent_contrasts) | Haddock and Dunn R chapter |
 | 11 | 4/12/2016 | Phylogenies in time. | B&S chapter 11; Bonacorsi and Carter: [Nagalingum et al 2011](http://dx.doi.org/10.1126/science.1209926); Napoli and Subramanian: [Harmon et al 2003](http://dx.doi.org/10.1126/science.1084786) |
 | 11 | 4/14/2016 |  |   Seidman:[Ruder et al. 2013](http://dx.doi.org/10.1007/s00239-013-9552-5); Neil: [Gagneux 2012](http://dx.doi.org/10.1098/rstb.2011.0316) |
-| 12 | 4/19/2016 | TBD | Moeglein and Bonacorsi: [Pease et al 2016](http://dx.doi.org/10.1371/journal.pbio.1002379); Neil: [Teeling et al. 2005](http://dx.doi.org/10.1126/science.1105113) |
+| 12 | 4/19/2016 | TBD | Moeglein and Bonacorsi: [Pease et al 2016](http://dx.doi.org/10.1371/journal.pbio.1002379) |
 | 12 | 4/21/2016 |  | Thomas and Sano: [Hendriksen et al 2011](http://dx.doi.org/10.1128/mBio.00157-11); Sannerud: [Heath et al. 2008](http://dx.doi.org/10.1080/10635150701884640) |
-| 13 | 4/26/2016 | | Michael:[Ree and Smith 2008](http://dx.doi.org/10.1080/10635150701883881); Sannerud: [Guang et al. 2016](http://dx.doi.org/10.1016/j.tree.2015.12.007) |
-| 13 | 4/28/2016 | [Michael Landis](http://mlandis.github.io/) guest lecture | |
+| 13 | 4/26/2016 | | Michael:[Ree and Smith 2008](http://dx.doi.org/10.1080/10635150701883881); Sannerud: [Guang et al. 2016](http://dx.doi.org/10.1016/j.tree.2015.12.007); Neil: [Teeling et al. 2005](http://dx.doi.org/10.1126/science.1105113) |
+| 13 | 4/28/2016 | [Michael Landis](http://mlandis.github.io/) guest lecture, refresh yourselves on [Hohna et al 2014](http://dx.doi.org/10.1093/sysbio/syu039) | |
 | 14 | 5/3/2016 | Final project presentations; Final projects due (as pull requests) |  |
 | 14 | 5/5/2016 | No class |  |
 |  | 5/10/2016 | Final project presentations |  |
